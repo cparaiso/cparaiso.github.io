@@ -1,7 +1,59 @@
-.main-container {
+body {
+    background: #262b33;
+    color: white;
+}
+
+h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.highlight {
+    color: #29d781;
+}
+
+.main {
     width: 80%;
-    max-width: 700px;
     margin: 0 auto;
     text-align: center;
     margin-top: 100px;
+}
+
+.social {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+    width: 65%;
+    margin: 0 auto;
+    display: -webkit-box;   
+    display: -moz-box;  
+    display: -ms-flexbox; 
+    display: -webkit-flex; 
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.social li {
+    flex-grow: 1;
+    text-align: center;
+}
+
+a:link, a:visited {
+    color: #AEB8C2;
+    display: block;
+    padding: 20px;
+    font-size: 32px;
+    margin: 1px;
+}
+
+a:hover {
+    color: #29d781;
 }
