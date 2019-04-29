@@ -44,16 +44,21 @@ h2 {
 .social li {
     flex-grow: 1;
     text-align: center;
+    padding: 20px;
 }
 
 a:link, a:visited {
     color: #AEB8C2;
-    display: block;
-    padding: 20px;
     font-size: 32px;
     margin: 1px;
 }
 
 a:hover {
     color: #29d781;
+}
+
+@media all and (max-width: 500px) {
+    .social {
+        width: auto;
+    }
 }
