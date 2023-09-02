@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://chrisparaiso.dev/</loc>
+    <lastmod>2023-08-25T02:37:52-07:00</lastmod>
+  </url><url>
+    <loc>https://chrisparaiso.dev/posts/</loc>
+    <lastmod>2023-08-25T02:37:52-07:00</lastmod>
+  </url><url>
+    <loc>https://chrisparaiso.dev/posts/preserving-quotes-in-yaml/</loc>
+    <lastmod>2023-08-25T02:37:52-07:00</lastmod>
+  </url><url>
+    <loc>https://chrisparaiso.dev/posts/fighting-with-venv-in-python/</loc>
+    <lastmod>2023-08-23T02:36:29-07:00</lastmod>
+  </url><url>
+    <loc>https://chrisparaiso.dev/posts/revisiting-my-development-environment/</loc>
+    <lastmod>2023-08-20T02:33:46-07:00</lastmod>
+  </url><url>
+    <loc>https://chrisparaiso.dev/posts/the-sorcery-that-is-vim/</loc>
+    <lastmod>2023-04-17T02:15:15-07:00</lastmod>
+  </url><url>
+    <loc>https://chrisparaiso.dev/posts/unlocking-the-data-universe/</loc>
+    <lastmod>2022-12-22T02:31:50-07:00</lastmod>
+  </url><url>
+    <loc>https://chrisparaiso.dev/categories/</loc>
+  </url><url>
+    <loc>https://chrisparaiso.dev/tags/</loc>
+  </url>
+</urlset>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Chris Paraiso</title>
+    <link>https://chrisparaiso.dev/</link>
+    <description>Recent content on Chris Paraiso</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 25 Aug 2023 02:37:52 -0700</lastBuildDate><atom:link href="https://chrisparaiso.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Preserving Quotes in Yaml</title>
+      <link>https://chrisparaiso.dev/posts/preserving-quotes-in-yaml/</link>
+      <pubDate>Fri, 25 Aug 2023 02:37:52 -0700</pubDate>
+      
+      <guid>https://chrisparaiso.dev/posts/preserving-quotes-in-yaml/</guid>
+      <description>For a bit of context, I&amp;rsquo;m working on a project that spits out a YAML file that has properties with UUIDs. These UUIDs are linked to different text files and image files. The goal was to have some kind of web component consisting of an SVG with a text overlay. The text was separated out for third-party localization.
+I wrote a Python script and successfully populated the YAML file with what I needed for now.</description>
+    </item>
+    
+    <item>
+      <title>Fighting with venv in Python</title>
+      <link>https://chrisparaiso.dev/posts/fighting-with-venv-in-python/</link>
+      <pubDate>Wed, 23 Aug 2023 02:36:29 -0700</pubDate>
+      
+      <guid>https://chrisparaiso.dev/posts/fighting-with-venv-in-python/</guid>
+      <description>I had a brain fart today. I was developing a personal project in Python and I had some library issues that I was trying to wrap my head around. It turns out, I didn&amp;rsquo;t even have my virtual environment running. I completely forgot.
+So then I activated it.
+source .venv/bin/activate Then I thought to myself&amp;hellip;
+I don&amp;rsquo;t want to type that out every single damn time.
+I&amp;rsquo;m lazy. I don&amp;rsquo;t like to type unnecessary things.</description>
+    </item>
+    
+    <item>
+      <title>Revisiting My Development Environment</title>
+      <link>https://chrisparaiso.dev/posts/revisiting-my-development-environment/</link>
+      <pubDate>Sun, 20 Aug 2023 02:33:46 -0700</pubDate>
+      
+      <guid>https://chrisparaiso.dev/posts/revisiting-my-development-environment/</guid>
+      <description>From working the usual 9 to 5 job on top of studying data engineering (Python, SQL, DE concepts), I&amp;rsquo;ve been feeling a little burnt out with everything. I decided to take a break and revisit my development environment to see what I could add, remove or even change.
+It&amp;rsquo;s been a while. According to my dotfiles repository, it&amp;rsquo;s been about 6 years since I last updated it. This makes sense since in my aliases file, the most used aliases I&amp;rsquo;ve used over the years are:</description>
+    </item>
+    
+    <item>
+      <title>The Sorcery That Is VIM</title>
+      <link>https://chrisparaiso.dev/posts/the-sorcery-that-is-vim/</link>
+      <pubDate>Mon, 17 Apr 2023 02:15:15 -0700</pubDate>
+      
+      <guid>https://chrisparaiso.dev/posts/the-sorcery-that-is-vim/</guid>
+      <description>This isn&amp;rsquo;t going to be about the history of Vim. This, also, is not going to be a Vim tutorial. What it will be is my experience with getting back into using it.
+My First Experience Back in the early 2000s while I was in college, I was approached by a classmate who mentioned that I should install and learn Linux. I decided on installing Slackware because that was the distribution everyone was suggesting to learn Linux.</description>
+    </item>
+    
+    <item>
+      <title>Unlocking the Data Universe: Embarking on a Data Engineer Journey</title>
+      <link>https://chrisparaiso.dev/posts/unlocking-the-data-universe/</link>
+      <pubDate>Thu, 22 Dec 2022 02:31:50 -0700</pubDate>
+      
+      <guid>https://chrisparaiso.dev/posts/unlocking-the-data-universe/</guid>
+      <description>I&amp;rsquo;ve been in the software engineering field since 2009 with a focus on front-end development and UI/UX. This is funny to me because when I first started learning web development back in the early 2000s, I avoided JavaScript like the plague. I would only touch the HTML and CSS of the website. The design was all I cared about. Now, JavaScript is all I do.
+The Now Currently, my team is contracted by Cisco to convert and migrate their Networking Academy application to replace all unsupported Flash assets into Canvas.</description>
+    </item>
+    
+  </channel>
+</rss>
