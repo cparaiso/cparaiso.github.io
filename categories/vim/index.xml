@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>vim on Chris Paraiso</title>
+    <link>https://chrisparaiso.dev/categories/vim/</link>
+    <description>Recent content in vim on Chris Paraiso</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Aug 2023 02:33:46 -0700</lastBuildDate><atom:link href="https://chrisparaiso.dev/categories/vim/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Revisiting My Development Environment</title>
+      <link>https://chrisparaiso.dev/posts/revisiting-my-development-environment/</link>
+      <pubDate>Sun, 20 Aug 2023 02:33:46 -0700</pubDate>
+      
+      <guid>https://chrisparaiso.dev/posts/revisiting-my-development-environment/</guid>
+      <description>From working the usual 9 to 5 job on top of studying data engineering (Python, SQL, DE concepts), I&amp;rsquo;ve been feeling a little burnt out with everything. I decided to take a break and revisit my development environment to see what I could add, remove or even change.
+It&amp;rsquo;s been a while. According to my dotfiles repository, it&amp;rsquo;s been about 6 years since I last updated it. This makes sense since in my aliases file, the most used aliases I&amp;rsquo;ve used over the years are:</description>
+    </item>
+    
+    <item>
+      <title>The Sorcery That Is VIM</title>
+      <link>https://chrisparaiso.dev/posts/the-sorcery-that-is-vim/</link>
+      <pubDate>Mon, 17 Apr 2023 02:15:15 -0700</pubDate>
+      
+      <guid>https://chrisparaiso.dev/posts/the-sorcery-that-is-vim/</guid>
+      <description>This isn&amp;rsquo;t going to be about the history of Vim. This, also, is not going to be a Vim tutorial. What it will be is my experience with getting back into using it.
+My First Experience Back in the early 2000s while I was in college, I was approached by a classmate who mentioned that I should install and learn Linux. I decided on installing Slackware because that was the distribution everyone was suggesting to learn Linux.</description>
+    </item>
+    
+  </channel>
+</rss>
