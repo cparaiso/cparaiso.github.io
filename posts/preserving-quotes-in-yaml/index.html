@@ -1,203 +1,221 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="For a bit of context, I&rsquo;m working on a project that spits out a YAML file that has properties with UUIDs. These UUIDs are linked to different text files and image files. The goal was to have some kind of web component consisting of an SVG with a text overlay. The text was separated out for third-party localization. I wrote a Python script and successfully populated the YAML file with what I needed for now.">
+<title>Preserving Quotes in YAML</title>
 
-<head><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
-<title>Preserving Quotes in YAML | Chris Paraiso</title>
-<meta name="keywords" content="">
-<meta name="description" content="For a bit of context, I&rsquo;m working on a project that spits out a YAML file that has properties with UUIDs. These UUIDs are linked to different text files and image files. The goal was to have some kind of web component consisting of an SVG with a text overlay. The text was separated out for third-party localization.
-I wrote a Python script and successfully populated the YAML file with what I needed for now.">
-<meta name="author" content="">
-<link rel="canonical" href="https://chrisparaiso.dev/posts/preserving-quotes-in-yaml/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.77803e258ae4158ba8acfbb5b0f3dbe7c16b1e32cd579045e536a6495ab56dd3.css" integrity="sha256-d4A&#43;JYrkFYuorPu1sPPb58FrHjLNV5BF5TamSVq1bdM=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
-    onload="hljs.initHighlightingOnLoad();"></script>
-<link rel="icon" href="https://chrisparaiso.dev/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://chrisparaiso.dev/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://chrisparaiso.dev/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://chrisparaiso.dev/apple-touch-icon.png">
-<link rel="mask-icon" href="https://chrisparaiso.dev/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
+<link rel='canonical' href='https://chrisparaiso.dev/posts/preserving-quotes-in-yaml/'>
+
+<link rel="stylesheet" href="/scss/style.min.e9771575e20582fb99211bd6e2d8da544c511abc4d960373394197fe3ce2a939.css"><meta property='og:title' content="Preserving Quotes in YAML">
+<meta property='og:description' content="For a bit of context, I&rsquo;m working on a project that spits out a YAML file that has properties with UUIDs. These UUIDs are linked to different text files and image files. The goal was to have some kind of web component consisting of an SVG with a text overlay. The text was separated out for third-party localization. I wrote a Python script and successfully populated the YAML file with what I needed for now.">
+<meta property='og:url' content='https://chrisparaiso.dev/posts/preserving-quotes-in-yaml/'>
+<meta property='og:site_name' content='Chris Paraiso'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:published_time' content='2023-08-25T02:37:52-07:00'/><meta property='article:modified_time' content='2023-08-25T02:37:52-07:00'/>
+<meta name="twitter:title" content="Preserving Quotes in YAML">
+<meta name="twitter:description" content="For a bit of context, I&rsquo;m working on a project that spits out a YAML file that has properties with UUIDs. These UUIDs are linked to different text files and image files. The goal was to have some kind of web component consisting of an SVG with a text overlay. The text was separated out for third-party localization. I wrote a Python script and successfully populated the YAML file with what I needed for now.">
+  
+
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
         }
-
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --hljs-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
-            }
-        }
-
-    </style>
-</noscript><meta property="og:title" content="Preserving Quotes in YAML" />
-<meta property="og:description" content="For a bit of context, I&rsquo;m working on a project that spits out a YAML file that has properties with UUIDs. These UUIDs are linked to different text files and image files. The goal was to have some kind of web component consisting of an SVG with a text overlay. The text was separated out for third-party localization.
-I wrote a Python script and successfully populated the YAML file with what I needed for now." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://chrisparaiso.dev/posts/preserving-quotes-in-yaml/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-08-25T02:37:52-07:00" />
-<meta property="article:modified_time" content="2023-08-25T02:37:52-07:00" />
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Preserving Quotes in YAML"/>
-<meta name="twitter:description" content="For a bit of context, I&rsquo;m working on a project that spits out a YAML file that has properties with UUIDs. These UUIDs are linked to different text files and image files. The goal was to have some kind of web component consisting of an SVG with a text overlay. The text was separated out for third-party localization.
-I wrote a Python script and successfully populated the YAML file with what I needed for now."/>
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "https://chrisparaiso.dev/posts/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "Preserving Quotes in YAML",
-      "item": "https://chrisparaiso.dev/posts/preserving-quotes-in-yaml/"
-    }
-  ]
-}
+    })();
 </script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Preserving Quotes in YAML",
-  "name": "Preserving Quotes in YAML",
-  "description": "For a bit of context, I\u0026rsquo;m working on a project that spits out a YAML file that has properties with UUIDs. These UUIDs are linked to different text files and image files. The goal was to have some kind of web component consisting of an SVG with a text overlay. The text was separated out for third-party localization.\nI wrote a Python script and successfully populated the YAML file with what I needed for now.",
-  "keywords": [
-    
-  ],
-  "articleBody": "For a bit of context, I’m working on a project that spits out a YAML file that has properties with UUIDs. These UUIDs are linked to different text files and image files. The goal was to have some kind of web component consisting of an SVG with a text overlay. The text was separated out for third-party localization.\nI wrote a Python script and successfully populated the YAML file with what I needed for now.\nid: 5214484c-42d2-11ee-bb4b-a0cec89b3edd type: \"graphic\" subtype: \"\" metadata: media-not-started: \"false\" title: \"\" transcript: \"\" assets: - 52117bbc-42d2-11ee-bb4b-a0cec89b3edd - 521285a2-42d2-11ee-bb4b-a0cec89b3edd - 5213159e-42d2-11ee-bb4b-a0cec89b3edd ui: instructions: \"\" images: [] svgs: - text1: 52117bbc-42d2-11ee-bb4b-a0cec89b3edd text2: 521285a2-42d2-11ee-bb4b-a0cec89b3edd text3: 5213159e-42d2-11ee-bb4b-a0cec89b3edd file: \"\" caption: \"\" ratio: \"822/861\" stylesheet: 5214b930-42d2-11ee-bb4b-a0cec89b3edd Every UUID seen here has a corresponding directory, YAML file and markdown file with the same UUID. For example, the property of text1 would have:\n52117bbc-42d2-11ee-bb4b-a0cec89b3edd/ #directory | |-- 52117bbc-42d2-11ee-bb4b-a0cec89b3edd.yml | +-- 52117bbc-42d2-11ee-bb4b-a0cec89b3edd.md But there’s an issue. If you take a look at the YAML file, some properties are wrapped in double quotes and some are not. All values in the YAML file need to be surrounded by double quotes for my situation.\nInitially, I went with PyYaml’s library to assist me in wrangling YAML with Python. Everything was working well up until this point. Diving into the docs I can tell some programmers find documentation hard because it did not help at all. How can I RTFM if the manual is useless? Dive into the source code? I really shouldn’t need to do that for something so simple as this. Even, after diving through the source code, it was still unclear.\nTip: When writing technical documentation, imagine yourself as NOT the person who developed it. Also, imagine you’re explaining it to your mom. Thanks.\nAfter a bit of research, I switched to ruamel.yaml’s Python library. The API was similar for my needs and the source code was easy to navigate. Refactoring was minimal and it solved my missing double quote issue.\nfrom ruamel.yaml import YAML # 1 from ruamel.yaml.scalarstring import DoubleQuotedScalarString # 2 yaml = YAML() yaml.preserve_quotes = True # 3 def media_insert_text_field(fields: List[Dict]) -\u003e Tuple: assets = [] ui = {} for field in fields: # 4 double_quoted_scalar = DoubleQuotedScalarString(field['uuid']) assets.append(double_quoted_scalar) ui[f\"text{field['index']}\"] = double_quoted_scalar return (assets, ui) ... Load ruamel.yaml.\nImport DoubleQuotedScalarString to force double quotes on scalar types.\nSet preserve_quotes to true.\nForce double quotes on field['uuid'] with DoubleQuotedScalarString.\nYou may be asking yourself why I needed DoubleQuotedScalarString if preserve_quotes was set to true. I’m still asking myself that question. Data was triple checked and followed the same format as the other properties I’m injected in the final YAML so I’m not sure why. But ruamel.yaml made it easy to force it. That’s all that matters to me.\nI’ll end by reiterating a tip to write technical documentation like your mom will be reading it. (Not that I’m a mother, but you get the gist.)\nBe sure to follow me @chrisparaiso.\n",
-  "wordCount" : "490",
-  "inLanguage": "en",
-  "datePublished": "2023-08-25T02:37:52-07:00",
-  "dateModified": "2023-08-25T02:37:52-07:00",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://chrisparaiso.dev/posts/preserving-quotes-in-yaml/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Chris Paraiso",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://chrisparaiso.dev/favicon.ico"
-    }
-  }
-}
-</script>
-</head>
+<div class="container main-container flex on-phone--column compact"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
 
-<body class="" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="https://chrisparaiso.dev/" accesskey="h" title="Chris Paraiso (Alt + H)">Chris Paraiso</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu2c866e3a2d6b2522f10890c4c2e31937_313167_300x0_resize_q75_box.jpg" width="300"
+                            height="292" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Chris Paraiso</a></h1>
+            <h2 class="site-description">Full Stack Developer in Python, Golang, JavaScript -  Father -  Gamer</h2>
         </div>
-        <ul id="menu">
-            <li>
-                <a href="https://chrisparaiso.dev/" title="Chris Paraiso">
-                    <span>Home</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://chrisparaiso.dev/about/" title="About me">
-                    <span>About me</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://chrisparaiso.dev/categories/" title="Categories">
-                    <span>Categories</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://chrisparaiso.dev/archives/" title="Archives">
-                    <span>Archives</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-</header>
-<main class="main">
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
 
-<article class="post-single">
-  <header class="post-header">
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
     
-    <h1 class="post-title">
-      Preserving Quotes in YAML
-    </h1>
-    <div class="post-meta"><span title='2023-08-25 02:37:52 -0700 MST'>August 25, 2023</span>
 
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/python/" >
+                Python
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/posts/preserving-quotes-in-yaml/">Preserving Quotes in YAML</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Aug 25, 2023</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    3 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
 </div>
-  </header> 
-  <div class="post-content"><p>For a bit of context, I&rsquo;m working on a project that spits out a YAML file that has properties with UUIDs. These UUIDs are linked to different text files and image files. The goal was to have some kind of web component consisting of an SVG with a text overlay. The text was separated out for third-party localization.</p>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>For a bit of context, I&rsquo;m working on a project that spits out a YAML file that has properties with UUIDs. These UUIDs are linked to different text files and image files. The goal was to have some kind of web component consisting of an SVG with a text overlay. The text was separated out for third-party localization.</p>
 <p>I wrote a Python script and successfully populated the YAML file with what I needed for now.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">id</span>: <span style="color:#ae81ff">5214484c-42d2-11ee-bb4b-a0cec89b3edd</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">type</span>: <span style="color:#e6db74">&#34;graphic&#34;</span>
@@ -262,89 +280,140 @@ I wrote a Python script and successfully populated the YAML file with what I nee
 </ol>
 <p>You may be asking yourself why I needed <code>DoubleQuotedScalarString</code> if <code>preserve_quotes</code> was set to <code>true</code>. I&rsquo;m still asking myself that question. Data was triple checked and followed the same format as the other properties I&rsquo;m injected in the final YAML so I&rsquo;m not sure why. But ruamel.yaml made it easy to force it. That&rsquo;s all that matters to me.</p>
 <p>I&rsquo;ll end by reiterating a tip to write technical documentation like your mom will be reading it. (Not that I&rsquo;m a mother, but you get the gist.)</p>
-<p>Be sure to follow me <a href="https://twitter.com/chrisparaiso">@chrisparaiso</a>.</p>
+<p>Be sure to follow me <a class="link" href="https://twitter.com/chrisparaiso"  target="_blank" rel="noopener"
+    >@chrisparaiso</a>.</p>
+
+</section>
 
 
-  </div>
-
-  <footer class="post-footer">
-    <ul class="post-tags">
-    </ul>
-<nav class="paginav">
-  <a class="next" href="https://chrisparaiso.dev/posts/fighting-with-venv-in-python/">
-    <span class="title">Next »</span>
-    <br>
-    <span>Fighting with venv in Python</span>
-  </a>
-</nav>
-
-  </footer>
-</article>
-    </main>
+    <footer class="article-footer">
     
-<footer class="footer">
-    <span>&copy; 2023 <a href="https://chrisparaiso.dev/">Chris Paraiso</a></span>
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2024 Chris Paraiso
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
-</a>
 
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
 <script>
-    let menu = document.getElementById('menu')
-    if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
 
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
 
+        document.head.appendChild(customFont);
+    }());
 </script>
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
 
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            document.body.classList.add('dark');
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-</script>
-</body>
-
+    </body>
 </html>

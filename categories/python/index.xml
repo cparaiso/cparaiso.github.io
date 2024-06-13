@@ -1,34 +1,146 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Python on Chris Paraiso</title>
-    <link>https://chrisparaiso.dev/categories/python/</link>
-    <description>Recent content in Python on Chris Paraiso</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 25 Aug 2023 02:37:52 -0700</lastBuildDate><atom:link href="https://chrisparaiso.dev/categories/python/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Preserving Quotes in YAML</title>
-      <link>https://chrisparaiso.dev/posts/preserving-quotes-in-yaml/</link>
-      <pubDate>Fri, 25 Aug 2023 02:37:52 -0700</pubDate>
-      
-      <guid>https://chrisparaiso.dev/posts/preserving-quotes-in-yaml/</guid>
-      <description>For a bit of context, I&amp;rsquo;m working on a project that spits out a YAML file that has properties with UUIDs. These UUIDs are linked to different text files and image files. The goal was to have some kind of web component consisting of an SVG with a text overlay. The text was separated out for third-party localization.
-I wrote a Python script and successfully populated the YAML file with what I needed for now.</description>
-    </item>
-    
-    <item>
-      <title>Fighting with venv in Python</title>
-      <link>https://chrisparaiso.dev/posts/fighting-with-venv-in-python/</link>
-      <pubDate>Wed, 23 Aug 2023 02:36:29 -0700</pubDate>
-      
-      <guid>https://chrisparaiso.dev/posts/fighting-with-venv-in-python/</guid>
-      <description>I had a brain fart today. I was developing a personal project in Python and I had some library issues that I was trying to wrap my head around. It turns out, I didn&amp;rsquo;t even have my virtual environment running. I completely forgot.
-So then I activated it.
-source .venv/bin/activate Then I thought to myself&amp;hellip;
-I don&amp;rsquo;t want to type that out every single damn time.
-I&amp;rsquo;m lazy. I don&amp;rsquo;t like to type unnecessary things.</description>
-    </item>
-    
-  </channel>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Python on Chris Paraiso</title>
+        <link>https://chrisparaiso.dev/categories/python/</link>
+        <description>Recent content in Python on Chris Paraiso</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Fri, 25 Aug 2023 02:37:52 -0700</lastBuildDate><atom:link href="https://chrisparaiso.dev/categories/python/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Preserving Quotes in YAML</title>
+        <link>https://chrisparaiso.dev/posts/preserving-quotes-in-yaml/</link>
+        <pubDate>Fri, 25 Aug 2023 02:37:52 -0700</pubDate>
+        
+        <guid>https://chrisparaiso.dev/posts/preserving-quotes-in-yaml/</guid>
+        <description>&lt;p&gt;For a bit of context, I&amp;rsquo;m working on a project that spits out a YAML file that has properties with UUIDs. These UUIDs are linked to different text files and image files. The goal was to have some kind of web component consisting of an SVG with a text overlay. The text was separated out for third-party localization.&lt;/p&gt;
+&lt;p&gt;I wrote a Python script and successfully populated the YAML file with what I needed for now.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;id&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;5214484c-42d2-11ee-bb4b-a0cec89b3edd&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;type&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;graphic&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;subtype&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;metadata&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;media-not-started&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;false&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;title&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;transcript&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;assets&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;- &lt;span style=&#34;color:#ae81ff&#34;&gt;52117bbc-42d2-11ee-bb4b-a0cec89b3edd&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;- &lt;span style=&#34;color:#ae81ff&#34;&gt;521285a2-42d2-11ee-bb4b-a0cec89b3edd&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;- &lt;span style=&#34;color:#ae81ff&#34;&gt;5213159e-42d2-11ee-bb4b-a0cec89b3edd&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;ui&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;instructions&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;images&lt;/span&gt;: []
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;svgs&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  - &lt;span style=&#34;color:#f92672&#34;&gt;text1&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;52117bbc-42d2-11ee-bb4b-a0cec89b3edd&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;text2&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;521285a2-42d2-11ee-bb4b-a0cec89b3edd&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;text3&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;5213159e-42d2-11ee-bb4b-a0cec89b3edd&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;file&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;caption&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;ratio&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;822/861&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;stylesheet&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;5214b930-42d2-11ee-bb4b-a0cec89b3edd&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Every UUID seen here has a corresponding directory, YAML file and markdown file with the same UUID. For example, the property of &lt;code&gt;text1&lt;/code&gt; would have:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;52117bbc-42d2-11ee-bb4b-a0cec89b3edd/&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;#directory&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;|&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;|-- 52117bbc-42d2-11ee-bb4b-a0cec89b3edd.yml&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;|&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;+-- 52117bbc-42d2-11ee-bb4b-a0cec89b3edd.md&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;But there&amp;rsquo;s an issue. If you take a look at the YAML file, some properties are wrapped in double quotes and some are not. All values in the YAML file need to be surrounded by double quotes for my situation.&lt;/p&gt;
+&lt;p&gt;Initially, I went with PyYaml&amp;rsquo;s library to assist me in wrangling YAML with Python. Everything was working well up until this point. Diving into the docs I can tell some programmers find documentation hard because it did not help at all. How can I RTFM if the manual is useless? Dive into the source code? I really shouldn&amp;rsquo;t need to do that for something so simple as this. Even, after diving through the source code, it was still unclear.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tip&lt;/strong&gt;: When writing technical documentation, imagine yourself as &lt;em&gt;&lt;strong&gt;NOT&lt;/strong&gt;&lt;/em&gt; the person who developed it. Also, imagine you&amp;rsquo;re explaining it to your mom. Thanks.&lt;/p&gt;
+&lt;p&gt;After a bit of research, I switched to ruamel.yaml&amp;rsquo;s Python library. The API was similar for my needs and the source code was easy to navigate. Refactoring was minimal and it solved my missing double quote issue.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; ruamel.yaml &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; YAML &lt;span style=&#34;color:#75715e&#34;&gt;# 1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; ruamel.yaml.scalarstring &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; DoubleQuotedScalarString &lt;span style=&#34;color:#75715e&#34;&gt;# 2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;yaml &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; YAML()                       
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;yaml&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;preserve_quotes &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;True&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 3&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;media_insert_text_field&lt;/span&gt;(fields: List[Dict]) &lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt; Tuple:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    assets &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; []
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ui &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {} 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; field &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; fields:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;# 4&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        double_quoted_scalar &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; DoubleQuotedScalarString(field[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;uuid&amp;#39;&lt;/span&gt;])
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        assets&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;append(double_quoted_scalar)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        ui[&lt;span style=&#34;color:#e6db74&#34;&gt;f&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;text&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{&lt;/span&gt;field[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;index&amp;#39;&lt;/span&gt;]&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; double_quoted_scalar 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; (assets, ui)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Load ruamel.yaml.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Import &lt;code&gt;DoubleQuotedScalarString&lt;/code&gt; to force double quotes on scalar types.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Set &lt;code&gt;preserve_quotes&lt;/code&gt; to &lt;code&gt;true&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Force double quotes on &lt;code&gt;field[&#39;uuid&#39;]&lt;/code&gt; with &lt;code&gt;DoubleQuotedScalarString&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You may be asking yourself why I needed &lt;code&gt;DoubleQuotedScalarString&lt;/code&gt; if &lt;code&gt;preserve_quotes&lt;/code&gt; was set to &lt;code&gt;true&lt;/code&gt;. I&amp;rsquo;m still asking myself that question. Data was triple checked and followed the same format as the other properties I&amp;rsquo;m injected in the final YAML so I&amp;rsquo;m not sure why. But ruamel.yaml made it easy to force it. That&amp;rsquo;s all that matters to me.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll end by reiterating a tip to write technical documentation like your mom will be reading it. (Not that I&amp;rsquo;m a mother, but you get the gist.)&lt;/p&gt;
+&lt;p&gt;Be sure to follow me &lt;a class=&#34;link&#34; href=&#34;https://twitter.com/chrisparaiso&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;@chrisparaiso&lt;/a&gt;.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Fighting with venv in Python</title>
+        <link>https://chrisparaiso.dev/posts/fighting-with-venv-in-python/</link>
+        <pubDate>Wed, 23 Aug 2023 02:36:29 -0700</pubDate>
+        
+        <guid>https://chrisparaiso.dev/posts/fighting-with-venv-in-python/</guid>
+        <description>&lt;p&gt;I had a brain fart today. I was developing a personal project in Python and I had some library issues that I was trying to wrap my head around. It turns out, I didn&amp;rsquo;t even have my &lt;a class=&#34;link&#34; href=&#34;https://docs.python.org/3/library/venv.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;virtual environment&lt;/a&gt; running. I completely forgot.&lt;/p&gt;
+&lt;p&gt;So then I activated it.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;source .venv/bin/activate
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Then I thought to myself&amp;hellip;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I don&amp;rsquo;t want to type that out every single damn time.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I&amp;rsquo;m lazy. I don&amp;rsquo;t like to type unnecessary things. I switch projects mid-day on multiple occasions at work so there&amp;rsquo;s a bit of a context switch to deal with. If I have to write automation scripts and aliases now to prevent me from typing even the smallest of words, I&amp;rsquo;ll take the time to try to solve that.&lt;/p&gt;
+&lt;h2 id=&#34;context-issues&#34;&gt;Context issues
+&lt;/h2&gt;&lt;p&gt;So I did just that. I set aside some time to try to automate things.&lt;/p&gt;
+&lt;p&gt;I wanted a command I could execute (&lt;code&gt;venv&lt;/code&gt;). This command would run a script that creates a virtual environment via &lt;code&gt;python3 -m venv .venv&lt;/code&gt;. Then it would run &lt;code&gt;source .venv/bin/activate&lt;/code&gt; to start the virtual environment.&lt;/p&gt;
+&lt;p&gt;Well, every time I ran this script, the directory would be created at the current working directory and the &lt;code&gt;source&lt;/code&gt; line ran without error but the virtual environment did not start. The Python interpreter my environment was running was still global at &lt;code&gt;/usr/local/bin/python3&lt;/code&gt;. So something is amiss!&lt;/p&gt;
+&lt;p&gt;After doing a bit of research it turns out that when you want to enter a virtual environment, the virtual environment modifies my shell&amp;rsquo;s variables. An example of this would be modifying my shell&amp;rsquo;s variables to point to the correct Python interpreter.&lt;/p&gt;
+&lt;p&gt;Also, when you run a Bash script, it executes in a different context/subshell. The file and directory changes stuck after the script ran, but the necessary variables I needed for my virtual environment were thrown away as soon as the script finished running.&lt;/p&gt;
+&lt;h2 id=&#34;solution&#34;&gt;Solution
+&lt;/h2&gt;&lt;p&gt;I removed the &lt;code&gt;source&lt;/code&gt; line from my &lt;code&gt;venv.sh&lt;/code&gt; script and just left the script to create the needed files and directories. I would then need to run that &lt;code&gt;source&lt;/code&gt; command to enter the virtual environment.&lt;/p&gt;
+&lt;p&gt;Then I thought: Why don&amp;rsquo;t I just string the commands together into one alias on my shell? Perfect.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# aliases.sh&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;alias venv&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;$HOME/src/dotfiles/bin/utils/venv.sh &amp;amp;&amp;amp; \
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    source .venv/bin/activate&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# ... other aliases below here&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Running the &lt;code&gt;venv&lt;/code&gt; alias would execute the &lt;code&gt;venv.sh&lt;/code&gt; &lt;strong&gt;then&lt;/strong&gt; run the &lt;code&gt;source&lt;/code&gt; command in the context of the shell I am currently in.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#!/bin/bash
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# venv.sh&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# create venv if not exists&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt; -d &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.venv&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Found .venv. Activating...&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    read -p &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.venv does not exist. Would you like to \
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;         create a venv for this directory? (y/n) &amp;#34;&lt;/span&gt; response
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$response&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;y&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Creating .venv directory @ &lt;/span&gt;$PWD&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      python3 -m venv .venv
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If &lt;code&gt;venv.sh&lt;/code&gt; finds an existing &lt;code&gt;.venv&lt;/code&gt; directory, it does nothing. If the script does not find the &lt;code&gt;.venv&lt;/code&gt; directory it prompts the user asking if the script has permission to create it. I know I could probably do without the prompt and just have the script create it. I decided to leave it in for now.&lt;/p&gt;
+&lt;p&gt;I guess my issue was with Bash and not venv. Anyway, I think I have to be careful. I&amp;rsquo;ve been getting sidetracked and spending a lot of time configuring my environment. Off to building something!&lt;/p&gt;
+&lt;p&gt;Be sure to follow me &lt;a class=&#34;link&#34; href=&#34;https://twitter.com/chrisparaiso&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;@chrisparaiso&lt;/a&gt;.&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
 </rss>

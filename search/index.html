@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Full Stack Developer in Python, Golang, JavaScript -  Father -  Gamer">
-<title>Posts</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="search">
+<title>Search</title>
 
-<link rel='canonical' href='https://chrisparaiso.dev/posts/'>
+<link rel='canonical' href='https://chrisparaiso.dev/search/'>
 
-<link rel="stylesheet" href="/scss/style.min.e9771575e20582fb99211bd6e2d8da544c511abc4d960373394197fe3ce2a939.css"><meta property='og:title' content="Posts">
-<meta property='og:description' content="Full Stack Developer in Python, Golang, JavaScript -  Father -  Gamer">
-<meta property='og:url' content='https://chrisparaiso.dev/posts/'>
+<link rel="stylesheet" href="/scss/style.min.e9771575e20582fb99211bd6e2d8da544c511abc4d960373394197fe3ce2a939.css"><meta property='og:title' content="Search">
+<meta property='og:description' content="search">
+<meta property='og:url' content='https://chrisparaiso.dev/search/'>
 <meta property='og:site_name' content='Chris Paraiso'>
-<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2023-08-25T02:37:52-07:00 '/>
-<meta name="twitter:title" content="Posts">
-<meta name="twitter:description" content="Full Stack Developer in Python, Golang, JavaScript -  Father -  Gamer"><link rel="alternate" type="application/rss&#43;xml" href="https://chrisparaiso.dev/posts/index.xml">
+<meta property='og:type' content='article'><meta property='article:section' content='' />
+<meta name="twitter:title" content="Search">
+<meta name="twitter:description" content="search">
   
 
 
     </head>
-    <body class="">
+    <body class="template-search">
     <script>
         (function() {
             const colorSchemeKey = 'StackColorScheme';
@@ -142,83 +142,34 @@
     </ol>
 </aside>
 
-    
-
             <main class="main full-width">
-    <header>
-        <h3 class="section-title">
-            
-                Section
-            
-        </h3>
+<form action="/search/" class="search-form">
+    <p>
+        <label>Search</label>
+        <input name="keyword" placeholder="Type something..." />
+    </p>
 
-        <div class="section-card">
-            <div class="section-details">
-                <h3 class="section-count">5 pages</h3>
-                <h1 class="section-term">Posts</h1>
-                
-            </div>
-        </div>
-    </header>
-    
-    <section class="article-list--compact">
-        
-            <article>
-    <a href="/posts/preserving-quotes-in-yaml/">
-        <div class="article-details">
-            <h2 class="article-title">Preserving Quotes in YAML</h2>
-            <footer class="article-time">
-                <time datetime='2023-08-25T02:37:52-07:00'>Aug 25, 2023</time>
-            </footer>
-        </div>
-    </a>
-</article>
-        
-            <article>
-    <a href="/posts/fighting-with-venv-in-python/">
-        <div class="article-details">
-            <h2 class="article-title">Fighting with venv in Python</h2>
-            <footer class="article-time">
-                <time datetime='2023-08-23T02:36:29-07:00'>Aug 23, 2023</time>
-            </footer>
-        </div>
-    </a>
-</article>
-        
-            <article>
-    <a href="/posts/revisiting-my-development-environment/">
-        <div class="article-details">
-            <h2 class="article-title">Revisiting My Development Environment</h2>
-            <footer class="article-time">
-                <time datetime='2023-08-20T02:33:46-07:00'>Aug 20, 2023</time>
-            </footer>
-        </div>
-    </a>
-</article>
-        
-            <article>
-    <a href="/posts/the-sorcery-that-is-vim/">
-        <div class="article-details">
-            <h2 class="article-title">The Sorcery That Is VIM</h2>
-            <footer class="article-time">
-                <time datetime='2023-04-17T02:15:15-07:00'>Apr 17, 2023</time>
-            </footer>
-        </div>
-    </a>
-</article>
-        
-            <article>
-    <a href="/posts/unlocking-the-data-universe/">
-        <div class="article-details">
-            <h2 class="article-title">Unlocking the Data Universe: Embarking on a Data Engineer Journey</h2>
-            <footer class="article-time">
-                <time datetime='2022-12-22T02:31:50-07:00'>Dec 22, 2022</time>
-            </footer>
-        </div>
-    </a>
-</article>
-        
-    </section>
+    <button title="Search">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+    </button>
+</form>
+
+<div class="search-result">
+    <h3 class="search-result--title section-title"></h3>
+    <div class="search-result--list article-list--compact"></div>
+</div>
+
+<script>
+    window.searchResultTitleTemplate = "#PAGES_COUNT pages (#TIME_SECONDS seconds)"
+</script><script type="text/javascript" src="/ts/search.js" defer></script>
+
 <footer class="site-footer">
     <section class="copyright">
         &copy; 

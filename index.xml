@@ -1,84 +1,524 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Chris Paraiso</title>
-    <link>https://chrisparaiso.dev/</link>
-    <description>Recent content on Chris Paraiso</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 25 Aug 2023 02:37:52 -0700</lastBuildDate><atom:link href="https://chrisparaiso.dev/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Preserving Quotes in YAML</title>
-      <link>https://chrisparaiso.dev/posts/preserving-quotes-in-yaml/</link>
-      <pubDate>Fri, 25 Aug 2023 02:37:52 -0700</pubDate>
-      
-      <guid>https://chrisparaiso.dev/posts/preserving-quotes-in-yaml/</guid>
-      <description>For a bit of context, I&amp;rsquo;m working on a project that spits out a YAML file that has properties with UUIDs. These UUIDs are linked to different text files and image files. The goal was to have some kind of web component consisting of an SVG with a text overlay. The text was separated out for third-party localization.
-I wrote a Python script and successfully populated the YAML file with what I needed for now.</description>
-    </item>
-    
-    <item>
-      <title>Fighting with venv in Python</title>
-      <link>https://chrisparaiso.dev/posts/fighting-with-venv-in-python/</link>
-      <pubDate>Wed, 23 Aug 2023 02:36:29 -0700</pubDate>
-      
-      <guid>https://chrisparaiso.dev/posts/fighting-with-venv-in-python/</guid>
-      <description>I had a brain fart today. I was developing a personal project in Python and I had some library issues that I was trying to wrap my head around. It turns out, I didn&amp;rsquo;t even have my virtual environment running. I completely forgot.
-So then I activated it.
-source .venv/bin/activate Then I thought to myself&amp;hellip;
-I don&amp;rsquo;t want to type that out every single damn time.
-I&amp;rsquo;m lazy. I don&amp;rsquo;t like to type unnecessary things.</description>
-    </item>
-    
-    <item>
-      <title>Revisiting My Development Environment</title>
-      <link>https://chrisparaiso.dev/posts/revisiting-my-development-environment/</link>
-      <pubDate>Sun, 20 Aug 2023 02:33:46 -0700</pubDate>
-      
-      <guid>https://chrisparaiso.dev/posts/revisiting-my-development-environment/</guid>
-      <description>From working the usual 9 to 5 job on top of studying data engineering (Python, SQL, DE concepts), I&amp;rsquo;ve been feeling a little burnt out with everything. I decided to take a break and revisit my development environment to see what I could add, remove or even change.
-It&amp;rsquo;s been a while. According to my dotfiles repository, it&amp;rsquo;s been about 6 years since I last updated it. This makes sense since in my aliases file, the most used aliases I&amp;rsquo;ve used over the years are:</description>
-    </item>
-    
-    <item>
-      <title>The Sorcery That Is VIM</title>
-      <link>https://chrisparaiso.dev/posts/the-sorcery-that-is-vim/</link>
-      <pubDate>Mon, 17 Apr 2023 02:15:15 -0700</pubDate>
-      
-      <guid>https://chrisparaiso.dev/posts/the-sorcery-that-is-vim/</guid>
-      <description>This isn&amp;rsquo;t going to be about the history of Vim. This, also, is not going to be a Vim tutorial. What it will be is my experience with getting back into using it.
-My First Experience Back in the early 2000s while I was in college, I was approached by a classmate who mentioned that I should install and learn Linux. I decided on installing Slackware because that was the distribution everyone was suggesting to learn Linux.</description>
-    </item>
-    
-    <item>
-      <title>Unlocking the Data Universe: Embarking on a Data Engineer Journey</title>
-      <link>https://chrisparaiso.dev/posts/unlocking-the-data-universe/</link>
-      <pubDate>Thu, 22 Dec 2022 02:31:50 -0700</pubDate>
-      
-      <guid>https://chrisparaiso.dev/posts/unlocking-the-data-universe/</guid>
-      <description>I&amp;rsquo;ve been in the software engineering field since 2009 with a focus on front-end development and UI/UX. This is funny to me because when I first started learning web development back in the early 2000s, I avoided JavaScript like the plague. I would only touch the HTML and CSS of the website. The design was all I cared about. Now, JavaScript is all I do.
-The Now Currently, my team is contracted by Cisco to convert and migrate their Networking Academy application to replace all unsupported Flash assets into Canvas.</description>
-    </item>
-    
-    <item>
-      <title>About me</title>
-      <link>https://chrisparaiso.dev/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chrisparaiso.dev/about/</guid>
-      <description>Hi there! My name is Chris Paraiso. I have been a software engineer for 12 years working on the front-end of web applications. I love to learn and have been diving into other languages as well as data engineering. This space is just a space for me to write down things I want to remember. If it helps others, great. If not, that&amp;rsquo;s also fine.
-Be sure to follow me @chrisparaiso.</description>
-    </item>
-    
-    
-    <item>
-      <title>Categories</title>
-      <link>https://chrisparaiso.dev/categories/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chrisparaiso.dev/categories/</guid>
-      <description>categories</description>
-    </item>
-    
-  </channel>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Chris Paraiso</title>
+        <link>https://chrisparaiso.dev/</link>
+        <description>Recent content on Chris Paraiso</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Fri, 25 Aug 2023 02:37:52 -0700</lastBuildDate><atom:link href="https://chrisparaiso.dev/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Preserving Quotes in YAML</title>
+        <link>https://chrisparaiso.dev/posts/preserving-quotes-in-yaml/</link>
+        <pubDate>Fri, 25 Aug 2023 02:37:52 -0700</pubDate>
+        
+        <guid>https://chrisparaiso.dev/posts/preserving-quotes-in-yaml/</guid>
+        <description>&lt;p&gt;For a bit of context, I&amp;rsquo;m working on a project that spits out a YAML file that has properties with UUIDs. These UUIDs are linked to different text files and image files. The goal was to have some kind of web component consisting of an SVG with a text overlay. The text was separated out for third-party localization.&lt;/p&gt;
+&lt;p&gt;I wrote a Python script and successfully populated the YAML file with what I needed for now.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;id&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;5214484c-42d2-11ee-bb4b-a0cec89b3edd&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;type&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;graphic&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;subtype&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;metadata&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;media-not-started&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;false&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;title&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;transcript&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;assets&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;- &lt;span style=&#34;color:#ae81ff&#34;&gt;52117bbc-42d2-11ee-bb4b-a0cec89b3edd&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;- &lt;span style=&#34;color:#ae81ff&#34;&gt;521285a2-42d2-11ee-bb4b-a0cec89b3edd&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;- &lt;span style=&#34;color:#ae81ff&#34;&gt;5213159e-42d2-11ee-bb4b-a0cec89b3edd&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;ui&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;instructions&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;images&lt;/span&gt;: []
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;svgs&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  - &lt;span style=&#34;color:#f92672&#34;&gt;text1&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;52117bbc-42d2-11ee-bb4b-a0cec89b3edd&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;text2&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;521285a2-42d2-11ee-bb4b-a0cec89b3edd&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;text3&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;5213159e-42d2-11ee-bb4b-a0cec89b3edd&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;file&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;caption&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;ratio&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;822/861&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;stylesheet&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;5214b930-42d2-11ee-bb4b-a0cec89b3edd&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Every UUID seen here has a corresponding directory, YAML file and markdown file with the same UUID. For example, the property of &lt;code&gt;text1&lt;/code&gt; would have:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;52117bbc-42d2-11ee-bb4b-a0cec89b3edd/&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;#directory&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;|&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;|-- 52117bbc-42d2-11ee-bb4b-a0cec89b3edd.yml&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;|&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;+-- 52117bbc-42d2-11ee-bb4b-a0cec89b3edd.md&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;But there&amp;rsquo;s an issue. If you take a look at the YAML file, some properties are wrapped in double quotes and some are not. All values in the YAML file need to be surrounded by double quotes for my situation.&lt;/p&gt;
+&lt;p&gt;Initially, I went with PyYaml&amp;rsquo;s library to assist me in wrangling YAML with Python. Everything was working well up until this point. Diving into the docs I can tell some programmers find documentation hard because it did not help at all. How can I RTFM if the manual is useless? Dive into the source code? I really shouldn&amp;rsquo;t need to do that for something so simple as this. Even, after diving through the source code, it was still unclear.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tip&lt;/strong&gt;: When writing technical documentation, imagine yourself as &lt;em&gt;&lt;strong&gt;NOT&lt;/strong&gt;&lt;/em&gt; the person who developed it. Also, imagine you&amp;rsquo;re explaining it to your mom. Thanks.&lt;/p&gt;
+&lt;p&gt;After a bit of research, I switched to ruamel.yaml&amp;rsquo;s Python library. The API was similar for my needs and the source code was easy to navigate. Refactoring was minimal and it solved my missing double quote issue.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; ruamel.yaml &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; YAML &lt;span style=&#34;color:#75715e&#34;&gt;# 1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; ruamel.yaml.scalarstring &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; DoubleQuotedScalarString &lt;span style=&#34;color:#75715e&#34;&gt;# 2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;yaml &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; YAML()                       
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;yaml&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;preserve_quotes &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;True&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 3&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;media_insert_text_field&lt;/span&gt;(fields: List[Dict]) &lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt; Tuple:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    assets &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; []
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ui &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {} 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; field &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; fields:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;# 4&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        double_quoted_scalar &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; DoubleQuotedScalarString(field[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;uuid&amp;#39;&lt;/span&gt;])
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        assets&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;append(double_quoted_scalar)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        ui[&lt;span style=&#34;color:#e6db74&#34;&gt;f&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;text&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{&lt;/span&gt;field[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;index&amp;#39;&lt;/span&gt;]&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; double_quoted_scalar 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; (assets, ui)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Load ruamel.yaml.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Import &lt;code&gt;DoubleQuotedScalarString&lt;/code&gt; to force double quotes on scalar types.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Set &lt;code&gt;preserve_quotes&lt;/code&gt; to &lt;code&gt;true&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Force double quotes on &lt;code&gt;field[&#39;uuid&#39;]&lt;/code&gt; with &lt;code&gt;DoubleQuotedScalarString&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You may be asking yourself why I needed &lt;code&gt;DoubleQuotedScalarString&lt;/code&gt; if &lt;code&gt;preserve_quotes&lt;/code&gt; was set to &lt;code&gt;true&lt;/code&gt;. I&amp;rsquo;m still asking myself that question. Data was triple checked and followed the same format as the other properties I&amp;rsquo;m injected in the final YAML so I&amp;rsquo;m not sure why. But ruamel.yaml made it easy to force it. That&amp;rsquo;s all that matters to me.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll end by reiterating a tip to write technical documentation like your mom will be reading it. (Not that I&amp;rsquo;m a mother, but you get the gist.)&lt;/p&gt;
+&lt;p&gt;Be sure to follow me &lt;a class=&#34;link&#34; href=&#34;https://twitter.com/chrisparaiso&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;@chrisparaiso&lt;/a&gt;.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Fighting with venv in Python</title>
+        <link>https://chrisparaiso.dev/posts/fighting-with-venv-in-python/</link>
+        <pubDate>Wed, 23 Aug 2023 02:36:29 -0700</pubDate>
+        
+        <guid>https://chrisparaiso.dev/posts/fighting-with-venv-in-python/</guid>
+        <description>&lt;p&gt;I had a brain fart today. I was developing a personal project in Python and I had some library issues that I was trying to wrap my head around. It turns out, I didn&amp;rsquo;t even have my &lt;a class=&#34;link&#34; href=&#34;https://docs.python.org/3/library/venv.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;virtual environment&lt;/a&gt; running. I completely forgot.&lt;/p&gt;
+&lt;p&gt;So then I activated it.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;source .venv/bin/activate
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Then I thought to myself&amp;hellip;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I don&amp;rsquo;t want to type that out every single damn time.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I&amp;rsquo;m lazy. I don&amp;rsquo;t like to type unnecessary things. I switch projects mid-day on multiple occasions at work so there&amp;rsquo;s a bit of a context switch to deal with. If I have to write automation scripts and aliases now to prevent me from typing even the smallest of words, I&amp;rsquo;ll take the time to try to solve that.&lt;/p&gt;
+&lt;h2 id=&#34;context-issues&#34;&gt;Context issues
+&lt;/h2&gt;&lt;p&gt;So I did just that. I set aside some time to try to automate things.&lt;/p&gt;
+&lt;p&gt;I wanted a command I could execute (&lt;code&gt;venv&lt;/code&gt;). This command would run a script that creates a virtual environment via &lt;code&gt;python3 -m venv .venv&lt;/code&gt;. Then it would run &lt;code&gt;source .venv/bin/activate&lt;/code&gt; to start the virtual environment.&lt;/p&gt;
+&lt;p&gt;Well, every time I ran this script, the directory would be created at the current working directory and the &lt;code&gt;source&lt;/code&gt; line ran without error but the virtual environment did not start. The Python interpreter my environment was running was still global at &lt;code&gt;/usr/local/bin/python3&lt;/code&gt;. So something is amiss!&lt;/p&gt;
+&lt;p&gt;After doing a bit of research it turns out that when you want to enter a virtual environment, the virtual environment modifies my shell&amp;rsquo;s variables. An example of this would be modifying my shell&amp;rsquo;s variables to point to the correct Python interpreter.&lt;/p&gt;
+&lt;p&gt;Also, when you run a Bash script, it executes in a different context/subshell. The file and directory changes stuck after the script ran, but the necessary variables I needed for my virtual environment were thrown away as soon as the script finished running.&lt;/p&gt;
+&lt;h2 id=&#34;solution&#34;&gt;Solution
+&lt;/h2&gt;&lt;p&gt;I removed the &lt;code&gt;source&lt;/code&gt; line from my &lt;code&gt;venv.sh&lt;/code&gt; script and just left the script to create the needed files and directories. I would then need to run that &lt;code&gt;source&lt;/code&gt; command to enter the virtual environment.&lt;/p&gt;
+&lt;p&gt;Then I thought: Why don&amp;rsquo;t I just string the commands together into one alias on my shell? Perfect.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# aliases.sh&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;alias venv&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;$HOME/src/dotfiles/bin/utils/venv.sh &amp;amp;&amp;amp; \
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    source .venv/bin/activate&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# ... other aliases below here&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Running the &lt;code&gt;venv&lt;/code&gt; alias would execute the &lt;code&gt;venv.sh&lt;/code&gt; &lt;strong&gt;then&lt;/strong&gt; run the &lt;code&gt;source&lt;/code&gt; command in the context of the shell I am currently in.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#!/bin/bash
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# venv.sh&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# create venv if not exists&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt; -d &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.venv&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Found .venv. Activating...&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    read -p &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.venv does not exist. Would you like to \
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;         create a venv for this directory? (y/n) &amp;#34;&lt;/span&gt; response
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$response&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;y&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Creating .venv directory @ &lt;/span&gt;$PWD&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      python3 -m venv .venv
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If &lt;code&gt;venv.sh&lt;/code&gt; finds an existing &lt;code&gt;.venv&lt;/code&gt; directory, it does nothing. If the script does not find the &lt;code&gt;.venv&lt;/code&gt; directory it prompts the user asking if the script has permission to create it. I know I could probably do without the prompt and just have the script create it. I decided to leave it in for now.&lt;/p&gt;
+&lt;p&gt;I guess my issue was with Bash and not venv. Anyway, I think I have to be careful. I&amp;rsquo;ve been getting sidetracked and spending a lot of time configuring my environment. Off to building something!&lt;/p&gt;
+&lt;p&gt;Be sure to follow me &lt;a class=&#34;link&#34; href=&#34;https://twitter.com/chrisparaiso&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;@chrisparaiso&lt;/a&gt;.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Revisiting My Development Environment</title>
+        <link>https://chrisparaiso.dev/posts/revisiting-my-development-environment/</link>
+        <pubDate>Sun, 20 Aug 2023 02:33:46 -0700</pubDate>
+        
+        <guid>https://chrisparaiso.dev/posts/revisiting-my-development-environment/</guid>
+        <description>&lt;p&gt;From working the usual 9 to 5 job on top of studying data engineering (Python, SQL, DE concepts), I&amp;rsquo;ve been feeling a little burnt out with everything. I decided to take a break and revisit my development environment to see what I could add, remove or even change.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s been a while. According to my dotfiles repository, it&amp;rsquo;s been about 6 years since I last updated it. This makes sense since in my &lt;code&gt;aliases&lt;/code&gt; file, the most used aliases I&amp;rsquo;ve used over the years are:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;alias ..=&amp;#39;cd ..&amp;#39;
+alias gs=&amp;#39;git status&amp;#39;
+alias ga=&amp;#39;git add .&amp;#39;
+alias gd=&amp;#39;git ls-files --deleted | xargs git rm&amp;#39;
+alias gc=&amp;#39;git commit&amp;#39;
+alias gl=&amp;#39;git log --pretty=&amp;#34;%H %s&amp;#34;&amp;#39;
+alias gp=&amp;#39;git push&amp;#39;
+alias gf=&amp;#39;git difftool&amp;#39;
+alias bell=&amp;#34;tput bel&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;That&amp;rsquo;s it. I mean, there are other aliases and exports in my dotfiles but I rarely use them daily.&lt;/p&gt;
+&lt;h2 id=&#34;the-ulterior-motives&#34;&gt;The ulterior motives
+&lt;/h2&gt;&lt;p&gt;&lt;em&gt;&lt;strong&gt;Faster&lt;/strong&gt;&lt;/em&gt;. That&amp;rsquo;s at least one of the goals when customizing a development environment. This was my motive.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://code.visualstudio.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;VSCode&lt;/a&gt; has served me well over the years. It prevented me from getting the Sublime Text pop-up that &amp;ldquo;suggests&amp;rdquo; for you to buy it. In a previous post, I explained the magic of vim motions within VSCode. But honestly, there were times when I turned the vim plugin off. Going back and forth between the two, eventually, I never bothered and/or forgot to turn it back on.&lt;/p&gt;
+&lt;p&gt;After a while, I noticed that VSCode got slower. Depending on the project I was on, it would go from a speedy turtle pace to a snail&amp;rsquo;s pace. Yes, both are slow but you get the gist. It came to a point where I was uninstalling VSCode extensions to try to improve the speed. I also kept the file explorer closed due to VSCode taking forever to load huge directories.&lt;/p&gt;
+&lt;p&gt;So there I was with a single VSCode window with nothing else open and barely any extensions installed. Its fuzzy finder (&lt;code&gt;cmd/ctrl + P&lt;/code&gt;) left much to be desired. In huge directories, adding a file that was created by an external script would take ~10 seconds for the newly created file to show up in VSCode&amp;rsquo;s fuzzy finder. I found myself audibly grunting at the delay.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Preventing repetitive stress injury.&lt;/strong&gt; I&amp;rsquo;ve been having trouble with my shoulder lately and mouse work has gotten a bit painful if I keep reaching for it. I needed a way to prevent this as much as possible.&lt;/p&gt;
+&lt;h2 id=&#34;hi-neovim&#34;&gt;Hi, Neovim
+&lt;/h2&gt;&lt;p&gt;Much of my free time is spent consuming content from the gaming community. Recently, I shifted to consuming content from the developer community. I stumbled upon &lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/@ThePrimeagen&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;The Primeagen&amp;rsquo;s&lt;/a&gt; &lt;a class=&#34;link&#34; href=&#34;https://youtube.com/playlist?list=PLm323Lc7iSW_wuxqmKx_xxNtJC_hJbQ7R&amp;amp;si=_vdQJL1qsGZNRu1f&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;vim series&lt;/a&gt; and got very excited. It&amp;rsquo;s hard not to get excited when watching his videos. He always sounds so passionate. I viewed his vim setup video in its entirety and was fascinated.&lt;/p&gt;
+&lt;p&gt;I spent a couple of days learning and setting everything up. Doing so lit a fire inside me that I haven&amp;rsquo;t felt in a while. I was programming to make my programming faster. Well, technically I&amp;rsquo;d call it &amp;ldquo;configuring&amp;rdquo;.&lt;/p&gt;
+&lt;h3 id=&#34;day-1&#34;&gt;Day 1
+&lt;/h3&gt;&lt;p&gt;Much of Day 1 was spent re-learning vim motions and getting the lay of the land as far as the &lt;a class=&#34;link&#34; href=&#34;https://neovim.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Neovim&lt;/a&gt; ecosystem. I wanted to know how it was possible to configure Neovim like I&amp;rsquo;ve seen others do without Vimscript.&lt;/p&gt;
+&lt;p&gt;I discovered that Neovim uses the &lt;a class=&#34;link&#34; href=&#34;https://www.lua.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Lua&lt;/a&gt; programming language to extend functionality! The only reason I got excited about Lua is because I had some experience with it in my World of Warcraft days. Not an expert, but it was cool to see Lua being used for something in a completely different context. Before Neovim, I thought Lua was just used for WoW extensions.&lt;/p&gt;
+&lt;p&gt;I wanted to understand how developers extend Neovim so I decided to follow this &lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=w7i4amO_zaE&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;video&lt;/a&gt; in setting up everything from scratch. Everything worked flawlessly. I installed plugins for syntax highlighting, fuzzy finding, colored everything so it looks sexy, status bar customizations, and a file explorer.&lt;/p&gt;
+&lt;p&gt;But am I the one to maintain all of this a year down the road? How about 3 years down the road? I wasn&amp;rsquo;t going to remember most of the things I did to install and configure Neovim.&lt;/p&gt;
+&lt;h3 id=&#34;day-2&#34;&gt;Day 2
+&lt;/h3&gt;&lt;p&gt;Now that I knew how to install a plugin, configure it and use it inside of Neovim, I wanted to see what kind of &amp;ldquo;bundles&amp;rdquo; were out there as far as Neovim setups. Why should I maintain my setup when someone else can do it for me, right? :)&lt;/p&gt;
+&lt;p&gt;I found a couple of notable ones:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/nvim-lua/kickstart.nvim&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/nvim-lua/kickstart.nvim&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/NvChad/NvChad&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/NvChad/NvChad&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I started with &lt;code&gt;kickstart.vim&lt;/code&gt; bundle (pun intended), and everything looked and worked perfectly. But where was I to put all of my customizations? I saw the examples and while it looked like a good solution I wanted to try something else.&lt;/p&gt;
+&lt;p&gt;I ended up going with NvChad. My reasons are probably going to be hilarious and/or stupid to some, but I liked the theme switcher and cheat sheet features already bundled in NvChad. Could install these features with &lt;code&gt;kickstart.vim&lt;/code&gt;? Sure, but no thanks.&lt;/p&gt;
+&lt;p&gt;I spent a longer time choosing a font and a theme compared to the amount of time it took to install Neovim, NvChad, &lt;strong&gt;and&lt;/strong&gt; &lt;a class=&#34;link&#34; href=&#34;https://github.com/tmux/tmux/wiki&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;tmux&lt;/a&gt; combined.&lt;/p&gt;
+&lt;p&gt;Oh, tmux. Yes, I installed it without really knowing what it was used for. I saw everyone using it so it must be good, right? Well, after diving into what it actually does, I found a use for it. I probably won&amp;rsquo;t be using all of its features, but they&amp;rsquo;re there for when I do I guess.&lt;/p&gt;
+&lt;p&gt;After everything was configured, now what? I knew I was going to be updating this config as I work in it so I wanted a way to save changes in case I needed them later. That&amp;rsquo;s what I&amp;rsquo;ll tackle on Day 3.&lt;/p&gt;
+&lt;h3 id=&#34;day-3&#34;&gt;Day 3
+&lt;/h3&gt;&lt;p&gt;There were two things I wanted to do. I wanted a way to install all of my customizations in Neovim/NvChad, tmux, and general dotfiles. I also wanted a way to pull any changes I&amp;rsquo;ve made to either Neovim/NvChad and/or tmux. The latter is the more important one since I&amp;rsquo;ll rarely be installing dotfiles.&lt;/p&gt;
+&lt;p&gt;Also, I guess I should say I&amp;rsquo;m adding things to my dotfiles repository that aren&amp;rsquo;t necessarily &amp;ldquo;dotfiles&amp;rdquo;. I know, I know. I usually like to separate this but all of these things in my dotfile repository are for my development environment. So the purpose fits.&lt;/p&gt;
+&lt;p&gt;The bash scripts I&amp;rsquo;ve made for both the install and the update are pretty simple and probably need refactoring. But it works.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#!/bin/bash
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# install script for dotfiles, neovim, nvchad, tmux&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;===============================================&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;-- Running install...&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;zshrc_path&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$HOME&lt;span style=&#34;color:#e6db74&#34;&gt;/.zshrc&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;zshrc_add&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;source $HOME/src/dotfiles/zshrc&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; ! grep -qF &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$zshrc_add&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; $zshrc_path; &lt;span style=&#34;color:#66d9ef&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;# Append the code if the search line is not found&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;# dotfiles&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$zshrc_path&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$zshrc_add&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$zshrc_path&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;-- Dotfiles have been installed.&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;-- Dotfiles have already been installed. No changes made.&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;-- Installing nvim configuration...&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cp -R &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$HOME&lt;span style=&#34;color:#e6db74&#34;&gt;/src/dotfiles/nvchad/&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$HOME&lt;span style=&#34;color:#e6db74&#34;&gt;/.config/nvim/lua/custom/&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;-- Configuration for nvim has been installed.&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;-- Attempting to install tmux...&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew update
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew install tmux
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;-- Installing tmux configuration...&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;old_tmux_config&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$HOME&lt;span style=&#34;color:#e6db74&#34;&gt;/.tmux.conf&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;new_tmux_config&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$HOME&lt;span style=&#34;color:#e6db74&#34;&gt;/src/dotfiles/tmux/tmux.conf&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt; -f &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$old_tmux_config&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;-- Found an old tmux configuration. Backing up...&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    timestamp&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;date +&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;%Y%m%dH%M%S&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    backup_file&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$HOME&lt;span style=&#34;color:#e6db74&#34;&gt;/.tmux.conf.backup.&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;timestamp&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;# Create backup&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    cp &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$old_tmux_config&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$backup_file&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;# Install new tmux configuration&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    cp &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$new_tmux_config&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$HOME&lt;span style=&#34;color:#e6db74&#34;&gt;/.tmux.conf&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    cp &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$new_tmux_config&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$HOME&lt;span style=&#34;color:#e6db74&#34;&gt;/.tmux.conf&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;-- Installing tmux package manager...&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt; -d &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$HOME&lt;span style=&#34;color:#e6db74&#34;&gt;/.tmux/plugins/tpm&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;-- The tmux package manager is already installed. Skipping...&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;-- tmux package manager has been installed.&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;-- Configuration for tmux has been installed.&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cp &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$HOME&lt;span style=&#34;color:#e6db74&#34;&gt;/src/dotfiles/tmux/tmux.conf&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$HOME&lt;span style=&#34;color:#e6db74&#34;&gt;/.tmux.conf&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;===============================================&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The &lt;code&gt;echo&lt;/code&gt; statements describe what this script is doing. I&amp;rsquo;m torn though. I think I&amp;rsquo;ll be taking the lines of code that install tmux. I think I want this script to only install configurations. We&amp;rsquo;ll see.&lt;/p&gt;
+&lt;p&gt;The &amp;ldquo;update&amp;rdquo; script I&amp;rsquo;ve created is the more important one. Over time, I&amp;rsquo;ll be modifying my configurations in Neovim/NvChad, tmux or dotfiles.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#!/bin/bash
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# update script for neovim, nvChad, tmux&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;=========================================&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;timestamp&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;date &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;+%Y%m%d%H%M%S&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nvm_custom&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$HOME&lt;span style=&#34;color:#e6db74&#34;&gt;/.config/nvim/lua/custom&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nvm_dest&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$HOME&lt;span style=&#34;color:#e6db74&#34;&gt;/src/dotfiles/nvchad/&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cp -rf &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$nvm_custom&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;/* &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$nvm_dest&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;-- Pulled your custom updates from ~/.config/nvim...&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cp &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$HOME&lt;span style=&#34;color:#e6db74&#34;&gt;/.tmux.conf&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$HOME&lt;span style=&#34;color:#e6db74&#34;&gt;/src/dotfiles/tmux/tmux.conf&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;-- Pulled your tmux configuration...&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;-- Checking for changes...&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$HOME&lt;span style=&#34;color:#e6db74&#34;&gt;/src/dotfiles&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git_status&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;git status&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[[&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$git_status&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; *&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;nothing to commit, working tree clean&amp;#34;&lt;/span&gt;* &lt;span style=&#34;color:#f92672&#34;&gt;]]&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;-- No changes found in the repository. Exiting...&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    git add .
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    git commit -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;dotfiles update &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;timestamp&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    git push origin master
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;-- Update complete.&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;=========================================&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This script is pretty simple. I&amp;rsquo;m copying and pasting the config files to my dotfiles repository and pushing it to Github with a timestamped commit message.&lt;/p&gt;
+&lt;h2 id=&#34;to-infinity-and-beyond&#34;&gt;To infinity and beyond&amp;hellip;
+&lt;/h2&gt;&lt;p&gt;I deem this setup as &amp;ldquo;good enough&amp;rdquo;. I don&amp;rsquo;t want to spend too much time on this configuration. I could easily go on an infinite loop working on this stuff. It&amp;rsquo;s very addicting. If I get stuck configuring, I&amp;rsquo;ll never have time to build anything!&lt;/p&gt;
+&lt;p&gt;I will be updating my configuration as I work with it or find settings that another developer uses that will better my setup.&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s one issue I&amp;rsquo;d like to solve next though. I&amp;rsquo;m having an issue changing the color of my cursor depending on which mode vim is in. It&amp;rsquo;s not straightforward to me how to do that. I&amp;rsquo;ll figure it out in time.&lt;/p&gt;
+&lt;p&gt;My dotfiles repository can be found on &lt;a class=&#34;link&#34; href=&#34;https://github.com/cparaiso/dotfiles&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Github&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Be sure to follow me &lt;a class=&#34;link&#34; href=&#34;https://twitter.com/chrisparaiso&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;@chrisparaiso&lt;/a&gt;.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>The Sorcery That Is VIM</title>
+        <link>https://chrisparaiso.dev/posts/the-sorcery-that-is-vim/</link>
+        <pubDate>Mon, 17 Apr 2023 02:15:15 -0700</pubDate>
+        
+        <guid>https://chrisparaiso.dev/posts/the-sorcery-that-is-vim/</guid>
+        <description>&lt;p&gt;This isn&amp;rsquo;t going to be about the history of &lt;a class=&#34;link&#34; href=&#34;https://www.vim.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Vim&lt;/a&gt;. This, also, is not going to be a Vim tutorial. What it will be is my experience with getting back into using it.&lt;/p&gt;
+&lt;h2 id=&#34;my-first-experience&#34;&gt;My First Experience
+&lt;/h2&gt;&lt;p&gt;Back in the early 2000s while I was in college, I was approached by a classmate who mentioned that I should install and learn Linux. I decided on installing &lt;a class=&#34;link&#34; href=&#34;http://www.slackware.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Slackware&lt;/a&gt; because that was the distribution everyone was suggesting to learn Linux. I had difficulties installing it but one of the hardest things I encountered was text editing with Vim. Vim was still new to me. Even using :wq! to save a file was extremely foreign.&lt;/p&gt;
+&lt;p&gt;I got so frustrated that I did everything in my power to stop using it. If I needed to edit text and I was in my window manager and not the command line, I would use &lt;a class=&#34;link&#34; href=&#34;https://wiki.gnome.org/Apps/Gedit&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;gEdit&lt;/a&gt;. If I was at the command line I used &lt;a class=&#34;link&#34; href=&#34;https://www.nano-editor.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;nano&lt;/a&gt;. Anything but VIM was good enough for me.&lt;/p&gt;
+&lt;h2 id=&#34;rediscovery&#34;&gt;Rediscovery
+&lt;/h2&gt;&lt;p&gt;Recently, I started to play a rhythm game called &lt;a class=&#34;link&#34; href=&#34;https://osu.ppy.sh/home&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;osu!&lt;/a&gt;. It&amp;rsquo;s such a great and challenging game.&lt;/p&gt;
+&lt;p&gt;Anyway, the owner and developer &lt;a class=&#34;link&#34; href=&#34;https://www.twitch.tv/ppy&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;streams&lt;/a&gt; on Twitch. On a whim, I decided to check out his stream. I know nothing of C# and even less of game development, but I was curious. After about 45 minutes into having the stream in the background, I noticed something. He hasn&amp;rsquo;t touched his mouse at all. His keyboard overlay was being shown on the livestream so his viewers saw everything that he was typing. While he was coding, it literally looked something like:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;jjjjjjjjjjkkkkkkkkkkkkwwwwwwwwwwbbbbbci
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;What is this sorcery?! After a while, I recognized some Vim commands I picked up over the years of NOT using it. He also used a Vim plugin for Safari which allowed him to traverse webpage elements on Github or any other website he visited via overlaid/marked key bindings.&lt;/p&gt;
+&lt;p&gt;His hands never moved away from the keyboard. I was amazed. Lately, it takes a lot to amaze me.&lt;/p&gt;
+&lt;h2 id=&#34;old-dog-new-tricks&#34;&gt;Old Dog, New Tricks
+&lt;/h2&gt;&lt;p&gt;I decided to give Vim a chance after witnessing the magic. I use VSCode daily. I figured there had to be some &lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=vscodevim.vim&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Vim emulation plugin&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Being on a fairly easy project of prototyping a design via HTML and CSS with a sprinkle of JavaScript here and there, this would be the perfect opportunity to build my Vim muscles.&lt;/p&gt;
+&lt;p&gt;With the plugin installed, it was slow going at first. There was a lot of stumbling and getting used to using &lt;code&gt;hjkl&lt;/code&gt; keys to navigate as well as other commands.&lt;/p&gt;
+&lt;p&gt;Since I was prototyping and working with a lot of HTML markup, &lt;code&gt;cit&lt;/code&gt; came in clutch. This command &amp;ldquo;changes inner tag&amp;rdquo;. If the cursor was anywhere on the tag, whether it be on an attribute or in the tag&amp;rsquo;s content itself, typing &lt;code&gt;cit&lt;/code&gt; in Normal mode deleted the tag content and set the cursor mode to Insert for you to start typing. Absolutely, powerful.&lt;/p&gt;
+&lt;p&gt;After tinkering around with the Vim settings, I stumbled upon something called &lt;a class=&#34;link&#34; href=&#34;https://github.com/easymotion/vim-easymotion&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Vim EasyMotion&lt;/a&gt;. EasyMotion makes roaming across text a bit easier and specific than Vim&amp;rsquo;s default bindings. I had to set a &lt;code&gt;&amp;lt;leader&amp;gt;&lt;/code&gt; key to something easier than the back-tick. I believe that was the default binding for EasyMotion to activate. I changed my &lt;code&gt;&amp;lt;leader&amp;gt;&lt;/code&gt; key to &lt;code&gt;&amp;lt;Space&amp;gt;&lt;/code&gt;. So typing two spaces would activate the plugin. For example, typing &lt;code&gt;&amp;lt;Space&amp;gt;&amp;lt;Space&amp;gt;j&lt;/code&gt; would make every line of code overlaid with a highlighted key binding. After pressing the binding for a specific line, the cursor would jump to that line.&lt;/p&gt;
+&lt;p&gt;Before activating Vim EasyMotion:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://chrisparaiso.dev/images/uIxe6zPsU.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Vim EasyMotion 1&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;After activating Vim EasyMotion with &lt;code&gt;&amp;lt;Space&amp;gt;&amp;lt;Space&amp;gt;j&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://chrisparaiso.dev/images/jjGEIAfRd.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Vim EasyMotion 2&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;So after getting into &amp;ldquo;highlight&amp;rdquo; mode, traversing to the line with &lt;code&gt;Node(9)&lt;/code&gt; would be as simple as pressing &lt;code&gt;n&lt;/code&gt;. Boom.&lt;/p&gt;
+&lt;p&gt;This also works with the usual Vim key bindings like words with &lt;code&gt;&amp;lt;Space&amp;gt;&amp;lt;Space&amp;gt;w&lt;/code&gt;. EasyMotion, overlays every start of a word with a key binding for you to pick which word you want the cursor on.&lt;/p&gt;
+&lt;h2 id=&#34;this-is-my-world-now&#34;&gt;This is my world now
+&lt;/h2&gt;&lt;p&gt;I&amp;rsquo;m still having trouble grasping a few things like copy/paste and buffers, but I&amp;rsquo;ll learn those in due time.&lt;/p&gt;
+&lt;p&gt;Vim has sparked a new fire in my coding and has made it fun. Because I&amp;rsquo;ve been typing a lot more since I&amp;rsquo;ve taken up writing and I code daily, I was thinking of buying a new mechanical keyboard. These Cherry MX Blue switches and SA profile keycaps are getting old and need something new. Maybe a &lt;a class=&#34;link&#34; href=&#34;https://www.hhkeyboard.com/uk/products/hybrid-type-s/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;HHKB&lt;/a&gt;? I guess that&amp;rsquo;s a post for another day&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Be sure to follow me &lt;a class=&#34;link&#34; href=&#34;https://twitter.com/chrisparaiso&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;@chrisparaiso&lt;/a&gt;.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Unlocking the Data Universe: Embarking on a Data Engineer Journey</title>
+        <link>https://chrisparaiso.dev/posts/unlocking-the-data-universe/</link>
+        <pubDate>Thu, 22 Dec 2022 02:31:50 -0700</pubDate>
+        
+        <guid>https://chrisparaiso.dev/posts/unlocking-the-data-universe/</guid>
+        <description>&lt;p&gt;I&amp;rsquo;ve been in the software engineering field since 2009 with a focus on front-end development and UI/UX. This is funny to me because when I first started learning web development back in the early 2000s, I avoided JavaScript like the plague. I would only touch the HTML and CSS of the website. The design was all I cared about. Now, JavaScript is all I do.&lt;/p&gt;
+&lt;h2 id=&#34;the-now&#34;&gt;The Now
+&lt;/h2&gt;&lt;p&gt;Currently, my team is contracted by &lt;a class=&#34;link&#34; href=&#34;https://www.cisco.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cisco&lt;/a&gt; to convert and migrate their &lt;a class=&#34;link&#34; href=&#34;https://www.netacad.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Networking Academy&lt;/a&gt; application to replace all unsupported Flash assets into Canvas. Everything from localized SVG translations, animations, and simulations is being converted over.&lt;/p&gt;
+&lt;p&gt;We used JSFL in Adobe Animate to export what we could, and manually update and fix what we could not export. This and the effort to break out different pieces of course content for subject matter experts to build and/or modify a given course for their students is still ongoing.&lt;/p&gt;
+&lt;p&gt;What scripting language did we use to migrate this over? I want to say Python&amp;hellip; But it was JavaScript. Leveraging Node we didn&amp;rsquo;t need to context switch due to a change in languages since we were all front-end engineers. I wanted it to be Python though.&lt;/p&gt;
+&lt;h2 id=&#34;the-obvious-choice&#34;&gt;The Obvious Choice
+&lt;/h2&gt;&lt;p&gt;I&amp;rsquo;m at a crossroads here. It&amp;rsquo;s obvious which direction I&amp;rsquo;m going given the title of this blog post but if that wasn&amp;rsquo;t clear, I&amp;rsquo;m planning to shift careers into data engineering. Why? The current project I&amp;rsquo;m on has me shifting data from one place to another to be consumed by subject matter experts as I&amp;rsquo;ve said before. This very action has inspired me to move and transform data on a &lt;strong&gt;bigger&lt;/strong&gt; scale but with a different impact.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;d like to help data scientists and ML engineers get the data that they need to work their magic or analyze the data in a way that helps either the business or the world.&lt;/p&gt;
+&lt;p&gt;Python has intrigued me since being introduced to it circa Python 3 but I&amp;rsquo;ve never had a chance or time to work in that language.&lt;/p&gt;
+&lt;p&gt;Now, I&amp;rsquo;m making time&amp;hellip;&lt;/p&gt;
+&lt;h2 id=&#34;the-future&#34;&gt;The Future
+&lt;/h2&gt;&lt;p&gt;I&amp;rsquo;ve set up a personal learning plan for myself because I wanted to be clear on what to study next. I tend to ponder too much on &amp;ldquo;what&amp;rsquo;s next?&amp;rdquo; rather than what I&amp;rsquo;m learning at this very moment. The learning plan I&amp;rsquo;ve created is only a start and not the end all be all of data engineering. Of course, this plan isn&amp;rsquo;t set in stone and will be modified if a course is subpar.&lt;/p&gt;
+&lt;h2 id=&#34;my-data-engineering-learning-plan&#34;&gt;My Data Engineering Learning Plan
+&lt;/h2&gt;&lt;p&gt;My company offers &amp;ldquo;professional development&amp;rdquo; funding every year and I&amp;rsquo;ve opted to subscribe to Datacamp and Udemy to learn data engineering as well as a single book for now.&lt;/p&gt;
+&lt;h3 id=&#34;broad-topic&#34;&gt;Broad Topic
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.datacamp.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;DataCamp Data Engineer Track&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.udemy.com/course/data-warehouse-fundamentals-for-beginners/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Data Warehouse Fundamentals for Beginners&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.amazon.com/Fundamentals-Data-Engineering-Robust-Systems/dp/1098108302/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;em&gt;Fundamentals of Data Engineering&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The first two list items above are courses that cover a wide range of topics. The third in this list is a book I see everywhere and have been enjoying the read. Datacamp&amp;rsquo;s teaching style doesn&amp;rsquo;t match the way my brain learns. I see inconsistencies in teaching methods and exercises. I&amp;rsquo;ll still complete this course, but that&amp;rsquo;s my high-level review of Datacamp.&lt;/p&gt;
+&lt;h3 id=&#34;programming-languages&#34;&gt;Programming Languages
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.udemy.com/course/complete-python-bootcamp/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;The Complete Python Bootcamp From Zero to Hero in Python&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.udemy.com/course/the-complete-sql-bootcamp/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;The Complete SQL Bootcamp: Go from Zero to Hero&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.udemy.com/course/python-for-data-structures-algorithms-and-interviews/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Python for Data Structures, Algorithms, and Interviews!&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Python &amp;amp; SQL are, from what I&amp;rsquo;ve researched thus far, required as a data engineer.&lt;/p&gt;
+&lt;p&gt;Python is such a beautiful language. I&amp;rsquo;ve worked with it before, but don&amp;rsquo;t feel confident to call myself proficient. I&amp;rsquo;ll be changing that after the courses above are complete.&lt;/p&gt;
+&lt;p&gt;SQL joins make sense. Complex SQL joins hurt my brain to read. Hopefully, this course on SQL will help with that.&lt;/p&gt;
+&lt;h3 id=&#34;technologies&#34;&gt;Technologies
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.udemy.com/course/taming-big-data-with-apache-spark-hands-on/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Taming Big Data with Apache Spark and Python - Hands On!&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.udemy.com/course/azure-databricks-spark-core-for-data-engineers/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Azure Databricks &amp;amp; Spark For Data Engineers (PySpark / SQL)&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;The Complete Hands-On Introduction to Apache Airflow&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.udemy.com/course/apache-kafka/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Apache Kafka Series - Learn Apache Kafka for Beginners v3&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.udemy.com/course/snowflake-zero-to-hero-masterclass/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Snowflake[A-Z] Zero to Hero Masterclass(Core+SQL+API+Visual)&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.udemy.com/course/learn-devops-ci-cd-with-jenkins-using-pipelines-and-docker/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Learn DevOps: CI/CD with Jenkins using Pipelines and Docker&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These are courses on topics I&amp;rsquo;ve researched that a data engineer should know. I can&amp;rsquo;t speak on these technologies yet, but these courses are highly reviewed.&lt;/p&gt;
+&lt;h3 id=&#34;certifications&#34;&gt;Certifications
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.udemy.com/course/aws-certified-cloud-practitioner-new/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;[AWS] Ultimate AWS Certified Cloud Practitioner - 2023&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;[AWS] Ultimate AWS Certified Solutions Architect Associate SAA-C03&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;My company is an AWS shop. Speaking with my team lead, he has stated this would be a good starting point. But I feel I need some knowledge of how these pieces work together&amp;hellip; maybe the courses cover that? Regardless, I&amp;rsquo;ll be taking this course, the Python course and reading my &lt;em&gt;Fundamentals of Data Engineering&lt;/em&gt; book in parallel.&lt;/p&gt;
+&lt;h3 id=&#34;practice&#34;&gt;Practice
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://leetcode.com/problemset/all/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Leetcode&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.hackerrank.com/domains/sql&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;HackerRank&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Who doesn&amp;rsquo;t need practice? I like puzzles. These links will scratch that part of my brain that likes puzzles.&lt;/p&gt;
+&lt;h2 id=&#34;from-here-on-out&#34;&gt;From here on out&amp;hellip;
+&lt;/h2&gt;&lt;p&gt;All in all, I&amp;rsquo;m pretty excited. I haven&amp;rsquo;t been this excited in a while. After years of saying, &amp;ldquo;Oh, another JavaScript library/framework to learn.&amp;rdquo; I can say, &amp;ldquo;Oh, a new tool that may be better than the current one.&amp;rdquo; :shrug:&lt;/p&gt;
+&lt;p&gt;Off to learning!&lt;/p&gt;
+&lt;p&gt;Be sure to follow me &lt;a class=&#34;link&#34; href=&#34;https://twitter.com/chrisparaiso&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;@chrisparaiso&lt;/a&gt;.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>About me</title>
+        <link>https://chrisparaiso.dev/about/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://chrisparaiso.dev/about/</guid>
+        <description>&lt;p&gt;Hi there! My name is Chris Paraiso. I have been a software engineer for 12 years working on the front-end of web applications. I love to learn and have been diving into other languages as well as data engineering. This space is just a space for me to write down things I want to remember. If it helps others, great. If not, that&amp;rsquo;s also fine.&lt;/p&gt;
+&lt;p&gt;Be sure to follow me &lt;a class=&#34;link&#34; href=&#34;https://x.com/chrisparaiso&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;@chrisparaiso&lt;/a&gt;.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Archives</title>
+        <link>https://chrisparaiso.dev/archives/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://chrisparaiso.dev/archives/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Categories</title>
+        <link>https://chrisparaiso.dev/categories/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://chrisparaiso.dev/categories/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Search</title>
+        <link>https://chrisparaiso.dev/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://chrisparaiso.dev/search/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
 </rss>
