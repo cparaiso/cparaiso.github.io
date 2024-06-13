@@ -71,7 +71,7 @@
         
         <div class="site-meta">
             <h1 class="site-name"><a href="/">Chris Paraiso</a></h1>
-            <h2 class="site-description">Full Stack Developer in Python, Golang, JavaScript -  Father -  Gamer</h2>
+            <h2 class="site-description">Full Stack Developer, Father, Gamer, Python, Golang, JavaScript</h2>
         </div>
     </header><ol class="menu" id="main-menu">
         
@@ -342,6 +342,52 @@
      
     
         
+    <script src="https://utteranc.es/client.js" 
+        repo="cparaiso/cparaiso.github.io"
+        issue-term="pathname"
+        
+        crossorigin="anonymous"
+        async
+        >
+</script>
+
+<style>
+    .utterances {
+        max-width: unset;
+    }
+</style>
+
+<script>
+    let utterancesLoaded = false;
+
+    function setUtterancesTheme(theme) {
+        let utterances = document.querySelector('.utterances iframe');
+        if (utterances) {
+            utterances.contentWindow.postMessage(
+                {
+                    type: 'set-theme',
+                    theme: `github-${theme}`
+                },
+                'https://utteranc.es'
+            );
+        }
+    }
+
+    addEventListener('message', event => {
+        if (event.origin !== 'https://utteranc.es') return;
+
+        
+        utterancesLoaded = true;
+        setUtterancesTheme(document.documentElement.dataset.scheme)
+    });
+
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (!utterancesLoaded) return;
+        setUtterancesTheme(e.detail)
+    })
+</script>
+
+
     
 
     <footer class="site-footer">
