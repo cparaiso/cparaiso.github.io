@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Chris Paraiso</title>
-    <link>https://chrisparaiso.dev/</link>
-    <description>Recent content on Chris Paraiso</description>
+    <title>Posts on Chris Paraiso</title>
+    <link>https://chrisparaiso.dev/articles/</link>
+    <description>Recent content in Posts on Chris Paraiso</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 25 Aug 2023 02:37:52 -0700</lastBuildDate>
-    <atom:link href="https://chrisparaiso.dev/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://chrisparaiso.dev/articles/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Preserving Quotes in YAML</title>
       <link>https://chrisparaiso.dev/articles/preserving-quotes-in-yaml/</link>
@@ -54,17 +54,6 @@
       <description>&lt;p&gt;I&amp;rsquo;ve been in the software engineering field since 2009 with a focus on front-end development and UI/UX. This is funny to me because when I first started learning web development back in the early 2000s, I avoided JavaScript like the plague. I would only touch the HTML and CSS of the website. The design was all I cared about. Now, JavaScript is all I do.&lt;/p&gt;
 &lt;h2 id=&#34;the-now&#34;&gt;The Now&lt;/h2&gt;
 &lt;p&gt;Currently, my team is contracted by &lt;a href=&#34;https://www.cisco.com/&#34;&gt;Cisco&lt;/a&gt; to convert and migrate their &lt;a href=&#34;https://www.netacad.com/&#34;&gt;Networking Academy&lt;/a&gt; application to replace all unsupported Flash assets into Canvas. Everything from localized SVG translations, animations, and simulations is being converted over.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>About me</title>
-      <link>https://chrisparaiso.dev/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://chrisparaiso.dev/about/</guid>
-      <description>&lt;p&gt;Hello, friend. My name is Chris Paraiso.&lt;/p&gt;
-&lt;p&gt;I am a Full Stack Developer with over a decade of experience building web applications. I love to tinker and build things, dive into things I know nothing about just to learn.&lt;/p&gt;
-&lt;p&gt;Forever a student. This space is to write things down so I remember them.&lt;/p&gt;
-&lt;p&gt;Everything is over-engineered and complex until it isn&amp;rsquo;t.&lt;/p&gt;
-&lt;p&gt;Be sure to follow me &lt;a href=&#34;https://x.com/chrisparaiso&#34;&gt;@chrisparaiso&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

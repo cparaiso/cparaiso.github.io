@@ -1,126 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Data Engineering on Chris Paraiso</title>
-        <link>https://chrisparaiso.dev/categories/data-engineering/</link>
-        <description>Recent content in Data Engineering on Chris Paraiso</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language>
-        <lastBuildDate>Thu, 22 Dec 2022 02:31:50 -0700</lastBuildDate><atom:link href="https://chrisparaiso.dev/categories/data-engineering/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Unlocking the Data Universe: Embarking on a Data Engineer Journey</title>
-        <link>https://chrisparaiso.dev/posts/unlocking-the-data-universe/</link>
-        <pubDate>Thu, 22 Dec 2022 02:31:50 -0700</pubDate>
-        
-        <guid>https://chrisparaiso.dev/posts/unlocking-the-data-universe/</guid>
-        <description>&lt;p&gt;I&amp;rsquo;ve been in the software engineering field since 2009 with a focus on front-end development and UI/UX. This is funny to me because when I first started learning web development back in the early 2000s, I avoided JavaScript like the plague. I would only touch the HTML and CSS of the website. The design was all I cared about. Now, JavaScript is all I do.&lt;/p&gt;
-&lt;h2 id=&#34;the-now&#34;&gt;The Now
-&lt;/h2&gt;&lt;p&gt;Currently, my team is contracted by &lt;a class=&#34;link&#34; href=&#34;https://www.cisco.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Cisco&lt;/a&gt; to convert and migrate their &lt;a class=&#34;link&#34; href=&#34;https://www.netacad.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Networking Academy&lt;/a&gt; application to replace all unsupported Flash assets into Canvas. Everything from localized SVG translations, animations, and simulations is being converted over.&lt;/p&gt;
-&lt;p&gt;We used JSFL in Adobe Animate to export what we could, and manually update and fix what we could not export. This and the effort to break out different pieces of course content for subject matter experts to build and/or modify a given course for their students is still ongoing.&lt;/p&gt;
-&lt;p&gt;What scripting language did we use to migrate this over? I want to say Python&amp;hellip; But it was JavaScript. Leveraging Node we didn&amp;rsquo;t need to context switch due to a change in languages since we were all front-end engineers. I wanted it to be Python though.&lt;/p&gt;
-&lt;h2 id=&#34;the-obvious-choice&#34;&gt;The Obvious Choice
-&lt;/h2&gt;&lt;p&gt;I&amp;rsquo;m at a crossroads here. It&amp;rsquo;s obvious which direction I&amp;rsquo;m going given the title of this blog post but if that wasn&amp;rsquo;t clear, I&amp;rsquo;m planning to shift careers into data engineering. Why? The current project I&amp;rsquo;m on has me shifting data from one place to another to be consumed by subject matter experts as I&amp;rsquo;ve said before. This very action has inspired me to move and transform data on a &lt;strong&gt;bigger&lt;/strong&gt; scale but with a different impact.&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;d like to help data scientists and ML engineers get the data that they need to work their magic or analyze the data in a way that helps either the business or the world.&lt;/p&gt;
-&lt;p&gt;Python has intrigued me since being introduced to it circa Python 3 but I&amp;rsquo;ve never had a chance or time to work in that language.&lt;/p&gt;
-&lt;p&gt;Now, I&amp;rsquo;m making time&amp;hellip;&lt;/p&gt;
-&lt;h2 id=&#34;the-future&#34;&gt;The Future
-&lt;/h2&gt;&lt;p&gt;I&amp;rsquo;ve set up a personal learning plan for myself because I wanted to be clear on what to study next. I tend to ponder too much on &amp;ldquo;what&amp;rsquo;s next?&amp;rdquo; rather than what I&amp;rsquo;m learning at this very moment. The learning plan I&amp;rsquo;ve created is only a start and not the end all be all of data engineering. Of course, this plan isn&amp;rsquo;t set in stone and will be modified if a course is subpar.&lt;/p&gt;
-&lt;h2 id=&#34;my-data-engineering-learning-plan&#34;&gt;My Data Engineering Learning Plan
-&lt;/h2&gt;&lt;p&gt;My company offers &amp;ldquo;professional development&amp;rdquo; funding every year and I&amp;rsquo;ve opted to subscribe to Datacamp and Udemy to learn data engineering as well as a single book for now.&lt;/p&gt;
-&lt;h3 id=&#34;broad-topic&#34;&gt;Broad Topic
-&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.datacamp.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;DataCamp Data Engineer Track&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.udemy.com/course/data-warehouse-fundamentals-for-beginners/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Data Warehouse Fundamentals for Beginners&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.amazon.com/Fundamentals-Data-Engineering-Robust-Systems/dp/1098108302/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;em&gt;Fundamentals of Data Engineering&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The first two list items above are courses that cover a wide range of topics. The third in this list is a book I see everywhere and have been enjoying the read. Datacamp&amp;rsquo;s teaching style doesn&amp;rsquo;t match the way my brain learns. I see inconsistencies in teaching methods and exercises. I&amp;rsquo;ll still complete this course, but that&amp;rsquo;s my high-level review of Datacamp.&lt;/p&gt;
-&lt;h3 id=&#34;programming-languages&#34;&gt;Programming Languages
-&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.udemy.com/course/complete-python-bootcamp/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;The Complete Python Bootcamp From Zero to Hero in Python&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.udemy.com/course/the-complete-sql-bootcamp/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;The Complete SQL Bootcamp: Go from Zero to Hero&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.udemy.com/course/python-for-data-structures-algorithms-and-interviews/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Python for Data Structures, Algorithms, and Interviews!&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Python &amp;amp; SQL are, from what I&amp;rsquo;ve researched thus far, required as a data engineer.&lt;/p&gt;
-&lt;p&gt;Python is such a beautiful language. I&amp;rsquo;ve worked with it before, but don&amp;rsquo;t feel confident to call myself proficient. I&amp;rsquo;ll be changing that after the courses above are complete.&lt;/p&gt;
-&lt;p&gt;SQL joins make sense. Complex SQL joins hurt my brain to read. Hopefully, this course on SQL will help with that.&lt;/p&gt;
-&lt;h3 id=&#34;technologies&#34;&gt;Technologies
-&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.udemy.com/course/taming-big-data-with-apache-spark-hands-on/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Taming Big Data with Apache Spark and Python - Hands On!&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.udemy.com/course/azure-databricks-spark-core-for-data-engineers/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Azure Databricks &amp;amp; Spark For Data Engineers (PySpark / SQL)&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;The Complete Hands-On Introduction to Apache Airflow&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.udemy.com/course/apache-kafka/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Apache Kafka Series - Learn Apache Kafka for Beginners v3&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.udemy.com/course/snowflake-zero-to-hero-masterclass/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Snowflake[A-Z] Zero to Hero Masterclass(Core+SQL+API+Visual)&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.udemy.com/course/learn-devops-ci-cd-with-jenkins-using-pipelines-and-docker/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Learn DevOps: CI/CD with Jenkins using Pipelines and Docker&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;These are courses on topics I&amp;rsquo;ve researched that a data engineer should know. I can&amp;rsquo;t speak on these technologies yet, but these courses are highly reviewed.&lt;/p&gt;
-&lt;h3 id=&#34;certifications&#34;&gt;Certifications
-&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.udemy.com/course/aws-certified-cloud-practitioner-new/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;[AWS] Ultimate AWS Certified Cloud Practitioner - 2023&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;[AWS] Ultimate AWS Certified Solutions Architect Associate SAA-C03&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;My company is an AWS shop. Speaking with my team lead, he has stated this would be a good starting point. But I feel I need some knowledge of how these pieces work together&amp;hellip; maybe the courses cover that? Regardless, I&amp;rsquo;ll be taking this course, the Python course and reading my &lt;em&gt;Fundamentals of Data Engineering&lt;/em&gt; book in parallel.&lt;/p&gt;
-&lt;h3 id=&#34;practice&#34;&gt;Practice
-&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://leetcode.com/problemset/all/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Leetcode&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.hackerrank.com/domains/sql&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;HackerRank&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Who doesn&amp;rsquo;t need practice? I like puzzles. These links will scratch that part of my brain that likes puzzles.&lt;/p&gt;
-&lt;h2 id=&#34;from-here-on-out&#34;&gt;From here on out&amp;hellip;
-&lt;/h2&gt;&lt;p&gt;All in all, I&amp;rsquo;m pretty excited. I haven&amp;rsquo;t been this excited in a while. After years of saying, &amp;ldquo;Oh, another JavaScript library/framework to learn.&amp;rdquo; I can say, &amp;ldquo;Oh, a new tool that may be better than the current one.&amp;rdquo; :shrug:&lt;/p&gt;
-&lt;p&gt;Off to learning!&lt;/p&gt;
-&lt;p&gt;Be sure to follow me &lt;a class=&#34;link&#34; href=&#34;https://twitter.com/chrisparaiso&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;@chrisparaiso&lt;/a&gt;.&lt;/p&gt;
-</description>
-        </item>
-        
-    </channel>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Data Engineering on Chris Paraiso</title>
+    <link>https://chrisparaiso.dev/categories/data-engineering/</link>
+    <description>Recent content in Data Engineering on Chris Paraiso</description>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 22 Dec 2022 02:31:50 -0700</lastBuildDate>
+    <atom:link href="https://chrisparaiso.dev/categories/data-engineering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unlocking the Data Universe: Embarking on a Data Engineer Journey</title>
+      <link>https://chrisparaiso.dev/articles/unlocking-the-data-universe-embarking-on-a-data-engineer-journey/</link>
+      <pubDate>Thu, 22 Dec 2022 02:31:50 -0700</pubDate>
+      <guid>https://chrisparaiso.dev/articles/unlocking-the-data-universe-embarking-on-a-data-engineer-journey/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been in the software engineering field since 2009 with a focus on front-end development and UI/UX. This is funny to me because when I first started learning web development back in the early 2000s, I avoided JavaScript like the plague. I would only touch the HTML and CSS of the website. The design was all I cared about. Now, JavaScript is all I do.&lt;/p&gt;
+&lt;h2 id=&#34;the-now&#34;&gt;The Now&lt;/h2&gt;
+&lt;p&gt;Currently, my team is contracted by &lt;a href=&#34;https://www.cisco.com/&#34;&gt;Cisco&lt;/a&gt; to convert and migrate their &lt;a href=&#34;https://www.netacad.com/&#34;&gt;Networking Academy&lt;/a&gt; application to replace all unsupported Flash assets into Canvas. Everything from localized SVG translations, animations, and simulations is being converted over.&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

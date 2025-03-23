@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Revisiting My Development Environment | Chris Paraiso</title>
+<meta name="keywords" content="">
+<meta name="description" content="From working the usual 9 to 5 job on top of studying data engineering (Python, SQL, DE concepts), I&rsquo;ve been feeling a little burnt out with everything. I decided to take a break and revisit my development environment to see what I could add, remove or even change.
+It&rsquo;s been a while. According to my dotfiles repository, it&rsquo;s been about 6 years since I last updated it. This makes sense since in my aliases file, the most used aliases I&rsquo;ve used over the years are:">
+<meta name="author" content="">
+<link rel="canonical" href="https://chrisparaiso.dev/articles/revisiting-my-development-environment/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://chrisparaiso.dev/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://chrisparaiso.dev/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://chrisparaiso.dev/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://chrisparaiso.dev/apple-touch-icon.png">
+<link rel="mask-icon" href="https://chrisparaiso.dev/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://chrisparaiso.dev/articles/revisiting-my-development-environment/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><meta property="og:url" content="https://chrisparaiso.dev/articles/revisiting-my-development-environment/">
+  <meta property="og:site_name" content="Chris Paraiso">
+  <meta property="og:title" content="Revisiting My Development Environment">
+  <meta property="og:description" content="From working the usual 9 to 5 job on top of studying data engineering (Python, SQL, DE concepts), I’ve been feeling a little burnt out with everything. I decided to take a break and revisit my development environment to see what I could add, remove or even change.
+It’s been a while. According to my dotfiles repository, it’s been about 6 years since I last updated it. This makes sense since in my aliases file, the most used aliases I’ve used over the years are:">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-08-20T02:33:46-07:00">
+    <meta property="article:modified_time" content="2023-08-20T02:33:46-07:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Revisiting My Development Environment">
+<meta name="twitter:description" content="From working the usual 9 to 5 job on top of studying data engineering (Python, SQL, DE concepts), I&rsquo;ve been feeling a little burnt out with everything. I decided to take a break and revisit my development environment to see what I could add, remove or even change.
+It&rsquo;s been a while. According to my dotfiles repository, it&rsquo;s been about 6 years since I last updated it. This makes sense since in my aliases file, the most used aliases I&rsquo;ve used over the years are:">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Revisiting My Development Environment",
+      "item": "https://chrisparaiso.dev/articles/revisiting-my-development-environment/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Revisiting My Development Environment",
+  "name": "Revisiting My Development Environment",
+  "description": "From working the usual 9 to 5 job on top of studying data engineering (Python, SQL, DE concepts), I\u0026rsquo;ve been feeling a little burnt out with everything. I decided to take a break and revisit my development environment to see what I could add, remove or even change.\nIt\u0026rsquo;s been a while. According to my dotfiles repository, it\u0026rsquo;s been about 6 years since I last updated it. This makes sense since in my aliases file, the most used aliases I\u0026rsquo;ve used over the years are:\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "From working the usual 9 to 5 job on top of studying data engineering (Python, SQL, DE concepts), I’ve been feeling a little burnt out with everything. I decided to take a break and revisit my development environment to see what I could add, remove or even change.\nIt’s been a while. According to my dotfiles repository, it’s been about 6 years since I last updated it. This makes sense since in my aliases file, the most used aliases I’ve used over the years are:\nalias ..='cd ..' alias gs='git status' alias ga='git add .' alias gd='git ls-files --deleted | xargs git rm' alias gc='git commit' alias gl='git log --pretty=\"%H %s\"' alias gp='git push' alias gf='git difftool' alias bell=\"tput bel\" That’s it. I mean, there are other aliases and exports in my dotfiles but I rarely use them daily.\nThe ulterior motives Faster. That’s at least one of the goals when customizing a development environment. This was my motive.\nVSCode has served me well over the years. It prevented me from getting the Sublime Text pop-up that “suggests” for you to buy it. In a previous post, I explained the magic of vim motions within VSCode. But honestly, there were times when I turned the vim plugin off. Going back and forth between the two, eventually, I never bothered and/or forgot to turn it back on.\nAfter a while, I noticed that VSCode got slower. Depending on the project I was on, it would go from a speedy turtle pace to a snail’s pace. Yes, both are slow but you get the gist. It came to a point where I was uninstalling VSCode extensions to try to improve the speed. I also kept the file explorer closed due to VSCode taking forever to load huge directories.\nSo there I was with a single VSCode window with nothing else open and barely any extensions installed. Its fuzzy finder (cmd/ctrl + P) left much to be desired. In huge directories, adding a file that was created by an external script would take ~10 seconds for the newly created file to show up in VSCode’s fuzzy finder. I found myself audibly grunting at the delay.\nPreventing repetitive stress injury. I’ve been having trouble with my shoulder lately and mouse work has gotten a bit painful if I keep reaching for it. I needed a way to prevent this as much as possible.\nHi, Neovim Much of my free time is spent consuming content from the gaming community. Recently, I shifted to consuming content from the developer community. I stumbled upon The Primeagen’s vim series and got very excited. It’s hard not to get excited when watching his videos. He always sounds so passionate. I viewed his vim setup video in its entirety and was fascinated.\nI spent a couple of days learning and setting everything up. Doing so lit a fire inside me that I haven’t felt in a while. I was programming to make my programming faster. Well, technically I’d call it “configuring”.\nDay 1 Much of Day 1 was spent re-learning vim motions and getting the lay of the land as far as the Neovim ecosystem. I wanted to know how it was possible to configure Neovim like I’ve seen others do without Vimscript.\nI discovered that Neovim uses the Lua programming language to extend functionality! The only reason I got excited about Lua is because I had some experience with it in my World of Warcraft days. Not an expert, but it was cool to see Lua being used for something in a completely different context. Before Neovim, I thought Lua was just used for WoW extensions.\nI wanted to understand how developers extend Neovim so I decided to follow this video in setting up everything from scratch. Everything worked flawlessly. I installed plugins for syntax highlighting, fuzzy finding, colored everything so it looks sexy, status bar customizations, and a file explorer.\nBut am I the one to maintain all of this a year down the road? How about 3 years down the road? I wasn’t going to remember most of the things I did to install and configure Neovim.\nDay 2 Now that I knew how to install a plugin, configure it and use it inside of Neovim, I wanted to see what kind of “bundles” were out there as far as Neovim setups. Why should I maintain my setup when someone else can do it for me, right? :)\nI found a couple of notable ones:\nhttps://github.com/nvim-lua/kickstart.nvim\nhttps://github.com/NvChad/NvChad\nI started with kickstart.vim bundle (pun intended), and everything looked and worked perfectly. But where was I to put all of my customizations? I saw the examples and while it looked like a good solution I wanted to try something else.\nI ended up going with NvChad. My reasons are probably going to be hilarious and/or stupid to some, but I liked the theme switcher and cheat sheet features already bundled in NvChad. Could install these features with kickstart.vim? Sure, but no thanks.\nI spent a longer time choosing a font and a theme compared to the amount of time it took to install Neovim, NvChad, and tmux combined.\nOh, tmux. Yes, I installed it without really knowing what it was used for. I saw everyone using it so it must be good, right? Well, after diving into what it actually does, I found a use for it. I probably won’t be using all of its features, but they’re there for when I do I guess.\nAfter everything was configured, now what? I knew I was going to be updating this config as I work in it so I wanted a way to save changes in case I needed them later. That’s what I’ll tackle on Day 3.\nDay 3 There were two things I wanted to do. I wanted a way to install all of my customizations in Neovim/NvChad, tmux, and general dotfiles. I also wanted a way to pull any changes I’ve made to either Neovim/NvChad and/or tmux. The latter is the more important one since I’ll rarely be installing dotfiles.\nAlso, I guess I should say I’m adding things to my dotfiles repository that aren’t necessarily “dotfiles”. I know, I know. I usually like to separate this but all of these things in my dotfile repository are for my development environment. So the purpose fits.\nThe bash scripts I’ve made for both the install and the update are pretty simple and probably need refactoring. But it works.\n#!/bin/bash # install script for dotfiles, neovim, nvchad, tmux echo \"===============================================\" echo \"-- Running install...\" zshrc_path=\"$HOME/.zshrc\" zshrc_add='source $HOME/src/dotfiles/zshrc' if ! grep -qF \"$zshrc_add\" $zshrc_path; then # Append the code if the search line is not found echo \"# dotfiles\" \u003e\u003e \"$zshrc_path\" echo \"$zshrc_add\" \u003e\u003e \"$zshrc_path\" echo \"-- Dotfiles have been installed.\" else echo \"-- Dotfiles have already been installed. No changes made.\" fi echo \"-- Installing nvim configuration...\" cp -R \"$HOME/src/dotfiles/nvchad/\" \"$HOME/.config/nvim/lua/custom/\" echo \"-- Configuration for nvim has been installed.\" echo \"-- Attempting to install tmux...\" brew update brew install tmux echo \"-- Installing tmux configuration...\" old_tmux_config=\"$HOME/.tmux.conf\" new_tmux_config=\"$HOME/src/dotfiles/tmux/tmux.conf\" if [ -f \"$old_tmux_config\" ]; then echo \"-- Found an old tmux configuration. Backing up...\" timestamp=$(date +\"%Y%m%dH%M%S\") backup_file=\"$HOME/.tmux.conf.backup.${timestamp}\" # Create backup cp \"$old_tmux_config\" \"$backup_file\" # Install new tmux configuration cp \"$new_tmux_config\" \"$HOME/.tmux.conf\" else cp \"$new_tmux_config\" \"$HOME/.tmux.conf\" fi echo \"-- Installing tmux package manager...\" if [ -d \"$HOME/.tmux/plugins/tpm\" ]; then echo \"-- The tmux package manager is already installed. Skipping...\" else git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm echo \"-- tmux package manager has been installed.\" fi echo \"-- Configuration for tmux has been installed.\" cp \"$HOME/src/dotfiles/tmux/tmux.conf\" \"$HOME/.tmux.conf\" echo \"===============================================\" The echo statements describe what this script is doing. I’m torn though. I think I’ll be taking the lines of code that install tmux. I think I want this script to only install configurations. We’ll see.\nThe “update” script I’ve created is the more important one. Over time, I’ll be modifying my configurations in Neovim/NvChad, tmux or dotfiles.\n#!/bin/bash # update script for neovim, nvChad, tmux echo \"=========================================\" timestamp=$(date \"+%Y%m%d%H%M%S\") nvm_custom=\"$HOME/.config/nvim/lua/custom\" nvm_dest=\"$HOME/src/dotfiles/nvchad/\" cp -rf \"$nvm_custom\"/* \"$nvm_dest\" echo \"-- Pulled your custom updates from ~/.config/nvim...\" cp \"$HOME/.tmux.conf\" \"$HOME/src/dotfiles/tmux/tmux.conf\" echo \"-- Pulled your tmux configuration...\" echo \"-- Checking for changes...\" cd \"$HOME/src/dotfiles\" git_status=$(git status) if [[ \"$git_status\" == *\"nothing to commit, working tree clean\"* ]]; then echo \"-- No changes found in the repository. Exiting...\" else git add . git commit -m \"dotfiles update ${timestamp}\" git push origin master echo \"-- Update complete.\" fi echo \"=========================================\" This script is pretty simple. I’m copying and pasting the config files to my dotfiles repository and pushing it to Github with a timestamped commit message.\nTo infinity and beyond… I deem this setup as “good enough”. I don’t want to spend too much time on this configuration. I could easily go on an infinite loop working on this stuff. It’s very addicting. If I get stuck configuring, I’ll never have time to build anything!\nI will be updating my configuration as I work with it or find settings that another developer uses that will better my setup.\nThere’s one issue I’d like to solve next though. I’m having an issue changing the color of my cursor depending on which mode vim is in. It’s not straightforward to me how to do that. I’ll figure it out in time.\nMy dotfiles repository can be found on Github.\nBe sure to follow me @chrisparaiso.\n",
+  "wordCount" : "1561",
+  "inLanguage": "en",
+  "datePublished": "2023-08-20T02:33:46-07:00",
+  "dateModified": "2023-08-20T02:33:46-07:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://chrisparaiso.dev/articles/revisiting-my-development-environment/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Chris Paraiso",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://chrisparaiso.dev/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://chrisparaiso.dev/" accesskey="h" title="Chris Paraiso (Alt + H)">Chris Paraiso</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://chrisparaiso.dev/about/" title="About me">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://chrisparaiso.dev/archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Revisiting My Development Environment
+    </h1>
+    <div class="post-meta"><span title='2023-08-20 02:33:46 -0700 PDT'>August 20, 2023</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>From working the usual 9 to 5 job on top of studying data engineering (Python, SQL, DE concepts), I&rsquo;ve been feeling a little burnt out with everything. I decided to take a break and revisit my development environment to see what I could add, remove or even change.</p>
+<p>It&rsquo;s been a while. According to my dotfiles repository, it&rsquo;s been about 6 years since I last updated it. This makes sense since in my <code>aliases</code> file, the most used aliases I&rsquo;ve used over the years are:</p>
+<pre tabindex="0"><code>alias ..=&#39;cd ..&#39;
+alias gs=&#39;git status&#39;
+alias ga=&#39;git add .&#39;
+alias gd=&#39;git ls-files --deleted | xargs git rm&#39;
+alias gc=&#39;git commit&#39;
+alias gl=&#39;git log --pretty=&#34;%H %s&#34;&#39;
+alias gp=&#39;git push&#39;
+alias gf=&#39;git difftool&#39;
+alias bell=&#34;tput bel&#34;
+</code></pre><p>That&rsquo;s it. I mean, there are other aliases and exports in my dotfiles but I rarely use them daily.</p>
+<h2 id="the-ulterior-motives">The ulterior motives<a hidden class="anchor" aria-hidden="true" href="#the-ulterior-motives">#</a></h2>
+<p><em><strong>Faster</strong></em>. That&rsquo;s at least one of the goals when customizing a development environment. This was my motive.</p>
+<p><a href="https://code.visualstudio.com/">VSCode</a> has served me well over the years. It prevented me from getting the Sublime Text pop-up that &ldquo;suggests&rdquo; for you to buy it. In a previous post, I explained the magic of vim motions within VSCode. But honestly, there were times when I turned the vim plugin off. Going back and forth between the two, eventually, I never bothered and/or forgot to turn it back on.</p>
+<p>After a while, I noticed that VSCode got slower. Depending on the project I was on, it would go from a speedy turtle pace to a snail&rsquo;s pace. Yes, both are slow but you get the gist. It came to a point where I was uninstalling VSCode extensions to try to improve the speed. I also kept the file explorer closed due to VSCode taking forever to load huge directories.</p>
+<p>So there I was with a single VSCode window with nothing else open and barely any extensions installed. Its fuzzy finder (<code>cmd/ctrl + P</code>) left much to be desired. In huge directories, adding a file that was created by an external script would take ~10 seconds for the newly created file to show up in VSCode&rsquo;s fuzzy finder. I found myself audibly grunting at the delay.</p>
+<p><strong>Preventing repetitive stress injury.</strong> I&rsquo;ve been having trouble with my shoulder lately and mouse work has gotten a bit painful if I keep reaching for it. I needed a way to prevent this as much as possible.</p>
+<h2 id="hi-neovim">Hi, Neovim<a hidden class="anchor" aria-hidden="true" href="#hi-neovim">#</a></h2>
+<p>Much of my free time is spent consuming content from the gaming community. Recently, I shifted to consuming content from the developer community. I stumbled upon <a href="https://www.youtube.com/@ThePrimeagen">The Primeagen&rsquo;s</a> <a href="https://youtube.com/playlist?list=PLm323Lc7iSW_wuxqmKx_xxNtJC_hJbQ7R&amp;si=_vdQJL1qsGZNRu1f">vim series</a> and got very excited. It&rsquo;s hard not to get excited when watching his videos. He always sounds so passionate. I viewed his vim setup video in its entirety and was fascinated.</p>
+<p>I spent a couple of days learning and setting everything up. Doing so lit a fire inside me that I haven&rsquo;t felt in a while. I was programming to make my programming faster. Well, technically I&rsquo;d call it &ldquo;configuring&rdquo;.</p>
+<h3 id="day-1">Day 1<a hidden class="anchor" aria-hidden="true" href="#day-1">#</a></h3>
+<p>Much of Day 1 was spent re-learning vim motions and getting the lay of the land as far as the <a href="https://neovim.io/">Neovim</a> ecosystem. I wanted to know how it was possible to configure Neovim like I&rsquo;ve seen others do without Vimscript.</p>
+<p>I discovered that Neovim uses the <a href="https://www.lua.org/">Lua</a> programming language to extend functionality! The only reason I got excited about Lua is because I had some experience with it in my World of Warcraft days. Not an expert, but it was cool to see Lua being used for something in a completely different context. Before Neovim, I thought Lua was just used for WoW extensions.</p>
+<p>I wanted to understand how developers extend Neovim so I decided to follow this <a href="https://www.youtube.com/watch?v=w7i4amO_zaE">video</a> in setting up everything from scratch. Everything worked flawlessly. I installed plugins for syntax highlighting, fuzzy finding, colored everything so it looks sexy, status bar customizations, and a file explorer.</p>
+<p>But am I the one to maintain all of this a year down the road? How about 3 years down the road? I wasn&rsquo;t going to remember most of the things I did to install and configure Neovim.</p>
+<h3 id="day-2">Day 2<a hidden class="anchor" aria-hidden="true" href="#day-2">#</a></h3>
+<p>Now that I knew how to install a plugin, configure it and use it inside of Neovim, I wanted to see what kind of &ldquo;bundles&rdquo; were out there as far as Neovim setups. Why should I maintain my setup when someone else can do it for me, right? :)</p>
+<p>I found a couple of notable ones:</p>
+<ul>
+<li>
+<p><a href="https://github.com/nvim-lua/kickstart.nvim">https://github.com/nvim-lua/kickstart.nvim</a></p>
+</li>
+<li>
+<p><a href="https://github.com/NvChad/NvChad">https://github.com/NvChad/NvChad</a></p>
+</li>
+</ul>
+<p>I started with <code>kickstart.vim</code> bundle (pun intended), and everything looked and worked perfectly. But where was I to put all of my customizations? I saw the examples and while it looked like a good solution I wanted to try something else.</p>
+<p>I ended up going with NvChad. My reasons are probably going to be hilarious and/or stupid to some, but I liked the theme switcher and cheat sheet features already bundled in NvChad. Could install these features with <code>kickstart.vim</code>? Sure, but no thanks.</p>
+<p>I spent a longer time choosing a font and a theme compared to the amount of time it took to install Neovim, NvChad, <strong>and</strong> <a href="https://github.com/tmux/tmux/wiki">tmux</a> combined.</p>
+<p>Oh, tmux. Yes, I installed it without really knowing what it was used for. I saw everyone using it so it must be good, right? Well, after diving into what it actually does, I found a use for it. I probably won&rsquo;t be using all of its features, but they&rsquo;re there for when I do I guess.</p>
+<p>After everything was configured, now what? I knew I was going to be updating this config as I work in it so I wanted a way to save changes in case I needed them later. That&rsquo;s what I&rsquo;ll tackle on Day 3.</p>
+<h3 id="day-3">Day 3<a hidden class="anchor" aria-hidden="true" href="#day-3">#</a></h3>
+<p>There were two things I wanted to do. I wanted a way to install all of my customizations in Neovim/NvChad, tmux, and general dotfiles. I also wanted a way to pull any changes I&rsquo;ve made to either Neovim/NvChad and/or tmux. The latter is the more important one since I&rsquo;ll rarely be installing dotfiles.</p>
+<p>Also, I guess I should say I&rsquo;m adding things to my dotfiles repository that aren&rsquo;t necessarily &ldquo;dotfiles&rdquo;. I know, I know. I usually like to separate this but all of these things in my dotfile repository are for my development environment. So the purpose fits.</p>
+<p>The bash scripts I&rsquo;ve made for both the install and the update are pretty simple and probably need refactoring. But it works.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#75715e"># install script for dotfiles, neovim, nvchad, tmux</span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;===============================================&#34;</span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;-- Running install...&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>zshrc_path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$HOME<span style="color:#e6db74">/.zshrc&#34;</span>
+</span></span><span style="display:flex;"><span>zshrc_add<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;source $HOME/src/dotfiles/zshrc&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> ! grep -qF <span style="color:#e6db74">&#34;</span>$zshrc_add<span style="color:#e6db74">&#34;</span> $zshrc_path; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Append the code if the search line is not found</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;# dotfiles&#34;</span> &gt;&gt; <span style="color:#e6db74">&#34;</span>$zshrc_path<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;</span>$zshrc_add<span style="color:#e6db74">&#34;</span> &gt;&gt; <span style="color:#e6db74">&#34;</span>$zshrc_path<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;-- Dotfiles have been installed.&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;-- Dotfiles have already been installed. No changes made.&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;-- Installing nvim configuration...&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>cp -R <span style="color:#e6db74">&#34;</span>$HOME<span style="color:#e6db74">/src/dotfiles/nvchad/&#34;</span> <span style="color:#e6db74">&#34;</span>$HOME<span style="color:#e6db74">/.config/nvim/lua/custom/&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;-- Configuration for nvim has been installed.&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;-- Attempting to install tmux...&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>brew update
+</span></span><span style="display:flex;"><span>brew install tmux
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;-- Installing tmux configuration...&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>old_tmux_config<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$HOME<span style="color:#e6db74">/.tmux.conf&#34;</span>
+</span></span><span style="display:flex;"><span>new_tmux_config<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$HOME<span style="color:#e6db74">/src/dotfiles/tmux/tmux.conf&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> -f <span style="color:#e6db74">&#34;</span>$old_tmux_config<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;-- Found an old tmux configuration. Backing up...&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    timestamp<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>date +<span style="color:#e6db74">&#34;%Y%m%dH%M%S&#34;</span><span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>    backup_file<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$HOME<span style="color:#e6db74">/.tmux.conf.backup.</span><span style="color:#e6db74">${</span>timestamp<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Create backup</span>
+</span></span><span style="display:flex;"><span>    cp <span style="color:#e6db74">&#34;</span>$old_tmux_config<span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#34;</span>$backup_file<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Install new tmux configuration</span>
+</span></span><span style="display:flex;"><span>    cp <span style="color:#e6db74">&#34;</span>$new_tmux_config<span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#34;</span>$HOME<span style="color:#e6db74">/.tmux.conf&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>    cp <span style="color:#e6db74">&#34;</span>$new_tmux_config<span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#34;</span>$HOME<span style="color:#e6db74">/.tmux.conf&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;-- Installing tmux package manager...&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> -d <span style="color:#e6db74">&#34;</span>$HOME<span style="color:#e6db74">/.tmux/plugins/tpm&#34;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;-- The tmux package manager is already installed. Skipping...&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>    git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;-- tmux package manager has been installed.&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;-- Configuration for tmux has been installed.&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>cp <span style="color:#e6db74">&#34;</span>$HOME<span style="color:#e6db74">/src/dotfiles/tmux/tmux.conf&#34;</span> <span style="color:#e6db74">&#34;</span>$HOME<span style="color:#e6db74">/.tmux.conf&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;===============================================&#34;</span>
+</span></span></code></pre></div><p>The <code>echo</code> statements describe what this script is doing. I&rsquo;m torn though. I think I&rsquo;ll be taking the lines of code that install tmux. I think I want this script to only install configurations. We&rsquo;ll see.</p>
+<p>The &ldquo;update&rdquo; script I&rsquo;ve created is the more important one. Over time, I&rsquo;ll be modifying my configurations in Neovim/NvChad, tmux or dotfiles.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#75715e"># update script for neovim, nvChad, tmux</span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;=========================================&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>timestamp<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>date <span style="color:#e6db74">&#34;+%Y%m%d%H%M%S&#34;</span><span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>nvm_custom<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$HOME<span style="color:#e6db74">/.config/nvim/lua/custom&#34;</span>
+</span></span><span style="display:flex;"><span>nvm_dest<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$HOME<span style="color:#e6db74">/src/dotfiles/nvchad/&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>cp -rf <span style="color:#e6db74">&#34;</span>$nvm_custom<span style="color:#e6db74">&#34;</span>/* <span style="color:#e6db74">&#34;</span>$nvm_dest<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;-- Pulled your custom updates from ~/.config/nvim...&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>cp <span style="color:#e6db74">&#34;</span>$HOME<span style="color:#e6db74">/.tmux.conf&#34;</span> <span style="color:#e6db74">&#34;</span>$HOME<span style="color:#e6db74">/src/dotfiles/tmux/tmux.conf&#34;</span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;-- Pulled your tmux configuration...&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;-- Checking for changes...&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>cd <span style="color:#e6db74">&#34;</span>$HOME<span style="color:#e6db74">/src/dotfiles&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git_status<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>git status<span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> <span style="color:#e6db74">&#34;</span>$git_status<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">==</span> *<span style="color:#e6db74">&#34;nothing to commit, working tree clean&#34;</span>* <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;-- No changes found in the repository. Exiting...&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>    git add .
+</span></span><span style="display:flex;"><span>    git commit -m <span style="color:#e6db74">&#34;dotfiles update </span><span style="color:#e6db74">${</span>timestamp<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>    git push origin master
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;-- Update complete.&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;=========================================&#34;</span>
+</span></span></code></pre></div><p>This script is pretty simple. I&rsquo;m copying and pasting the config files to my dotfiles repository and pushing it to Github with a timestamped commit message.</p>
+<h2 id="to-infinity-and-beyond">To infinity and beyond&hellip;<a hidden class="anchor" aria-hidden="true" href="#to-infinity-and-beyond">#</a></h2>
+<p>I deem this setup as &ldquo;good enough&rdquo;. I don&rsquo;t want to spend too much time on this configuration. I could easily go on an infinite loop working on this stuff. It&rsquo;s very addicting. If I get stuck configuring, I&rsquo;ll never have time to build anything!</p>
+<p>I will be updating my configuration as I work with it or find settings that another developer uses that will better my setup.</p>
+<p>There&rsquo;s one issue I&rsquo;d like to solve next though. I&rsquo;m having an issue changing the color of my cursor depending on which mode vim is in. It&rsquo;s not straightforward to me how to do that. I&rsquo;ll figure it out in time.</p>
+<p>My dotfiles repository can be found on <a href="https://github.com/cparaiso/dotfiles">Github</a>.</p>
+<p>Be sure to follow me <a href="https://twitter.com/chrisparaiso">@chrisparaiso</a>.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://chrisparaiso.dev/">Chris Paraiso</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>The Sorcery That Is VIM | Chris Paraiso</title>
+<meta name="keywords" content="">
+<meta name="description" content="This isn&rsquo;t going to be about the history of Vim. This, also, is not going to be a Vim tutorial. What it will be is my experience with getting back into using it.
+My First Experience
+Back in the early 2000s while I was in college, I was approached by a classmate who mentioned that I should install and learn Linux. I decided on installing Slackware because that was the distribution everyone was suggesting to learn Linux. I had difficulties installing it but one of the hardest things I encountered was text editing with Vim. Vim was still new to me. Even using :wq! to save a file was extremely foreign.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/content/posts/the-sorcery-that-is-vim/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/content/posts/the-sorcery-that-is-vim/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Chris Paraiso (Alt + H)">Chris Paraiso</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/content/about/" title="About me">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/content/archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      The Sorcery That Is VIM
+    </h1>
+    <div class="post-meta"><span title='2023-04-17 02:15:15 -0700 PDT'>April 17, 2023</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>This isn&rsquo;t going to be about the history of <a href="https://www.vim.org/">Vim</a>. This, also, is not going to be a Vim tutorial. What it will be is my experience with getting back into using it.</p>
+<h2 id="my-first-experience">My First Experience<a hidden class="anchor" aria-hidden="true" href="#my-first-experience">#</a></h2>
+<p>Back in the early 2000s while I was in college, I was approached by a classmate who mentioned that I should install and learn Linux. I decided on installing <a href="http://www.slackware.com/">Slackware</a> because that was the distribution everyone was suggesting to learn Linux. I had difficulties installing it but one of the hardest things I encountered was text editing with Vim. Vim was still new to me. Even using :wq! to save a file was extremely foreign.</p>
+<p>I got so frustrated that I did everything in my power to stop using it. If I needed to edit text and I was in my window manager and not the command line, I would use <a href="https://wiki.gnome.org/Apps/Gedit">gEdit</a>. If I was at the command line I used <a href="https://www.nano-editor.org/">nano</a>. Anything but VIM was good enough for me.</p>
+<h2 id="rediscovery">Rediscovery<a hidden class="anchor" aria-hidden="true" href="#rediscovery">#</a></h2>
+<p>Recently, I started to play a rhythm game called <a href="https://osu.ppy.sh/home">osu!</a>. It&rsquo;s such a great and challenging game.</p>
+<p>Anyway, the owner and developer <a href="https://www.twitch.tv/ppy">streams</a> on Twitch. On a whim, I decided to check out his stream. I know nothing of C# and even less of game development, but I was curious. After about 45 minutes into having the stream in the background, I noticed something. He hasn&rsquo;t touched his mouse at all. His keyboard overlay was being shown on the livestream so his viewers saw everything that he was typing. While he was coding, it literally looked something like:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>jjjjjjjjjjkkkkkkkkkkkkwwwwwwwwwwbbbbbci
+</span></span></code></pre></div><p>What is this sorcery?! After a while, I recognized some Vim commands I picked up over the years of NOT using it. He also used a Vim plugin for Safari which allowed him to traverse webpage elements on Github or any other website he visited via overlaid/marked key bindings.</p>
+<p>His hands never moved away from the keyboard. I was amazed. Lately, it takes a lot to amaze me.</p>
+<h2 id="old-dog-new-tricks">Old Dog, New Tricks<a hidden class="anchor" aria-hidden="true" href="#old-dog-new-tricks">#</a></h2>
+<p>I decided to give Vim a chance after witnessing the magic. I use VSCode daily. I figured there had to be some <a href="https://marketplace.visualstudio.com/items?itemName=vscodevim.vim">Vim emulation plugin</a>.</p>
+<p>Being on a fairly easy project of prototyping a design via HTML and CSS with a sprinkle of JavaScript here and there, this would be the perfect opportunity to build my Vim muscles.</p>
+<p>With the plugin installed, it was slow going at first. There was a lot of stumbling and getting used to using <code>hjkl</code> keys to navigate as well as other commands.</p>
+<p>Since I was prototyping and working with a lot of HTML markup, <code>cit</code> came in clutch. This command &ldquo;changes inner tag&rdquo;. If the cursor was anywhere on the tag, whether it be on an attribute or in the tag&rsquo;s content itself, typing <code>cit</code> in Normal mode deleted the tag content and set the cursor mode to Insert for you to start typing. Absolutely, powerful.</p>
+<p>After tinkering around with the Vim settings, I stumbled upon something called <a href="https://github.com/easymotion/vim-easymotion">Vim EasyMotion</a>. EasyMotion makes roaming across text a bit easier and specific than Vim&rsquo;s default bindings. I had to set a <code>&lt;leader&gt;</code> key to something easier than the back-tick. I believe that was the default binding for EasyMotion to activate. I changed my <code>&lt;leader&gt;</code> key to <code>&lt;Space&gt;</code>. So typing two spaces would activate the plugin. For example, typing <code>&lt;Space&gt;&lt;Space&gt;j</code> would make every line of code overlaid with a highlighted key binding. After pressing the binding for a specific line, the cursor would jump to that line.</p>
+<p>Before activating Vim EasyMotion:</p>
+<p><img alt="Vim EasyMotion 1" loading="lazy" src="/images/uIxe6zPsU.png"></p>
+<p>After activating Vim EasyMotion with <code>&lt;Space&gt;&lt;Space&gt;j</code>:</p>
+<p><img alt="Vim EasyMotion 2" loading="lazy" src="/images/jjGEIAfRd.png"></p>
+<p>So after getting into &ldquo;highlight&rdquo; mode, traversing to the line with <code>Node(9)</code> would be as simple as pressing <code>n</code>. Boom.</p>
+<p>This also works with the usual Vim key bindings like words with <code>&lt;Space&gt;&lt;Space&gt;w</code>. EasyMotion, overlays every start of a word with a key binding for you to pick which word you want the cursor on.</p>
+<h2 id="this-is-my-world-now">This is my world now<a hidden class="anchor" aria-hidden="true" href="#this-is-my-world-now">#</a></h2>
+<p>I&rsquo;m still having trouble grasping a few things like copy/paste and buffers, but I&rsquo;ll learn those in due time.</p>
+<p>Vim has sparked a new fire in my coding and has made it fun. Because I&rsquo;ve been typing a lot more since I&rsquo;ve taken up writing and I code daily, I was thinking of buying a new mechanical keyboard. These Cherry MX Blue switches and SA profile keycaps are getting old and need something new. Maybe a <a href="https://www.hhkeyboard.com/uk/products/hybrid-type-s/">HHKB</a>? I guess that&rsquo;s a post for another day&hellip;</p>
+<p>Be sure to follow me <a href="https://twitter.com/chrisparaiso">@chrisparaiso</a>.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Chris Paraiso</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+</body>
+
+</html>

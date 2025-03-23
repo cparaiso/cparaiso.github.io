@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Preserving Quotes in YAML | Chris Paraiso</title>
+<meta name="keywords" content="">
+<meta name="description" content="For a bit of context, I&rsquo;m working on a project that spits out a YAML file that has properties with UUIDs. These UUIDs are linked to different text files and image files. The goal was to have some kind of web component consisting of an SVG with a text overlay. The text was separated out for third-party localization.
+I wrote a Python script and successfully populated the YAML file with what I needed for now.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/content/posts/preserving-quotes-in-yaml/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/content/posts/preserving-quotes-in-yaml/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Chris Paraiso (Alt + H)">Chris Paraiso</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/content/about/" title="About me">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/content/archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Preserving Quotes in YAML
+    </h1>
+    <div class="post-meta"><span title='2023-08-25 02:37:52 -0700 PDT'>August 25, 2023</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>For a bit of context, I&rsquo;m working on a project that spits out a YAML file that has properties with UUIDs. These UUIDs are linked to different text files and image files. The goal was to have some kind of web component consisting of an SVG with a text overlay. The text was separated out for third-party localization.</p>
+<p>I wrote a Python script and successfully populated the YAML file with what I needed for now.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">id</span>: <span style="color:#ae81ff">5214484c-42d2-11ee-bb4b-a0cec89b3edd</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">type</span>: <span style="color:#e6db74">&#34;graphic&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">subtype</span>: <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">media-not-started</span>: <span style="color:#e6db74">&#34;false&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">transcript</span>: <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">assets</span>:
+</span></span><span style="display:flex;"><span>- <span style="color:#ae81ff">52117bbc-42d2-11ee-bb4b-a0cec89b3edd</span>
+</span></span><span style="display:flex;"><span>- <span style="color:#ae81ff">521285a2-42d2-11ee-bb4b-a0cec89b3edd</span>
+</span></span><span style="display:flex;"><span>- <span style="color:#ae81ff">5213159e-42d2-11ee-bb4b-a0cec89b3edd</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">ui</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">instructions</span>: <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">images</span>: []
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">svgs</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">text1</span>: <span style="color:#ae81ff">52117bbc-42d2-11ee-bb4b-a0cec89b3edd</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">text2</span>: <span style="color:#ae81ff">521285a2-42d2-11ee-bb4b-a0cec89b3edd</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">text3</span>: <span style="color:#ae81ff">5213159e-42d2-11ee-bb4b-a0cec89b3edd</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">file</span>: <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">caption</span>: <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">ratio</span>: <span style="color:#e6db74">&#34;822/861&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">stylesheet</span>: <span style="color:#ae81ff">5214b930-42d2-11ee-bb4b-a0cec89b3edd</span>
+</span></span></code></pre></div><p>Every UUID seen here has a corresponding directory, YAML file and markdown file with the same UUID. For example, the property of <code>text1</code> would have:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#ae81ff">52117bbc-42d2-11ee-bb4b-a0cec89b3edd/</span> <span style="color:#75715e">#directory</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">|</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">|-- 52117bbc-42d2-11ee-bb4b-a0cec89b3edd.yml</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">|</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">+-- 52117bbc-42d2-11ee-bb4b-a0cec89b3edd.md</span>
+</span></span></code></pre></div><p>But there&rsquo;s an issue. If you take a look at the YAML file, some properties are wrapped in double quotes and some are not. All values in the YAML file need to be surrounded by double quotes for my situation.</p>
+<p>Initially, I went with PyYaml&rsquo;s library to assist me in wrangling YAML with Python. Everything was working well up until this point. Diving into the docs I can tell some programmers find documentation hard because it did not help at all. How can I RTFM if the manual is useless? Dive into the source code? I really shouldn&rsquo;t need to do that for something so simple as this. Even, after diving through the source code, it was still unclear.</p>
+<p><strong>Tip</strong>: When writing technical documentation, imagine yourself as <em><strong>NOT</strong></em> the person who developed it. Also, imagine you&rsquo;re explaining it to your mom. Thanks.</p>
+<p>After a bit of research, I switched to ruamel.yaml&rsquo;s Python library. The API was similar for my needs and the source code was easy to navigate. Refactoring was minimal and it solved my missing double quote issue.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> ruamel.yaml <span style="color:#f92672">import</span> YAML <span style="color:#75715e"># 1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> ruamel.yaml.scalarstring <span style="color:#f92672">import</span> DoubleQuotedScalarString <span style="color:#75715e"># 2</span>
+</span></span><span style="display:flex;"><span>yaml <span style="color:#f92672">=</span> YAML()                       
+</span></span><span style="display:flex;"><span>yaml<span style="color:#f92672">.</span>preserve_quotes <span style="color:#f92672">=</span> <span style="color:#66d9ef">True</span> <span style="color:#75715e"># 3</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">media_insert_text_field</span>(fields: List[Dict]) <span style="color:#f92672">-&gt;</span> Tuple:
+</span></span><span style="display:flex;"><span>    assets <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>    ui <span style="color:#f92672">=</span> {} 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> field <span style="color:#f92672">in</span> fields:
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 4</span>
+</span></span><span style="display:flex;"><span>        double_quoted_scalar <span style="color:#f92672">=</span> DoubleQuotedScalarString(field[<span style="color:#e6db74">&#39;uuid&#39;</span>])
+</span></span><span style="display:flex;"><span>        assets<span style="color:#f92672">.</span>append(double_quoted_scalar)
+</span></span><span style="display:flex;"><span>        ui[<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;text</span><span style="color:#e6db74">{</span>field[<span style="color:#e6db74">&#39;index&#39;</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>] <span style="color:#f92672">=</span> double_quoted_scalar 
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> (assets, ui)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>
+</span></span></code></pre></div><ol>
+<li>
+<p>Load ruamel.yaml.</p>
+</li>
+<li>
+<p>Import <code>DoubleQuotedScalarString</code> to force double quotes on scalar types.</p>
+</li>
+<li>
+<p>Set <code>preserve_quotes</code> to <code>true</code>.</p>
+</li>
+<li>
+<p>Force double quotes on <code>field['uuid']</code> with <code>DoubleQuotedScalarString</code>.</p>
+</li>
+</ol>
+<p>You may be asking yourself why I needed <code>DoubleQuotedScalarString</code> if <code>preserve_quotes</code> was set to <code>true</code>. I&rsquo;m still asking myself that question. Data was triple checked and followed the same format as the other properties I&rsquo;m injected in the final YAML so I&rsquo;m not sure why. But ruamel.yaml made it easy to force it. That&rsquo;s all that matters to me.</p>
+<p>I&rsquo;ll end by reiterating a tip to write technical documentation like your mom will be reading it. (Not that I&rsquo;m a mother, but you get the gist.)</p>
+<p>Be sure to follow me <a href="https://twitter.com/chrisparaiso">@chrisparaiso</a>.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Chris Paraiso</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+</body>
+
+</html>
