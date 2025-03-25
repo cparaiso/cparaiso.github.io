@@ -1,178 +1,198 @@
-<!DOCTYPE html>
-<html lang="en" dir="auto">
-
-<head><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
-<title>Preserving Quotes in YAML | Chris Paraiso</title>
-<meta name="keywords" content="">
-<meta name="description" content="For a bit of context, I&rsquo;m working on a project that spits out a YAML file that has properties with UUIDs. These UUIDs are linked to different text files and image files. The goal was to have some kind of web component consisting of an SVG with a text overlay. The text was separated out for third-party localization.
-I wrote a Python script and successfully populated the YAML file with what I needed for now.">
-<meta name="author" content="">
-<link rel="canonical" href="https://chrisparaiso.dev/articles/preserving-quotes-in-yaml/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://chrisparaiso.dev/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://chrisparaiso.dev/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://chrisparaiso.dev/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://chrisparaiso.dev/apple-touch-icon.png">
-<link rel="mask-icon" href="https://chrisparaiso.dev/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://chrisparaiso.dev/articles/preserving-quotes-in-yaml/">
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
-
-    </style>
-</noscript><meta property="og:url" content="https://chrisparaiso.dev/articles/preserving-quotes-in-yaml/">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Liste - https://chrisparaiso.dev/">
+    <title>Preserving Quotes in YAML | Chris Paraiso</title>
+    <meta name="description" content="A minimal hugo theme focus on content">
+    <meta property="og:url" content="https://chrisparaiso.dev/articles/preserving-quotes-in-yaml/">
   <meta property="og:site_name" content="Chris Paraiso">
   <meta property="og:title" content="Preserving Quotes in YAML">
   <meta property="og:description" content="For a bit of context, I’m working on a project that spits out a YAML file that has properties with UUIDs. These UUIDs are linked to different text files and image files. The goal was to have some kind of web component consisting of an SVG with a text overlay. The text was separated out for third-party localization.
 I wrote a Python script and successfully populated the YAML file with what I needed for now.">
-  <meta property="og:locale" content="en-us">
+  <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
+    <meta property="article:section" content="articles">
     <meta property="article:published_time" content="2023-08-25T02:37:52-07:00">
     <meta property="article:modified_time" content="2023-08-25T02:37:52-07:00">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Preserving Quotes in YAML">
-<meta name="twitter:description" content="For a bit of context, I&rsquo;m working on a project that spits out a YAML file that has properties with UUIDs. These UUIDs are linked to different text files and image files. The goal was to have some kind of web component consisting of an SVG with a text overlay. The text was separated out for third-party localization.
+
+    
+  <meta itemprop="name" content="Preserving Quotes in YAML">
+  <meta itemprop="description" content="For a bit of context, I’m working on a project that spits out a YAML file that has properties with UUIDs. These UUIDs are linked to different text files and image files. The goal was to have some kind of web component consisting of an SVG with a text overlay. The text was separated out for third-party localization.
 I wrote a Python script and successfully populated the YAML file with what I needed for now.">
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [, 
+  <meta itemprop="datePublished" content="2023-08-25T02:37:52-07:00">
+  <meta itemprop="dateModified" content="2023-08-25T02:37:52-07:00">
+  <meta itemprop="wordCount" content="490">
+    
+    <link rel="canonical" href="https://chrisparaiso.dev/articles/preserving-quotes-in-yaml/">
+    <link rel="icon" href="https://chrisparaiso.dev//assets/favicon.ico">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
+    <link rel="alternate" type="application/atom+xml" title="Chris Paraiso" href="https://chrisparaiso.dev//atom.xml" />
+    <link rel="alternate" type="application/json" title="Chris Paraiso" href="https://chrisparaiso.dev//feed.json" />
+    <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bricolage+Grotesque">
+    
+    <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 pt serif,bricolage grotesque,-apple-system,BlinkMacSystemFont,segoe ui,Helvetica,Arial,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:2rem;background:#111827;color:#d1d5db}.skip-link{position:absolute;top:-40px;left:0;background:#eee;z-index:100}.skip-link:focus{top:0}header{font-family:bricolage grotesque,-apple-system,BlinkMacSystemFont,segoe ui,Helvetica,Arial,sans-serif;display:flex;justify-content:space-between;align-items:center;position:relative;padding-bottom:1rem}header .burger{display:none;background:0 0;border:none;padding:0;cursor:pointer}header .burger span{display:block;width:25px;height:3px;background:#000;margin:5px 0;transition:all .3s ease}@media(max-width:768px){header .burger{display:block;z-index:2}header .nav-menu{position:fixed;top:0;right:-100%;width:100%;height:100vh;background:#fffdfa;padding:2rem;transition:.3s ease;z-index:1}header .nav-menu.active{right:0}header .nav-menu ul{flex-direction:column;align-items:center;width:100%}header .nav-menu ul li{display:block;font-size:1.2rem;border-bottom:1px dotted #000;height:50px;display:flex;justify-content:center;align-items:center}header.menu-open .burger span:first-child{transform:rotate(45deg)translate(5px,6px)}header.menu-open .burger span:nth-child(2){opacity:0}header.menu-open .burger span:last-child{transform:rotate(-45deg)translate(5px,-6px)}}header a{text-decoration:none}header ul{list-style-type:none;padding:0}header li,header a{display:inline}.link{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.time{font-variant-numeric:tabular-nums;white-space:nowrap}blockquote{border-left:5px solid #eee;padding-left:1rem;margin:0}a,a:visited{color:#00ccfd}a:hover,a.heading-link{text-decoration:none}pre{padding:.5rem;overflow:auto;overflow-x:visible;overflow-wrap:normal}code,pre{font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;font-size:small}code{margin:.1rem;border:none;overflow:visible;overflow-wrap:anywhere}ul{list-style-type:square}ul,ol{padding-left:1.2rem}.list{line-height:2;list-style-type:none;padding-left:0}.list li{padding-bottom:.1rem}.meta{color:#777}.content{max-width:70ch;margin:0 auto}h2.post{padding-top:.5rem}header ul a:first-child{padding-left:1rem}.nav{height:1px;background:#000;content:'';max-width:10%}.list li{display:flex;align-items:baseline}.list li time{flex:initial}.hr-list{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:0;border-bottom:1px dotted #ccc;flex:1 0 1rem}.m,hr{border:0;margin:3rem 0}img{max-width:100%;height:auto}.post-date{margin:5% 0}.index-date{color:#9a9a9a}.animate-blink{animation:opacity 1s infinite;opacity:1}@keyframes opacity{0%{opacity:1}50%{opacity:.5}100%{opacity:0}}.tags{display:flex;justify-content:space-between}.tags ul{padding:0;margin:0}.tags li{display:inline}.avatar{height:120px;width:120px;position:relative;margin:-10px 0 0 15px;float:right;border-radius:50%}table{width:100%;border-collapse:collapse}th,td{border:1px solid #ddd;text-align:left;padding:8px}th{background-color:#f2f2f2}footer{font-family:bricolage grotesque,-apple-system,BlinkMacSystemFont,segoe ui,Helvetica,Arial,sans-serif;margin-top:4rem}</style>
+  
+    
+    
+    
+    <script type="application/ld+json">
     {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "Preserving Quotes in YAML",
-      "item": "https://chrisparaiso.dev/articles/preserving-quotes-in-yaml/"
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "articles",
+        "name": "Preserving Quotes in YAML",
+        "headline": "Preserving Quotes in YAML",
+        "alternativeHeadline": "",
+        "description": "\u003cp\u003eFor a bit of context, I\u0026rsquo;m working on a project that spits out a YAML file that has properties with UUIDs. These UUIDs are linked to different text files and image files. The goal was to have some kind of web component consisting of an SVG with a text overlay. The text was separated out for third-party localization.\u003c\/p\u003e\n\u003cp\u003eI wrote a Python script and successfully populated the YAML file with what I needed for now.\u003c\/p\u003e",
+        "inLanguage": "en-us",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/chrisparaiso.dev\/articles\/preserving-quotes-in-yaml\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": ""
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": ""
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": ""
+        },
+        "copyrightHolder" : "Chris Paraiso",
+        "copyrightYear" : "2023",
+        "dateCreated": "2023-08-25T02:37:52.00Z",
+        "datePublished": "2023-08-25T02:37:52.00Z",
+        "dateModified": "2023-08-25T02:37:52.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Chris Paraiso",
+            "url": "https://chrisparaiso.dev/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/chrisparaiso.dev\/assets\/favicon.ico",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": "https://chrisparaiso.dev/assets/favicon.ico",
+        "url" : "https:\/\/chrisparaiso.dev\/articles\/preserving-quotes-in-yaml\/",
+        "wordCount" : "490",
+        "genre" : [ ],
+        "keywords" : [ ]
     }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Preserving Quotes in YAML",
-  "name": "Preserving Quotes in YAML",
-  "description": "For a bit of context, I\u0026rsquo;m working on a project that spits out a YAML file that has properties with UUIDs. These UUIDs are linked to different text files and image files. The goal was to have some kind of web component consisting of an SVG with a text overlay. The text was separated out for third-party localization.\nI wrote a Python script and successfully populated the YAML file with what I needed for now.\n",
-  "keywords": [
+    </script>
+     
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.nav-menu');
+            const header = document.querySelector('header');
+        
+            if (burger) {
+                burger.addEventListener('click', () => {
+                    nav.classList.toggle('active');
+                    header.classList.toggle('menu-open');
+                });
+        
+                
+                document.addEventListener('click', (e) => {
+                    if (!header.contains(e.target) && nav.classList.contains('active')) {
+                        nav.classList.remove('active');
+                        header.classList.remove('menu-open');
+                    }
+                });
+            }
+        });
+    </script> 
+  </head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main</a>
+  <main id="main">
+  <div class="content">
     
-  ],
-  "articleBody": "For a bit of context, I’m working on a project that spits out a YAML file that has properties with UUIDs. These UUIDs are linked to different text files and image files. The goal was to have some kind of web component consisting of an SVG with a text overlay. The text was separated out for third-party localization.\nI wrote a Python script and successfully populated the YAML file with what I needed for now.\nid: 5214484c-42d2-11ee-bb4b-a0cec89b3edd type: \"graphic\" subtype: \"\" metadata: media-not-started: \"false\" title: \"\" transcript: \"\" assets: - 52117bbc-42d2-11ee-bb4b-a0cec89b3edd - 521285a2-42d2-11ee-bb4b-a0cec89b3edd - 5213159e-42d2-11ee-bb4b-a0cec89b3edd ui: instructions: \"\" images: [] svgs: - text1: 52117bbc-42d2-11ee-bb4b-a0cec89b3edd text2: 521285a2-42d2-11ee-bb4b-a0cec89b3edd text3: 5213159e-42d2-11ee-bb4b-a0cec89b3edd file: \"\" caption: \"\" ratio: \"822/861\" stylesheet: 5214b930-42d2-11ee-bb4b-a0cec89b3edd Every UUID seen here has a corresponding directory, YAML file and markdown file with the same UUID. For example, the property of text1 would have:\n52117bbc-42d2-11ee-bb4b-a0cec89b3edd/ #directory | |-- 52117bbc-42d2-11ee-bb4b-a0cec89b3edd.yml | +-- 52117bbc-42d2-11ee-bb4b-a0cec89b3edd.md But there’s an issue. If you take a look at the YAML file, some properties are wrapped in double quotes and some are not. All values in the YAML file need to be surrounded by double quotes for my situation.\nInitially, I went with PyYaml’s library to assist me in wrangling YAML with Python. Everything was working well up until this point. Diving into the docs I can tell some programmers find documentation hard because it did not help at all. How can I RTFM if the manual is useless? Dive into the source code? I really shouldn’t need to do that for something so simple as this. Even, after diving through the source code, it was still unclear.\nTip: When writing technical documentation, imagine yourself as NOT the person who developed it. Also, imagine you’re explaining it to your mom. Thanks.\nAfter a bit of research, I switched to ruamel.yaml’s Python library. The API was similar for my needs and the source code was easy to navigate. Refactoring was minimal and it solved my missing double quote issue.\nfrom ruamel.yaml import YAML # 1 from ruamel.yaml.scalarstring import DoubleQuotedScalarString # 2 yaml = YAML() yaml.preserve_quotes = True # 3 def media_insert_text_field(fields: List[Dict]) -\u003e Tuple: assets = [] ui = {} for field in fields: # 4 double_quoted_scalar = DoubleQuotedScalarString(field['uuid']) assets.append(double_quoted_scalar) ui[f\"text{field['index']}\"] = double_quoted_scalar return (assets, ui) ... Load ruamel.yaml.\nImport DoubleQuotedScalarString to force double quotes on scalar types.\nSet preserve_quotes to true.\nForce double quotes on field['uuid'] with DoubleQuotedScalarString.\nYou may be asking yourself why I needed DoubleQuotedScalarString if preserve_quotes was set to true. I’m still asking myself that question. Data was triple checked and followed the same format as the other properties I’m injected in the final YAML so I’m not sure why. But ruamel.yaml made it easy to force it. That’s all that matters to me.\nI’ll end by reiterating a tip to write technical documentation like your mom will be reading it. (Not that I’m a mother, but you get the gist.)\nBe sure to follow me @chrisparaiso.\n",
-  "wordCount" : "490",
-  "inLanguage": "en",
-  "datePublished": "2023-08-25T02:37:52-07:00",
-  "dateModified": "2023-08-25T02:37:52-07:00",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://chrisparaiso.dev/articles/preserving-quotes-in-yaml/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Chris Paraiso",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://chrisparaiso.dev/favicon.ico"
-    }
-  }
-}
-</script>
-</head>
+<header>
+  <p style="padding: 0;margin: 0;">
+    <a href="https://chrisparaiso.dev/">
+      <b>Chris Paraiso</b>
+      <span class="text-stone-500 animate-blink">▮</span>
+    </a>
+  </p>
 
-<body class="" id="top">
-
-<header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="https://chrisparaiso.dev/" accesskey="h" title="Chris Paraiso (Alt + H)">Chris Paraiso</a>
-            <div class="logo-switches">
-            </div>
-        </div>
-        <ul id="menu">
-            <li>
-                <a href="https://chrisparaiso.dev/about/" title="About me">
-                    <span>About</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://chrisparaiso.dev/archives/" title="Archives">
-                    <span>Archives</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
+  
+  <ul style="padding: 0;margin: 0;">
+    
+    
+    <li class="">
+      <a href="/articles"><span>Articles</span></a>
+      
+    </li>
+  </ul>
+  
 </header>
-<main class="main">
+<hr class="hr-list" style="padding: 0;margin: 0;">
 
-<article class="post-single">
-  <header class="post-header">
-    
-    <h1 class="post-title entry-hint-parent">
-      Preserving Quotes in YAML
-    </h1>
-    <div class="post-meta"><span title='2023-08-25 02:37:52 -0700 PDT'>August 25, 2023</span>
-
-</div>
-  </header> 
-  <div class="post-content"><p>For a bit of context, I&rsquo;m working on a project that spits out a YAML file that has properties with UUIDs. These UUIDs are linked to different text files and image files. The goal was to have some kind of web component consisting of an SVG with a text overlay. The text was separated out for third-party localization.</p>
+    <section>
+      <h2 class="post">Preserving Quotes in YAML</h2>
+      <p>For a bit of context, I&rsquo;m working on a project that spits out a YAML file that has properties with UUIDs. These UUIDs are linked to different text files and image files. The goal was to have some kind of web component consisting of an SVG with a text overlay. The text was separated out for third-party localization.</p>
 <p>I wrote a Python script and successfully populated the YAML file with what I needed for now.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">id</span>: <span style="color:#ae81ff">5214484c-42d2-11ee-bb4b-a0cec89b3edd</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">type</span>: <span style="color:#e6db74">&#34;graphic&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">subtype</span>: <span style="color:#e6db74">&#34;&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">media-not-started</span>: <span style="color:#e6db74">&#34;false&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">transcript</span>: <span style="color:#e6db74">&#34;&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">assets</span>:
-</span></span><span style="display:flex;"><span>- <span style="color:#ae81ff">52117bbc-42d2-11ee-bb4b-a0cec89b3edd</span>
-</span></span><span style="display:flex;"><span>- <span style="color:#ae81ff">521285a2-42d2-11ee-bb4b-a0cec89b3edd</span>
-</span></span><span style="display:flex;"><span>- <span style="color:#ae81ff">5213159e-42d2-11ee-bb4b-a0cec89b3edd</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">ui</span>:
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">instructions</span>: <span style="color:#e6db74">&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">images</span>: []
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">svgs</span>:
-</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">text1</span>: <span style="color:#ae81ff">52117bbc-42d2-11ee-bb4b-a0cec89b3edd</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">text2</span>: <span style="color:#ae81ff">521285a2-42d2-11ee-bb4b-a0cec89b3edd</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">text3</span>: <span style="color:#ae81ff">5213159e-42d2-11ee-bb4b-a0cec89b3edd</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">file</span>: <span style="color:#e6db74">&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">caption</span>: <span style="color:#e6db74">&#34;&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">ratio</span>: <span style="color:#e6db74">&#34;822/861&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">stylesheet</span>: <span style="color:#ae81ff">5214b930-42d2-11ee-bb4b-a0cec89b3edd</span>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#191724;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#ebbcba">id</span><span style="color:#908caa">:</span> <span style="color:#f6c177">5214484c-42d2-11ee-bb4b-a0cec89b3edd</span>
+</span></span><span style="display:flex;"><span><span style="color:#ebbcba">type</span><span style="color:#908caa">:</span> <span style="color:#f6c177">&#34;graphic&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ebbcba">subtype</span><span style="color:#908caa">:</span> <span style="color:#f6c177">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ebbcba">metadata</span><span style="color:#908caa">:</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ebbcba">media-not-started</span><span style="color:#908caa">:</span> <span style="color:#f6c177">&#34;false&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ebbcba">title</span><span style="color:#908caa">:</span> <span style="color:#f6c177">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ebbcba">transcript</span><span style="color:#908caa">:</span> <span style="color:#f6c177">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ebbcba">assets</span><span style="color:#908caa">:</span>
+</span></span><span style="display:flex;"><span>- <span style="color:#f6c177">52117bbc-42d2-11ee-bb4b-a0cec89b3edd</span>
+</span></span><span style="display:flex;"><span>- <span style="color:#f6c177">521285a2-42d2-11ee-bb4b-a0cec89b3edd</span>
+</span></span><span style="display:flex;"><span>- <span style="color:#f6c177">5213159e-42d2-11ee-bb4b-a0cec89b3edd</span>
+</span></span><span style="display:flex;"><span><span style="color:#ebbcba">ui</span><span style="color:#908caa">:</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ebbcba">instructions</span><span style="color:#908caa">:</span> <span style="color:#f6c177">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ebbcba">images</span><span style="color:#908caa">:</span> <span style="color:#908caa">[]</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ebbcba">svgs</span><span style="color:#908caa">:</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#ebbcba">text1</span><span style="color:#908caa">:</span> <span style="color:#f6c177">52117bbc-42d2-11ee-bb4b-a0cec89b3edd</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ebbcba">text2</span><span style="color:#908caa">:</span> <span style="color:#f6c177">521285a2-42d2-11ee-bb4b-a0cec89b3edd</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ebbcba">text3</span><span style="color:#908caa">:</span> <span style="color:#f6c177">5213159e-42d2-11ee-bb4b-a0cec89b3edd</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ebbcba">file</span><span style="color:#908caa">:</span> <span style="color:#f6c177">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ebbcba">caption</span><span style="color:#908caa">:</span> <span style="color:#f6c177">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ebbcba">ratio</span><span style="color:#908caa">:</span> <span style="color:#f6c177">&#34;822/861&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ebbcba">stylesheet</span><span style="color:#908caa">:</span> <span style="color:#f6c177">5214b930-42d2-11ee-bb4b-a0cec89b3edd</span>
 </span></span></code></pre></div><p>Every UUID seen here has a corresponding directory, YAML file and markdown file with the same UUID. For example, the property of <code>text1</code> would have:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#ae81ff">52117bbc-42d2-11ee-bb4b-a0cec89b3edd/</span> <span style="color:#75715e">#directory</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">|</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">|-- 52117bbc-42d2-11ee-bb4b-a0cec89b3edd.yml</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">|</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">+-- 52117bbc-42d2-11ee-bb4b-a0cec89b3edd.md</span>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#191724;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f6c177">52117bbc-42d2-11ee-bb4b-a0cec89b3edd/</span> <span style="color:#6e6a86">#directory</span>
+</span></span><span style="display:flex;"><span><span style="color:#f6c177">|</span>
+</span></span><span style="display:flex;"><span><span style="color:#f6c177">|-- 52117bbc-42d2-11ee-bb4b-a0cec89b3edd.yml</span>
+</span></span><span style="display:flex;"><span><span style="color:#f6c177">|</span>
+</span></span><span style="display:flex;"><span><span style="color:#f6c177">+-- 52117bbc-42d2-11ee-bb4b-a0cec89b3edd.md</span>
 </span></span></code></pre></div><p>But there&rsquo;s an issue. If you take a look at the YAML file, some properties are wrapped in double quotes and some are not. All values in the YAML file need to be surrounded by double quotes for my situation.</p>
 <p>Initially, I went with PyYaml&rsquo;s library to assist me in wrangling YAML with Python. Everything was working well up until this point. Diving into the docs I can tell some programmers find documentation hard because it did not help at all. How can I RTFM if the manual is useless? Dive into the source code? I really shouldn&rsquo;t need to do that for something so simple as this. Even, after diving through the source code, it was still unclear.</p>
 <p><strong>Tip</strong>: When writing technical documentation, imagine yourself as <em><strong>NOT</strong></em> the person who developed it. Also, imagine you&rsquo;re explaining it to your mom. Thanks.</p>
 <p>After a bit of research, I switched to ruamel.yaml&rsquo;s Python library. The API was similar for my needs and the source code was easy to navigate. Refactoring was minimal and it solved my missing double quote issue.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> ruamel.yaml <span style="color:#f92672">import</span> YAML <span style="color:#75715e"># 1</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> ruamel.yaml.scalarstring <span style="color:#f92672">import</span> DoubleQuotedScalarString <span style="color:#75715e"># 2</span>
-</span></span><span style="display:flex;"><span>yaml <span style="color:#f92672">=</span> YAML()                       
-</span></span><span style="display:flex;"><span>yaml<span style="color:#f92672">.</span>preserve_quotes <span style="color:#f92672">=</span> <span style="color:#66d9ef">True</span> <span style="color:#75715e"># 3</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">media_insert_text_field</span>(fields: List[Dict]) <span style="color:#f92672">-&gt;</span> Tuple:
-</span></span><span style="display:flex;"><span>    assets <span style="color:#f92672">=</span> []
-</span></span><span style="display:flex;"><span>    ui <span style="color:#f92672">=</span> {} 
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> field <span style="color:#f92672">in</span> fields:
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 4</span>
-</span></span><span style="display:flex;"><span>        double_quoted_scalar <span style="color:#f92672">=</span> DoubleQuotedScalarString(field[<span style="color:#e6db74">&#39;uuid&#39;</span>])
-</span></span><span style="display:flex;"><span>        assets<span style="color:#f92672">.</span>append(double_quoted_scalar)
-</span></span><span style="display:flex;"><span>        ui[<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;text</span><span style="color:#e6db74">{</span>field[<span style="color:#e6db74">&#39;index&#39;</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>] <span style="color:#f92672">=</span> double_quoted_scalar 
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#191724;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#c4a7e7">from</span> <span style="color:#ebbcba">ruamel.yaml</span> <span style="color:#c4a7e7">import</span> <span style="color:#ebbcba">YAML</span> <span style="color:#6e6a86"># 1</span>
+</span></span><span style="display:flex;"><span><span style="color:#c4a7e7">from</span> <span style="color:#ebbcba">ruamel.yaml.scalarstring</span> <span style="color:#c4a7e7">import</span> <span style="color:#ebbcba">DoubleQuotedScalarString</span> <span style="color:#6e6a86"># 2</span>
+</span></span><span style="display:flex;"><span><span style="color:#ebbcba">yaml</span> <span style="color:#908caa">=</span> <span style="color:#ebbcba">YAML</span><span style="color:#908caa">()</span>                       
+</span></span><span style="display:flex;"><span><span style="color:#ebbcba">yaml</span><span style="color:#908caa">.</span><span style="color:#ebbcba">preserve_quotes</span> <span style="color:#908caa">=</span> <span style="color:#31748f">True</span> <span style="color:#6e6a86"># 3</span>
+</span></span><span style="display:flex;"><span><span style="color:#31748f">def</span> <span style="color:#ebbcba">media_insert_text_field</span><span style="color:#908caa">(</span><span style="color:#ebbcba">fields</span><span style="color:#908caa">:</span> <span style="color:#ebbcba">List</span><span style="color:#908caa">[</span><span style="color:#ebbcba">Dict</span><span style="color:#908caa">])</span> <span style="color:#908caa">-&gt;</span> <span style="color:#ebbcba">Tuple</span><span style="color:#908caa">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ebbcba">assets</span> <span style="color:#908caa">=</span> <span style="color:#908caa">[]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ebbcba">ui</span> <span style="color:#908caa">=</span> <span style="color:#908caa">{}</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#31748f">for</span> <span style="color:#ebbcba">field</span> <span style="color:#908caa">in</span> <span style="color:#ebbcba">fields</span><span style="color:#908caa">:</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6e6a86"># 4</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ebbcba">double_quoted_scalar</span> <span style="color:#908caa">=</span> <span style="color:#ebbcba">DoubleQuotedScalarString</span><span style="color:#908caa">(</span><span style="color:#ebbcba">field</span><span style="color:#908caa">[</span><span style="color:#f6c177">&#39;uuid&#39;</span><span style="color:#908caa">])</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ebbcba">assets</span><span style="color:#908caa">.</span><span style="color:#ebbcba">append</span><span style="color:#908caa">(</span><span style="color:#ebbcba">double_quoted_scalar</span><span style="color:#908caa">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ebbcba">ui</span><span style="color:#908caa">[</span><span style="color:#f6c177">f</span><span style="color:#f6c177">&#34;text</span><span style="color:#f6c177">{</span><span style="color:#ebbcba">field</span><span style="color:#908caa">[</span><span style="color:#f6c177">&#39;index&#39;</span><span style="color:#908caa">]</span><span style="color:#f6c177">}</span><span style="color:#f6c177">&#34;</span><span style="color:#908caa">]</span> <span style="color:#908caa">=</span> <span style="color:#ebbcba">double_quoted_scalar</span> 
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> (assets, ui)
-</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#31748f">return</span> <span style="color:#908caa">(</span><span style="color:#ebbcba">assets</span><span style="color:#908caa">,</span> <span style="color:#ebbcba">ui</span><span style="color:#908caa">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">...</span>
 </span></span></code></pre></div><ol>
 <li>
 <p>Load ruamel.yaml.</p>
@@ -191,73 +211,20 @@ I wrote a Python script and successfully populated the YAML file with what I nee
 <p>I&rsquo;ll end by reiterating a tip to write technical documentation like your mom will be reading it. (Not that I&rsquo;m a mother, but you get the gist.)</p>
 <p>Be sure to follow me <a href="https://twitter.com/chrisparaiso">@chrisparaiso</a>.</p>
 
+      
+      <div class="post-date">
+        <span class="g time">August 25, 2023 </span> &#8729;
+         
+      </div>
+      
+    </section>
+    
+    
+<footer>
+<p>&copy; 2025 Chris Paraiso</p>
+</footer>
 
   </div>
-
-  <footer class="post-footer">
-    <ul class="post-tags">
-    </ul>
-  </footer>
-</article>
-    </main>
-    
-<footer class="footer">
-        <span>&copy; 2025 <a href="https://chrisparaiso.dev/">Chris Paraiso</a></span> · 
-
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
-</footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
-</a>
-
-<script>
-    let menu = document.getElementById('menu')
-    if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-
-</script>
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
-
-</script>
+</main>
 </body>
-
 </html>

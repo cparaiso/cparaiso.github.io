@@ -1,0 +1,19 @@
+{
+  "version": "https://jsonfeed.org/version/1",
+  "title": "Chris Paraiso",
+  "home_page_url": "https://chrisparaiso.dev/",
+  "feed_url": "https://chrisparaiso.dev/feed.json",
+  "description": "A minimal hugo theme focus on content",
+  "favicon": "https://chrisparaiso.dev//assets/favicon.ico",
+  "expired": false,
+  "author": {
+    "name": "Chris Paraiso",
+    "url": "https://chrisparaiso.dev/"
+  },
+  "items": [
+    
+    
+
+    
+  ]
+}

@@ -1,549 +1,272 @@
-<!DOCTYPE html>
-<html lang="en-us" dir="ltr">
-    <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="I&rsquo;ve been in the software engineering field since 2009 with a focus on front-end development and UI/UX. This is funny to me because when I first started learning web development back in the early 2000s, I avoided JavaScript like the plague. I would only touch the HTML and CSS of the website. The design was all I cared about. Now, JavaScript is all I do. The Now Currently, my team is contracted by Cisco to convert and migrate their Networking Academy application to replace all unsupported Flash assets into Canvas.">
-<title>Unlocking the Data Universe: Embarking on a Data Engineer Journey</title>
+<!doctype html>
+<html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Liste - http://localhost:1313/">
+    <title>Unlocking the Data Universe: Embarking on a Data Engineer Journey | Chris Paraiso</title>
+    <meta name="description" content="A minimal hugo theme focus on content">
+    <meta property="og:url" content="http://localhost:1313/posts/unlocking-the-data-universe/">
+  <meta property="og:site_name" content="Chris Paraiso">
+  <meta property="og:title" content="Unlocking the Data Universe: Embarking on a Data Engineer Journey">
+  <meta property="og:description" content="I’ve been in the software engineering field since 2009 with a focus on front-end development and UI/UX. This is funny to me because when I first started learning web development back in the early 2000s, I avoided JavaScript like the plague. I would only touch the HTML and CSS of the website. The design was all I cared about. Now, JavaScript is all I do.
+The Now Currently, my team is contracted by Cisco to convert and migrate their Networking Academy application to replace all unsupported Flash assets into Canvas. Everything from localized SVG translations, animations, and simulations is being converted over.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2022-12-22T02:31:50-07:00">
+    <meta property="article:modified_time" content="2022-12-22T02:31:50-07:00">
 
-<link rel='canonical' href='https://chrisparaiso.dev/posts/unlocking-the-data-universe/'>
-
-<link rel="stylesheet" href="/scss/style.min.e9771575e20582fb99211bd6e2d8da544c511abc4d960373394197fe3ce2a939.css"><meta property='og:title' content="Unlocking the Data Universe: Embarking on a Data Engineer Journey">
-<meta property='og:description' content="I&rsquo;ve been in the software engineering field since 2009 with a focus on front-end development and UI/UX. This is funny to me because when I first started learning web development back in the early 2000s, I avoided JavaScript like the plague. I would only touch the HTML and CSS of the website. The design was all I cared about. Now, JavaScript is all I do. The Now Currently, my team is contracted by Cisco to convert and migrate their Networking Academy application to replace all unsupported Flash assets into Canvas.">
-<meta property='og:url' content='https://chrisparaiso.dev/posts/unlocking-the-data-universe/'>
-<meta property='og:site_name' content='Chris Paraiso'>
-<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:published_time' content='2022-12-22T02:31:50-07:00'/><meta property='article:modified_time' content='2022-12-22T02:31:50-07:00'/>
-<meta name="twitter:title" content="Unlocking the Data Universe: Embarking on a Data Engineer Journey">
-<meta name="twitter:description" content="I&rsquo;ve been in the software engineering field since 2009 with a focus on front-end development and UI/UX. This is funny to me because when I first started learning web development back in the early 2000s, I avoided JavaScript like the plague. I would only touch the HTML and CSS of the website. The design was all I cared about. Now, JavaScript is all I do. The Now Currently, my team is contracted by Cisco to convert and migrate their Networking Academy application to replace all unsupported Flash assets into Canvas.">
+    
+  <meta itemprop="name" content="Unlocking the Data Universe: Embarking on a Data Engineer Journey">
+  <meta itemprop="description" content="I’ve been in the software engineering field since 2009 with a focus on front-end development and UI/UX. This is funny to me because when I first started learning web development back in the early 2000s, I avoided JavaScript like the plague. I would only touch the HTML and CSS of the website. The design was all I cared about. Now, JavaScript is all I do.
+The Now Currently, my team is contracted by Cisco to convert and migrate their Networking Academy application to replace all unsupported Flash assets into Canvas. Everything from localized SVG translations, animations, and simulations is being converted over.">
+  <meta itemprop="datePublished" content="2022-12-22T02:31:50-07:00">
+  <meta itemprop="dateModified" content="2022-12-22T02:31:50-07:00">
+  <meta itemprop="wordCount" content="850">
+    
+    <link rel="canonical" href="http://localhost:1313/posts/unlocking-the-data-universe/">
+    <link rel="icon" href="http://localhost:1313//assets/favicon.ico">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
+    <link rel="alternate" type="application/atom+xml" title="Chris Paraiso" href="http://localhost:1313//atom.xml" />
+    <link rel="alternate" type="application/json" title="Chris Paraiso" href="http://localhost:1313//feed.json" />
+    <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bricolage+Grotesque">
+    
+    <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 bricolage grotesque,-apple-system,BlinkMacSystemFont,segoe ui,Helvetica,Arial,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:2rem;background:#fffdfa;color:#000}.skip-link{position:absolute;top:-40px;left:0;background:#eee;z-index:100}.skip-link:focus{top:0}header{display:flex;justify-content:space-between;align-items:center;position:relative;padding-bottom:1rem}header .burger{display:none;background:0 0;border:none;padding:0;cursor:pointer}header .burger span{display:block;width:25px;height:3px;background:#000;margin:5px 0;transition:all .3s ease}@media(max-width:768px){header .burger{display:block;z-index:2}header .nav-menu{position:fixed;top:0;right:-100%;width:100%;height:100vh;background:#fffdfa;padding:2rem;transition:.3s ease;z-index:1}header .nav-menu.active{right:0}header .nav-menu ul{flex-direction:column;align-items:center;width:100%}header .nav-menu ul li{display:block;font-size:1.2rem;border-bottom:1px dotted #000;height:50px;display:flex;justify-content:center;align-items:center}header.menu-open .burger span:first-child{transform:rotate(45deg)translate(5px,6px)}header.menu-open .burger span:nth-child(2){opacity:0}header.menu-open .burger span:last-child{transform:rotate(-45deg)translate(5px,-6px)}}header a{text-decoration:none}header ul{list-style-type:none;padding:0}header li,header a{display:inline}.link{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.time{font-variant-numeric:tabular-nums;white-space:nowrap}blockquote{border-left:5px solid #eee;padding-left:1rem;margin:0}a,a:visited{color:inherit}a:hover,a.heading-link{text-decoration:none}pre{padding:.5rem;overflow:auto;overflow-x:scroll;overflow-wrap:normal}code,pre{font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;font-size:small;background:#eee}code{margin:.1rem;border:none;overflow:visible;overflow-wrap:anywhere}ul{list-style-type:square}ul,ol{padding-left:1.2rem}.list{line-height:2;list-style-type:none;padding-left:0}.list li{padding-bottom:.1rem}.meta{color:#777}.content{max-width:70ch;margin:0 auto}h2.post{padding-top:.5rem}header ul a:first-child{padding-left:1rem}.nav{height:1px;background:#000;content:'';max-width:10%}.list li{display:flex;align-items:baseline}.list li time{flex:initial}.hr-list{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:0;border-bottom:1px dotted #ccc;flex:1 0 1rem}.m,hr{border:0;margin:3rem 0}img{max-width:100%;height:auto}.post-date{margin:5% 0}.index-date{color:#9a9a9a}.animate-blink{animation:opacity 1s infinite;opacity:1}@keyframes opacity{0%{opacity:1}50%{opacity:.5}100%{opacity:0}}.tags{display:flex;justify-content:space-between}.tags ul{padding:0;margin:0}.tags li{display:inline}.avatar{height:120px;width:120px;position:relative;margin:-10px 0 0 15px;float:right;border-radius:50%}table{width:100%;border-collapse:collapse}th,td{border:1px solid #ddd;text-align:left;padding:8px}th{background-color:#f2f2f2}footer{margin-top:4rem}</style>
   
-
-
-    </head>
-    <body class="
-    article-page
-    ">
-    <script>
-        (function() {
-            const colorSchemeKey = 'StackColorScheme';
-            if(!localStorage.getItem(colorSchemeKey)){
-                localStorage.setItem(colorSchemeKey, "auto");
+    
+    
+    
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "posts",
+        "name": "Unlocking the Data Universe: Embarking on a Data Engineer Journey",
+        "headline": "Unlocking the Data Universe: Embarking on a Data Engineer Journey",
+        "alternativeHeadline": "",
+        "description": "\u003cp\u003eI\u0026rsquo;ve been in the software engineering field since 2009 with a focus on front-end development and UI\/UX. This is funny to me because when I first started learning web development back in the early 2000s, I avoided JavaScript like the plague. I would only touch the HTML and CSS of the website. The design was all I cared about. Now, JavaScript is all I do.\u003c\/p\u003e\n\u003ch2 id=\u0022the-now\u0022\u003eThe Now\u003c\/h2\u003e\n\u003cp\u003eCurrently, my team is contracted by \u003ca href=\u0022https:\/\/www.cisco.com\/\u0022\u003eCisco\u003c\/a\u003e to convert and migrate their \u003ca href=\u0022https:\/\/www.netacad.com\/\u0022\u003eNetworking Academy\u003c\/a\u003e application to replace all unsupported Flash assets into Canvas. Everything from localized SVG translations, animations, and simulations is being converted over.\u003c\/p\u003e",
+        "inLanguage": "en-us",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:1313\/posts\/unlocking-the-data-universe\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": ""
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": ""
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": ""
+        },
+        "copyrightHolder" : "Chris Paraiso",
+        "copyrightYear" : "2022",
+        "dateCreated": "2022-12-22T02:31:50.00Z",
+        "datePublished": "2022-12-22T02:31:50.00Z",
+        "dateModified": "2022-12-22T02:31:50.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Chris Paraiso",
+            "url": "http://localhost:1313/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http:\/\/localhost:1313\/assets\/favicon.ico",
+                "width":"32",
+                "height":"32"
             }
-        })();
-    </script><script>
-    (function() {
-        const colorSchemeKey = 'StackColorScheme';
-        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
-        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+        },
+        "image": "http://localhost:1313/assets/favicon.ico",
+        "url" : "http:\/\/localhost:1313\/posts\/unlocking-the-data-universe\/",
+        "wordCount" : "850",
+        "genre" : [ ],
+        "keywords" : [ ]
+    }
+    </script>
+     
 
-        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
-            
-
-            document.documentElement.dataset.scheme = 'dark';
-        } else {
-            document.documentElement.dataset.scheme = 'light';
-        }
-    })();
-</script>
-<div class="container main-container flex on-phone--column compact"><aside class="sidebar left-sidebar sticky ">
-    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
-        <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-        </span>
-    </button>
-
-    <header>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.nav-menu');
+            const header = document.querySelector('header');
         
-            
-            <figure class="site-avatar">
-                <a href="/">
-                
-                    
-                    
-                    
-                        
-                        <img src="/img/avatar_hu2c866e3a2d6b2522f10890c4c2e31937_313167_300x0_resize_q75_box.jpg" width="300"
-                            height="292" class="site-logo" loading="lazy" alt="Avatar">
-                    
-                
-                </a>
-                
-            </figure>
-            
+            if (burger) {
+                burger.addEventListener('click', () => {
+                    nav.classList.toggle('active');
+                    header.classList.toggle('menu-open');
+                });
         
-        
-        <div class="site-meta">
-            <h1 class="site-name"><a href="/">Chris Paraiso</a></h1>
-            <h2 class="site-description">Full Stack Developer, Father, Gamer, Python, Golang, JavaScript</h2>
-        </div>
-    </header><ol class="menu-social">
-            
-                <li>
-                    <a 
-                        href='https://github.com/cparaiso'
-                        target="_blank"
-                        title="Github"
-                        rel="me"
-                    >
-                        
-                        
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
-</svg>
-
-
-
-                        
-                    </a>
-                </li>
-            
-                <li>
-                    <a 
-                        href='https://twitter.com/chrisparaiso'
-                        target="_blank"
-                        title="Twitter"
-                        rel="me"
-                    >
-                        
-                        
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
-</svg>
-
-
-
-                        
-                    </a>
-                </li>
-            
-        </ol><ol class="menu" id="main-menu">
-        
-        
-        
-        <li >
-            <a href='/about/' >
                 
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="7" r="4" />
-  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-</svg>
+                document.addEventListener('click', (e) => {
+                    if (!header.contains(e.target) && nav.classList.contains('active')) {
+                        nav.classList.remove('active');
+                        header.classList.remove('menu-open');
+                    }
+                });
+            }
+        });
+    </script> 
+  </head>
 
+<body>
+  <a class="skip-link" href="#main">Skip to main</a>
+  <main id="main">
+  <div class="content">
+    
+<header>
+  <p style="padding: 0;margin: 0;">
+    <a href="http://localhost:1313/">
+      <b>Chris Paraiso</b>
+      <span class="text-stone-500 animate-blink">▮</span>
+    </a>
+  </p>
 
-
-                
-                <span>About</span>
-            </a>
+  
+  <button class="burger" aria-label="Toggle menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <nav class="nav-menu">
+    <ul style="padding: 0;margin: 0;">
+      
+      
+        <li class="">
+          <a href="/posts/"><span>Articles</span></a>
         </li>
-        
-        
-        <li >
-            <a href='/archives/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <rect x="3" y="4" width="18" height="4" rx="2" />
-  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
-  <line x1="10" y1="12" x2="14" y2="12" />
-</svg>
-
-
-
-                
-                <span>Archives</span>
-            </a>
+      
+        <li class="">
+          <a href="/about/"><span>About</span></a>
         </li>
-        
-        <li class="menu-bottom-section">
-            <ol class="menu">
-
-                
-                    <li id="dark-mode-toggle">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="8" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
-
-
-
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="16" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
-
-
-
-                        <span>Dark Mode</span>
-                    </li>
-                
-            </ol>
-        </li>
-    </ol>
-</aside>
-
-    
-
-            <main class="main full-width">
-    <article class="main-article">
-    <header class="article-header">
-
-    <div class="article-details">
-    
-    <header class="article-category">
-        
-            <a href="/categories/data-engineering/" >
-                Data Engineering
-            </a>
-        
-    </header>
-    
-
-    <div class="article-title-wrapper">
-        <h2 class="article-title">
-            <a href="/posts/unlocking-the-data-universe/">Unlocking the Data Universe: Embarking on a Data Engineer Journey</a>
-        </h2>
-    
-        
-    </div>
-
-    
-    
-    
-    
-    <footer class="article-time">
-        
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
-  <circle cx="18" cy="18" r="4" />
-  <path d="M15 3v4" />
-  <path d="M7 3v4" />
-  <path d="M3 11h16" />
-  <path d="M18 16.496v1.504l1 1" />
-</svg>
-                <time class="article-time--published">Dec 22, 2022</time>
-            </div>
-        
-
-        
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="12" r="9" />
-  <polyline points="12 7 12 12 15 15" />
-</svg>
-
-
-
-                <time class="article-time--reading">
-                    4 minute read
-                </time>
-            </div>
-        
-    </footer>
-    
-
-    
-</div>
-
+      
+    </ul>
+  </nav>
+  
 </header>
-
-    <section class="article-content">
-    
-    
-    <p>I&rsquo;ve been in the software engineering field since 2009 with a focus on front-end development and UI/UX. This is funny to me because when I first started learning web development back in the early 2000s, I avoided JavaScript like the plague. I would only touch the HTML and CSS of the website. The design was all I cared about. Now, JavaScript is all I do.</p>
-<h2 id="the-now">The Now
-</h2><p>Currently, my team is contracted by <a class="link" href="https://www.cisco.com/"  target="_blank" rel="noopener"
-    >Cisco</a> to convert and migrate their <a class="link" href="https://www.netacad.com/"  target="_blank" rel="noopener"
-    >Networking Academy</a> application to replace all unsupported Flash assets into Canvas. Everything from localized SVG translations, animations, and simulations is being converted over.</p>
+<hr class="hr-list" style="padding: 0;margin: 0;">
+    <section>
+      <h2 class="post">Unlocking the Data Universe: Embarking on a Data Engineer Journey</h2>
+      <p>I&rsquo;ve been in the software engineering field since 2009 with a focus on front-end development and UI/UX. This is funny to me because when I first started learning web development back in the early 2000s, I avoided JavaScript like the plague. I would only touch the HTML and CSS of the website. The design was all I cared about. Now, JavaScript is all I do.</p>
+<h2 id="the-now">The Now</h2>
+<p>Currently, my team is contracted by <a href="https://www.cisco.com/">Cisco</a> to convert and migrate their <a href="https://www.netacad.com/">Networking Academy</a> application to replace all unsupported Flash assets into Canvas. Everything from localized SVG translations, animations, and simulations is being converted over.</p>
 <p>We used JSFL in Adobe Animate to export what we could, and manually update and fix what we could not export. This and the effort to break out different pieces of course content for subject matter experts to build and/or modify a given course for their students is still ongoing.</p>
 <p>What scripting language did we use to migrate this over? I want to say Python&hellip; But it was JavaScript. Leveraging Node we didn&rsquo;t need to context switch due to a change in languages since we were all front-end engineers. I wanted it to be Python though.</p>
-<h2 id="the-obvious-choice">The Obvious Choice
-</h2><p>I&rsquo;m at a crossroads here. It&rsquo;s obvious which direction I&rsquo;m going given the title of this blog post but if that wasn&rsquo;t clear, I&rsquo;m planning to shift careers into data engineering. Why? The current project I&rsquo;m on has me shifting data from one place to another to be consumed by subject matter experts as I&rsquo;ve said before. This very action has inspired me to move and transform data on a <strong>bigger</strong> scale but with a different impact.</p>
+<h2 id="the-obvious-choice">The Obvious Choice</h2>
+<p>I&rsquo;m at a crossroads here. It&rsquo;s obvious which direction I&rsquo;m going given the title of this blog post but if that wasn&rsquo;t clear, I&rsquo;m planning to shift careers into data engineering. Why? The current project I&rsquo;m on has me shifting data from one place to another to be consumed by subject matter experts as I&rsquo;ve said before. This very action has inspired me to move and transform data on a <strong>bigger</strong> scale but with a different impact.</p>
 <p>I&rsquo;d like to help data scientists and ML engineers get the data that they need to work their magic or analyze the data in a way that helps either the business or the world.</p>
 <p>Python has intrigued me since being introduced to it circa Python 3 but I&rsquo;ve never had a chance or time to work in that language.</p>
 <p>Now, I&rsquo;m making time&hellip;</p>
-<h2 id="the-future">The Future
-</h2><p>I&rsquo;ve set up a personal learning plan for myself because I wanted to be clear on what to study next. I tend to ponder too much on &ldquo;what&rsquo;s next?&rdquo; rather than what I&rsquo;m learning at this very moment. The learning plan I&rsquo;ve created is only a start and not the end all be all of data engineering. Of course, this plan isn&rsquo;t set in stone and will be modified if a course is subpar.</p>
-<h2 id="my-data-engineering-learning-plan">My Data Engineering Learning Plan
-</h2><p>My company offers &ldquo;professional development&rdquo; funding every year and I&rsquo;ve opted to subscribe to Datacamp and Udemy to learn data engineering as well as a single book for now.</p>
-<h3 id="broad-topic">Broad Topic
-</h3><ul>
+<h2 id="the-future">The Future</h2>
+<p>I&rsquo;ve set up a personal learning plan for myself because I wanted to be clear on what to study next. I tend to ponder too much on &ldquo;what&rsquo;s next?&rdquo; rather than what I&rsquo;m learning at this very moment. The learning plan I&rsquo;ve created is only a start and not the end all be all of data engineering. Of course, this plan isn&rsquo;t set in stone and will be modified if a course is subpar.</p>
+<h2 id="my-data-engineering-learning-plan">My Data Engineering Learning Plan</h2>
+<p>My company offers &ldquo;professional development&rdquo; funding every year and I&rsquo;ve opted to subscribe to Datacamp and Udemy to learn data engineering as well as a single book for now.</p>
+<h3 id="broad-topic">Broad Topic</h3>
+<ul>
 <li>
-<p><a class="link" href="https://www.datacamp.com/"  target="_blank" rel="noopener"
-    >DataCamp Data Engineer Track</a></p>
+<p><a href="https://www.datacamp.com/">DataCamp Data Engineer Track</a></p>
 </li>
 <li>
-<p><a class="link" href="https://www.udemy.com/course/data-warehouse-fundamentals-for-beginners/"  target="_blank" rel="noopener"
-    >Data Warehouse Fundamentals for Beginners</a></p>
+<p><a href="https://www.udemy.com/course/data-warehouse-fundamentals-for-beginners/">Data Warehouse Fundamentals for Beginners</a></p>
 </li>
 <li>
-<p><a class="link" href="https://www.amazon.com/Fundamentals-Data-Engineering-Robust-Systems/dp/1098108302/"  target="_blank" rel="noopener"
-    ><em>Fundamentals of Data Engineering</em></a></p>
+<p><a href="https://www.amazon.com/Fundamentals-Data-Engineering-Robust-Systems/dp/1098108302/"><em>Fundamentals of Data Engineering</em></a></p>
 </li>
 </ul>
 <p>The first two list items above are courses that cover a wide range of topics. The third in this list is a book I see everywhere and have been enjoying the read. Datacamp&rsquo;s teaching style doesn&rsquo;t match the way my brain learns. I see inconsistencies in teaching methods and exercises. I&rsquo;ll still complete this course, but that&rsquo;s my high-level review of Datacamp.</p>
-<h3 id="programming-languages">Programming Languages
-</h3><ul>
+<h3 id="programming-languages">Programming Languages</h3>
+<ul>
 <li>
-<p><a class="link" href="https://www.udemy.com/course/complete-python-bootcamp/"  target="_blank" rel="noopener"
-    >The Complete Python Bootcamp From Zero to Hero in Python</a></p>
+<p><a href="https://www.udemy.com/course/complete-python-bootcamp/">The Complete Python Bootcamp From Zero to Hero in Python</a></p>
 </li>
 <li>
-<p><a class="link" href="https://www.udemy.com/course/the-complete-sql-bootcamp/"  target="_blank" rel="noopener"
-    >The Complete SQL Bootcamp: Go from Zero to Hero</a></p>
+<p><a href="https://www.udemy.com/course/the-complete-sql-bootcamp/">The Complete SQL Bootcamp: Go from Zero to Hero</a></p>
 </li>
 <li>
-<p><a class="link" href="https://www.udemy.com/course/python-for-data-structures-algorithms-and-interviews/"  target="_blank" rel="noopener"
-    >Python for Data Structures, Algorithms, and Interviews!</a></p>
+<p><a href="https://www.udemy.com/course/python-for-data-structures-algorithms-and-interviews/">Python for Data Structures, Algorithms, and Interviews!</a></p>
 </li>
 </ul>
 <p>Python &amp; SQL are, from what I&rsquo;ve researched thus far, required as a data engineer.</p>
 <p>Python is such a beautiful language. I&rsquo;ve worked with it before, but don&rsquo;t feel confident to call myself proficient. I&rsquo;ll be changing that after the courses above are complete.</p>
 <p>SQL joins make sense. Complex SQL joins hurt my brain to read. Hopefully, this course on SQL will help with that.</p>
-<h3 id="technologies">Technologies
-</h3><ul>
+<h3 id="technologies">Technologies</h3>
+<ul>
 <li>
-<p><a class="link" href="https://www.udemy.com/course/taming-big-data-with-apache-spark-hands-on/"  target="_blank" rel="noopener"
-    >Taming Big Data with Apache Spark and Python - Hands On!</a></p>
+<p><a href="https://www.udemy.com/course/taming-big-data-with-apache-spark-hands-on/">Taming Big Data with Apache Spark and Python - Hands On!</a></p>
 </li>
 <li>
-<p><a class="link" href="https://www.udemy.com/course/azure-databricks-spark-core-for-data-engineers/"  target="_blank" rel="noopener"
-    >Azure Databricks &amp; Spark For Data Engineers (PySpark / SQL)</a></p>
+<p><a href="https://www.udemy.com/course/azure-databricks-spark-core-for-data-engineers/">Azure Databricks &amp; Spark For Data Engineers (PySpark / SQL)</a></p>
 </li>
 <li>
-<p><a class="link" href="https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/"  target="_blank" rel="noopener"
-    >The Complete Hands-On Introduction to Apache Airflow</a></p>
+<p><a href="https://www.udemy.com/course/the-complete-hands-on-course-to-master-apache-airflow/">The Complete Hands-On Introduction to Apache Airflow</a></p>
 </li>
 <li>
-<p><a class="link" href="https://www.udemy.com/course/apache-kafka/"  target="_blank" rel="noopener"
-    >Apache Kafka Series - Learn Apache Kafka for Beginners v3</a></p>
+<p><a href="https://www.udemy.com/course/apache-kafka/">Apache Kafka Series - Learn Apache Kafka for Beginners v3</a></p>
 </li>
 <li>
-<p><a class="link" href="https://www.udemy.com/course/snowflake-zero-to-hero-masterclass/"  target="_blank" rel="noopener"
-    >Snowflake[A-Z] Zero to Hero Masterclass(Core+SQL+API+Visual)</a></p>
+<p><a href="https://www.udemy.com/course/snowflake-zero-to-hero-masterclass/">Snowflake[A-Z] Zero to Hero Masterclass(Core+SQL+API+Visual)</a></p>
 </li>
 <li>
-<p><a class="link" href="https://www.udemy.com/course/learn-devops-ci-cd-with-jenkins-using-pipelines-and-docker/"  target="_blank" rel="noopener"
-    >Learn DevOps: CI/CD with Jenkins using Pipelines and Docker</a></p>
+<p><a href="https://www.udemy.com/course/learn-devops-ci-cd-with-jenkins-using-pipelines-and-docker/">Learn DevOps: CI/CD with Jenkins using Pipelines and Docker</a></p>
 </li>
 </ul>
 <p>These are courses on topics I&rsquo;ve researched that a data engineer should know. I can&rsquo;t speak on these technologies yet, but these courses are highly reviewed.</p>
-<h3 id="certifications">Certifications
-</h3><ul>
+<h3 id="certifications">Certifications</h3>
+<ul>
 <li>
-<p><a class="link" href="https://www.udemy.com/course/aws-certified-cloud-practitioner-new/"  target="_blank" rel="noopener"
-    >[AWS] Ultimate AWS Certified Cloud Practitioner - 2023</a></p>
+<p><a href="https://www.udemy.com/course/aws-certified-cloud-practitioner-new/">[AWS] Ultimate AWS Certified Cloud Practitioner - 2023</a></p>
 </li>
 <li>
-<p><a class="link" href="https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/"  target="_blank" rel="noopener"
-    >[AWS] Ultimate AWS Certified Solutions Architect Associate SAA-C03</a></p>
+<p><a href="https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/">[AWS] Ultimate AWS Certified Solutions Architect Associate SAA-C03</a></p>
 </li>
 </ul>
 <p>My company is an AWS shop. Speaking with my team lead, he has stated this would be a good starting point. But I feel I need some knowledge of how these pieces work together&hellip; maybe the courses cover that? Regardless, I&rsquo;ll be taking this course, the Python course and reading my <em>Fundamentals of Data Engineering</em> book in parallel.</p>
-<h3 id="practice">Practice
-</h3><ul>
+<h3 id="practice">Practice</h3>
+<ul>
 <li>
-<p><a class="link" href="https://leetcode.com/problemset/all/"  target="_blank" rel="noopener"
-    >Leetcode</a></p>
+<p><a href="https://leetcode.com/problemset/all/">Leetcode</a></p>
 </li>
 <li>
-<p><a class="link" href="https://www.hackerrank.com/domains/sql"  target="_blank" rel="noopener"
-    >HackerRank</a></p>
+<p><a href="https://www.hackerrank.com/domains/sql">HackerRank</a></p>
 </li>
 </ul>
 <p>Who doesn&rsquo;t need practice? I like puzzles. These links will scratch that part of my brain that likes puzzles.</p>
-<h2 id="from-here-on-out">From here on out&hellip;
-</h2><p>All in all, I&rsquo;m pretty excited. I haven&rsquo;t been this excited in a while. After years of saying, &ldquo;Oh, another JavaScript library/framework to learn.&rdquo; I can say, &ldquo;Oh, a new tool that may be better than the current one.&rdquo; :shrug:</p>
+<h2 id="from-here-on-out">From here on out&hellip;</h2>
+<p>All in all, I&rsquo;m pretty excited. I haven&rsquo;t been this excited in a while. After years of saying, &ldquo;Oh, another JavaScript library/framework to learn.&rdquo; I can say, &ldquo;Oh, a new tool that may be better than the current one.&rdquo; :shrug:</p>
 <p>Off to learning!</p>
-<p>Be sure to follow me <a class="link" href="https://twitter.com/chrisparaiso"  target="_blank" rel="noopener"
-    >@chrisparaiso</a>.</p>
+<p>Be sure to follow me <a href="https://twitter.com/chrisparaiso">@chrisparaiso</a>.</p>
 
-</section>
-
-
-    <footer class="article-footer">
-    
-
-    </footer>
-
-
-    
-</article>
-
-    
-
-    
-
-     
-    
-        
-    <script src="https://utteranc.es/client.js" 
-        repo="cparaiso/cparaiso.github.io"
-        issue-term="pathname"
-        
-        crossorigin="anonymous"
-        async
-        >
-</script>
-
-<style>
-    .utterances {
-        max-width: unset;
-    }
-</style>
-
-<script>
-    let utterancesLoaded = false;
-
-    function setUtterancesTheme(theme) {
-        let utterances = document.querySelector('.utterances iframe');
-        if (utterances) {
-            utterances.contentWindow.postMessage(
-                {
-                    type: 'set-theme',
-                    theme: `github-${theme}`
-                },
-                'https://utteranc.es'
-            );
-        }
-    }
-
-    addEventListener('message', event => {
-        if (event.origin !== 'https://utteranc.es') return;
-
-        
-        utterancesLoaded = true;
-        setUtterancesTheme(document.documentElement.dataset.scheme)
-    });
-
-    window.addEventListener('onColorSchemeChange', (e) => {
-        if (!utterancesLoaded) return;
-        setUtterancesTheme(e.detail)
-    })
-</script>
-
-
-    
-
-    <footer class="site-footer">
-    <section class="copyright">
-        &copy; 
-        
-            2022 - 
-        
-        2024 Chris Paraiso
+      
+      <div class="post-date">
+        <span class="g time">December 22, 2022 </span> &#8729;
+         
+      </div>
+      
     </section>
     
-    <section class="powerby">
-        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
-    </section>
-</footer>
-
-
     
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <div id="comments">
+      
+<script src="https://utteranc.es/client.js"
+    repo=cparaiso/cparaiso.github.io
+    issue-term="pathname"
+    theme=github-light
+    crossorigin="anonymous"
+    async>
+</script>
 
-    
-    <div class="pswp__bg"></div>
-
-    
-    <div class="pswp__scroll-wrap">
-
-        
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-        </div>
-
-        
-        <div class="pswp__ui pswp__ui--hidden">
-
-            <div class="pswp__top-bar">
-
-                
-
-                <div class="pswp__counter"></div>
-
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                <button class="pswp__button pswp__button--share" title="Share"></button>
-
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                
-                
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                        <div class="pswp__preloader__cut">
-                            <div class="pswp__preloader__donut"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div>
-            </div>
-
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-
-        </div>
 
     </div>
-
-</div><script 
-                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
-                defer
-                >
-            </script><script 
-                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
-                defer
-                >
-            </script><link 
-                rel="stylesheet" 
-                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
-            ><link 
-                rel="stylesheet" 
-                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
-            >
-
-            </main>
-        </div>
-        <script 
-                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
-                
-                >
-            </script><script type="text/javascript" src="/ts/main.js" defer></script>
-<script>
-    (function () {
-        const customFont = document.createElement('link');
-        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
-
-        customFont.type = "text/css";
-        customFont.rel = "stylesheet";
-
-        document.head.appendChild(customFont);
-    }());
-</script>
-
-    </body>
+    
+    
+  </div>
+</main>
+</body>
 </html>

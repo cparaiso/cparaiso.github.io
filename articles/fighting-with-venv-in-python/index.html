@@ -1,39 +1,13 @@
-<!DOCTYPE html>
-<html lang="en" dir="auto">
-
-<head><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
-<title>Fighting with venv in Python | Chris Paraiso</title>
-<meta name="keywords" content="">
-<meta name="description" content="I had a brain fart today. I was developing a personal project in Python and I had some library issues that I was trying to wrap my head around. It turns out, I didn&rsquo;t even have my virtual environment running. I completely forgot.
-So then I activated it.
-source .venv/bin/activate
-Then I thought to myself&hellip;
-
-I don&rsquo;t want to type that out every single damn time.
-I&rsquo;m lazy. I don&rsquo;t like to type unnecessary things. I switch projects mid-day on multiple occasions at work so there&rsquo;s a bit of a context switch to deal with. If I have to write automation scripts and aliases now to prevent me from typing even the smallest of words, I&rsquo;ll take the time to try to solve that.">
-<meta name="author" content="">
-<link rel="canonical" href="https://chrisparaiso.dev/articles/fighting-with-venv-in-python/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://chrisparaiso.dev/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://chrisparaiso.dev/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://chrisparaiso.dev/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://chrisparaiso.dev/apple-touch-icon.png">
-<link rel="mask-icon" href="https://chrisparaiso.dev/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://chrisparaiso.dev/articles/fighting-with-venv-in-python/">
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
-
-    </style>
-</noscript><meta property="og:url" content="https://chrisparaiso.dev/articles/fighting-with-venv-in-python/">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Liste - https://chrisparaiso.dev/">
+    <title>Fighting with venv in Python | Chris Paraiso</title>
+    <meta name="description" content="A minimal hugo theme focus on content">
+    <meta property="og:url" content="https://chrisparaiso.dev/articles/fighting-with-venv-in-python/">
   <meta property="og:site_name" content="Chris Paraiso">
   <meta property="og:title" content="Fighting with venv in Python">
   <meta property="og:description" content="I had a brain fart today. I was developing a personal project in Python and I had some library issues that I was trying to wrap my head around. It turns out, I didn’t even have my virtual environment running. I completely forgot.
@@ -41,219 +15,205 @@ So then I activated it.
 source .venv/bin/activate Then I thought to myself…
 I don’t want to type that out every single damn time.
 I’m lazy. I don’t like to type unnecessary things. I switch projects mid-day on multiple occasions at work so there’s a bit of a context switch to deal with. If I have to write automation scripts and aliases now to prevent me from typing even the smallest of words, I’ll take the time to try to solve that.">
-  <meta property="og:locale" content="en-us">
+  <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
+    <meta property="article:section" content="articles">
     <meta property="article:published_time" content="2023-08-23T02:36:29-07:00">
     <meta property="article:modified_time" content="2023-08-23T02:36:29-07:00">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Fighting with venv in Python">
-<meta name="twitter:description" content="I had a brain fart today. I was developing a personal project in Python and I had some library issues that I was trying to wrap my head around. It turns out, I didn&rsquo;t even have my virtual environment running. I completely forgot.
+
+    
+  <meta itemprop="name" content="Fighting with venv in Python">
+  <meta itemprop="description" content="I had a brain fart today. I was developing a personal project in Python and I had some library issues that I was trying to wrap my head around. It turns out, I didn’t even have my virtual environment running. I completely forgot.
 So then I activated it.
-source .venv/bin/activate
-Then I thought to myself&hellip;
-
-I don&rsquo;t want to type that out every single damn time.
-I&rsquo;m lazy. I don&rsquo;t like to type unnecessary things. I switch projects mid-day on multiple occasions at work so there&rsquo;s a bit of a context switch to deal with. If I have to write automation scripts and aliases now to prevent me from typing even the smallest of words, I&rsquo;ll take the time to try to solve that.">
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [, 
+source .venv/bin/activate Then I thought to myself…
+I don’t want to type that out every single damn time.
+I’m lazy. I don’t like to type unnecessary things. I switch projects mid-day on multiple occasions at work so there’s a bit of a context switch to deal with. If I have to write automation scripts and aliases now to prevent me from typing even the smallest of words, I’ll take the time to try to solve that.">
+  <meta itemprop="datePublished" content="2023-08-23T02:36:29-07:00">
+  <meta itemprop="dateModified" content="2023-08-23T02:36:29-07:00">
+  <meta itemprop="wordCount" content="560">
+    
+    <link rel="canonical" href="https://chrisparaiso.dev/articles/fighting-with-venv-in-python/">
+    <link rel="icon" href="https://chrisparaiso.dev//assets/favicon.ico">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
+    <link rel="alternate" type="application/atom+xml" title="Chris Paraiso" href="https://chrisparaiso.dev//atom.xml" />
+    <link rel="alternate" type="application/json" title="Chris Paraiso" href="https://chrisparaiso.dev//feed.json" />
+    <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bricolage+Grotesque">
+    
+    <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 pt serif,bricolage grotesque,-apple-system,BlinkMacSystemFont,segoe ui,Helvetica,Arial,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:2rem;background:#111827;color:#d1d5db}.skip-link{position:absolute;top:-40px;left:0;background:#eee;z-index:100}.skip-link:focus{top:0}header{font-family:bricolage grotesque,-apple-system,BlinkMacSystemFont,segoe ui,Helvetica,Arial,sans-serif;display:flex;justify-content:space-between;align-items:center;position:relative;padding-bottom:1rem}header .burger{display:none;background:0 0;border:none;padding:0;cursor:pointer}header .burger span{display:block;width:25px;height:3px;background:#000;margin:5px 0;transition:all .3s ease}@media(max-width:768px){header .burger{display:block;z-index:2}header .nav-menu{position:fixed;top:0;right:-100%;width:100%;height:100vh;background:#fffdfa;padding:2rem;transition:.3s ease;z-index:1}header .nav-menu.active{right:0}header .nav-menu ul{flex-direction:column;align-items:center;width:100%}header .nav-menu ul li{display:block;font-size:1.2rem;border-bottom:1px dotted #000;height:50px;display:flex;justify-content:center;align-items:center}header.menu-open .burger span:first-child{transform:rotate(45deg)translate(5px,6px)}header.menu-open .burger span:nth-child(2){opacity:0}header.menu-open .burger span:last-child{transform:rotate(-45deg)translate(5px,-6px)}}header a{text-decoration:none}header ul{list-style-type:none;padding:0}header li,header a{display:inline}.link{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.time{font-variant-numeric:tabular-nums;white-space:nowrap}blockquote{border-left:5px solid #eee;padding-left:1rem;margin:0}a,a:visited{color:#00ccfd}a:hover,a.heading-link{text-decoration:none}pre{padding:.5rem;overflow:auto;overflow-x:visible;overflow-wrap:normal}code,pre{font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;font-size:small}code{margin:.1rem;border:none;overflow:visible;overflow-wrap:anywhere}ul{list-style-type:square}ul,ol{padding-left:1.2rem}.list{line-height:2;list-style-type:none;padding-left:0}.list li{padding-bottom:.1rem}.meta{color:#777}.content{max-width:70ch;margin:0 auto}h2.post{padding-top:.5rem}header ul a:first-child{padding-left:1rem}.nav{height:1px;background:#000;content:'';max-width:10%}.list li{display:flex;align-items:baseline}.list li time{flex:initial}.hr-list{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:0;border-bottom:1px dotted #ccc;flex:1 0 1rem}.m,hr{border:0;margin:3rem 0}img{max-width:100%;height:auto}.post-date{margin:5% 0}.index-date{color:#9a9a9a}.animate-blink{animation:opacity 1s infinite;opacity:1}@keyframes opacity{0%{opacity:1}50%{opacity:.5}100%{opacity:0}}.tags{display:flex;justify-content:space-between}.tags ul{padding:0;margin:0}.tags li{display:inline}.avatar{height:120px;width:120px;position:relative;margin:-10px 0 0 15px;float:right;border-radius:50%}table{width:100%;border-collapse:collapse}th,td{border:1px solid #ddd;text-align:left;padding:8px}th{background-color:#f2f2f2}footer{font-family:bricolage grotesque,-apple-system,BlinkMacSystemFont,segoe ui,Helvetica,Arial,sans-serif;margin-top:4rem}</style>
+  
+    
+    
+    
+    <script type="application/ld+json">
     {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "Fighting with venv in Python",
-      "item": "https://chrisparaiso.dev/articles/fighting-with-venv-in-python/"
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "articles",
+        "name": "Fighting with venv in Python",
+        "headline": "Fighting with venv in Python",
+        "alternativeHeadline": "",
+        "description": "\u003cp\u003eI had a brain fart today. I was developing a personal project in Python and I had some library issues that I was trying to wrap my head around. It turns out, I didn\u0026rsquo;t even have my \u003ca href=\u0022https:\/\/docs.python.org\/3\/library\/venv.html\u0022\u003evirtual environment\u003c\/a\u003e running. I completely forgot.\u003c\/p\u003e\n\u003cp\u003eSo then I activated it.\u003c\/p\u003e\n\u003cpre tabindex=\u00220\u0022\u003e\u003ccode\u003esource .venv\/bin\/activate\n\u003c\/code\u003e\u003c\/pre\u003e\u003cp\u003eThen I thought to myself\u0026hellip;\u003c\/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003eI don\u0026rsquo;t want to type that out every single damn time.\u003c\/p\u003e\u003c\/blockquote\u003e\n\u003cp\u003eI\u0026rsquo;m lazy. I don\u0026rsquo;t like to type unnecessary things. I switch projects mid-day on multiple occasions at work so there\u0026rsquo;s a bit of a context switch to deal with. If I have to write automation scripts and aliases now to prevent me from typing even the smallest of words, I\u0026rsquo;ll take the time to try to solve that.\u003c\/p\u003e",
+        "inLanguage": "en-us",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/chrisparaiso.dev\/articles\/fighting-with-venv-in-python\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": ""
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": ""
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": ""
+        },
+        "copyrightHolder" : "Chris Paraiso",
+        "copyrightYear" : "2023",
+        "dateCreated": "2023-08-23T02:36:29.00Z",
+        "datePublished": "2023-08-23T02:36:29.00Z",
+        "dateModified": "2023-08-23T02:36:29.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Chris Paraiso",
+            "url": "https://chrisparaiso.dev/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/chrisparaiso.dev\/assets\/favicon.ico",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": "https://chrisparaiso.dev/assets/favicon.ico",
+        "url" : "https:\/\/chrisparaiso.dev\/articles\/fighting-with-venv-in-python\/",
+        "wordCount" : "560",
+        "genre" : [ ],
+        "keywords" : [ ]
     }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Fighting with venv in Python",
-  "name": "Fighting with venv in Python",
-  "description": "I had a brain fart today. I was developing a personal project in Python and I had some library issues that I was trying to wrap my head around. It turns out, I didn\u0026rsquo;t even have my virtual environment running. I completely forgot.\nSo then I activated it.\nsource .venv/bin/activate Then I thought to myself\u0026hellip;\nI don\u0026rsquo;t want to type that out every single damn time.\nI\u0026rsquo;m lazy. I don\u0026rsquo;t like to type unnecessary things. I switch projects mid-day on multiple occasions at work so there\u0026rsquo;s a bit of a context switch to deal with. If I have to write automation scripts and aliases now to prevent me from typing even the smallest of words, I\u0026rsquo;ll take the time to try to solve that.\n",
-  "keywords": [
+    </script>
+     
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.nav-menu');
+            const header = document.querySelector('header');
+        
+            if (burger) {
+                burger.addEventListener('click', () => {
+                    nav.classList.toggle('active');
+                    header.classList.toggle('menu-open');
+                });
+        
+                
+                document.addEventListener('click', (e) => {
+                    if (!header.contains(e.target) && nav.classList.contains('active')) {
+                        nav.classList.remove('active');
+                        header.classList.remove('menu-open');
+                    }
+                });
+            }
+        });
+    </script> 
+  </head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main</a>
+  <main id="main">
+  <div class="content">
     
-  ],
-  "articleBody": "I had a brain fart today. I was developing a personal project in Python and I had some library issues that I was trying to wrap my head around. It turns out, I didn’t even have my virtual environment running. I completely forgot.\nSo then I activated it.\nsource .venv/bin/activate Then I thought to myself…\nI don’t want to type that out every single damn time.\nI’m lazy. I don’t like to type unnecessary things. I switch projects mid-day on multiple occasions at work so there’s a bit of a context switch to deal with. If I have to write automation scripts and aliases now to prevent me from typing even the smallest of words, I’ll take the time to try to solve that.\nContext issues So I did just that. I set aside some time to try to automate things.\nI wanted a command I could execute (venv). This command would run a script that creates a virtual environment via python3 -m venv .venv. Then it would run source .venv/bin/activate to start the virtual environment.\nWell, every time I ran this script, the directory would be created at the current working directory and the source line ran without error but the virtual environment did not start. The Python interpreter my environment was running was still global at /usr/local/bin/python3. So something is amiss!\nAfter doing a bit of research it turns out that when you want to enter a virtual environment, the virtual environment modifies my shell’s variables. An example of this would be modifying my shell’s variables to point to the correct Python interpreter.\nAlso, when you run a Bash script, it executes in a different context/subshell. The file and directory changes stuck after the script ran, but the necessary variables I needed for my virtual environment were thrown away as soon as the script finished running.\nSolution I removed the source line from my venv.sh script and just left the script to create the needed files and directories. I would then need to run that source command to enter the virtual environment.\nThen I thought: Why don’t I just string the commands together into one alias on my shell? Perfect.\n1 2 3 4 5 # aliases.sh alias venv='$HOME/src/dotfiles/bin/utils/venv.sh \u0026\u0026 \\ source .venv/bin/activate' # ... other aliases below here Running the venv alias would execute the venv.sh then run the source command in the context of the shell I am currently in.\n#!/bin/bash # venv.sh # create venv if not exists if [ -d \".venv\" ]; then echo \"Found .venv. Activating...\" else read -p \".venv does not exist. Would you like to \\ create a venv for this directory? (y/n) \" response if [ \"$response\" == \"y\" ]; then echo \"Creating .venv directory @ $PWD\" python3 -m venv .venv fi fi If venv.sh finds an existing .venv directory, it does nothing. If the script does not find the .venv directory it prompts the user asking if the script has permission to create it. I know I could probably do without the prompt and just have the script create it. I decided to leave it in for now.\nI guess my issue was with Bash and not venv. Anyway, I think I have to be careful. I’ve been getting sidetracked and spending a lot of time configuring my environment. Off to building something!\nBe sure to follow me @chrisparaiso.\n",
-  "wordCount" : "560",
-  "inLanguage": "en",
-  "datePublished": "2023-08-23T02:36:29-07:00",
-  "dateModified": "2023-08-23T02:36:29-07:00",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://chrisparaiso.dev/articles/fighting-with-venv-in-python/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Chris Paraiso",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://chrisparaiso.dev/favicon.ico"
-    }
-  }
-}
-</script>
-</head>
+<header>
+  <p style="padding: 0;margin: 0;">
+    <a href="https://chrisparaiso.dev/">
+      <b>Chris Paraiso</b>
+      <span class="text-stone-500 animate-blink">▮</span>
+    </a>
+  </p>
 
-<body class="" id="top">
-
-<header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="https://chrisparaiso.dev/" accesskey="h" title="Chris Paraiso (Alt + H)">Chris Paraiso</a>
-            <div class="logo-switches">
-            </div>
-        </div>
-        <ul id="menu">
-            <li>
-                <a href="https://chrisparaiso.dev/about/" title="About me">
-                    <span>About</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://chrisparaiso.dev/archives/" title="Archives">
-                    <span>Archives</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
+  
+  <ul style="padding: 0;margin: 0;">
+    
+    
+    <li class="">
+      <a href="/articles"><span>Articles</span></a>
+      
+    </li>
+  </ul>
+  
 </header>
-<main class="main">
+<hr class="hr-list" style="padding: 0;margin: 0;">
 
-<article class="post-single">
-  <header class="post-header">
-    
-    <h1 class="post-title entry-hint-parent">
-      Fighting with venv in Python
-    </h1>
-    <div class="post-meta"><span title='2023-08-23 02:36:29 -0700 PDT'>August 23, 2023</span>
-
-</div>
-  </header> 
-  <div class="post-content"><p>I had a brain fart today. I was developing a personal project in Python and I had some library issues that I was trying to wrap my head around. It turns out, I didn&rsquo;t even have my <a href="https://docs.python.org/3/library/venv.html">virtual environment</a> running. I completely forgot.</p>
+    <section>
+      <h2 class="post">Fighting with venv in Python</h2>
+      <p>I had a brain fart today. I was developing a personal project in Python and I had some library issues that I was trying to wrap my head around. It turns out, I didn&rsquo;t even have my <a href="https://docs.python.org/3/library/venv.html">virtual environment</a> running. I completely forgot.</p>
 <p>So then I activated it.</p>
 <pre tabindex="0"><code>source .venv/bin/activate
 </code></pre><p>Then I thought to myself&hellip;</p>
 <blockquote>
 <p>I don&rsquo;t want to type that out every single damn time.</p></blockquote>
 <p>I&rsquo;m lazy. I don&rsquo;t like to type unnecessary things. I switch projects mid-day on multiple occasions at work so there&rsquo;s a bit of a context switch to deal with. If I have to write automation scripts and aliases now to prevent me from typing even the smallest of words, I&rsquo;ll take the time to try to solve that.</p>
-<h2 id="context-issues">Context issues<a hidden class="anchor" aria-hidden="true" href="#context-issues">#</a></h2>
+<h2 id="context-issues">Context issues</h2>
 <p>So I did just that. I set aside some time to try to automate things.</p>
 <p>I wanted a command I could execute (<code>venv</code>). This command would run a script that creates a virtual environment via <code>python3 -m venv .venv</code>. Then it would run <code>source .venv/bin/activate</code> to start the virtual environment.</p>
 <p>Well, every time I ran this script, the directory would be created at the current working directory and the <code>source</code> line ran without error but the virtual environment did not start. The Python interpreter my environment was running was still global at <code>/usr/local/bin/python3</code>. So something is amiss!</p>
 <p>After doing a bit of research it turns out that when you want to enter a virtual environment, the virtual environment modifies my shell&rsquo;s variables. An example of this would be modifying my shell&rsquo;s variables to point to the correct Python interpreter.</p>
 <p>Also, when you run a Bash script, it executes in a different context/subshell. The file and directory changes stuck after the script ran, but the necessary variables I needed for my virtual environment were thrown away as soon as the script finished running.</p>
-<h2 id="solution">Solution<a hidden class="anchor" aria-hidden="true" href="#solution">#</a></h2>
+<h2 id="solution">Solution</h2>
 <p>I removed the <code>source</code> line from my <code>venv.sh</code> script and just left the script to create the needed files and directories. I would then need to run that <code>source</code> command to enter the virtual environment.</p>
 <p>Then I thought: Why don&rsquo;t I just string the commands together into one alias on my shell? Perfect.</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<div class="highlight"><div style="color:#e0def4;background-color:#191724;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+<pre tabindex="0" style="color:#e0def4;background-color:#191724;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># aliases.sh</span>
-</span></span><span style="display:flex;"><span>alias venv<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;$HOME/src/dotfiles/bin/utils/venv.sh &amp;&amp; \
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    source .venv/bin/activate&#39;</span>
+<pre tabindex="0" style="color:#e0def4;background-color:#191724;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#6e6a86"># aliases.sh</span>
+</span></span><span style="display:flex;"><span><span style="color:#ebbcba">alias</span> <span style="color:#ebbcba">venv</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#39;$HOME/src/dotfiles/bin/utils/venv.sh &amp;&amp; \
+</span></span></span><span style="display:flex;"><span><span style="color:#f6c177">    source .venv/bin/activate&#39;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># ... other aliases below here</span>
+</span></span><span style="display:flex;"><span><span style="color:#6e6a86"># ... other aliases below here</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>Running the <code>venv</code> alias would execute the <code>venv.sh</code> <strong>then</strong> run the <code>source</code> command in the context of the shell I am currently in.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#75715e"># venv.sh</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># create venv if not exists</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> -d <span style="color:#e6db74">&#34;.venv&#34;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
-</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;Found .venv. Activating...&#34;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">else</span>
-</span></span><span style="display:flex;"><span>    read -p <span style="color:#e6db74">&#34;.venv does not exist. Would you like to \
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         create a venv for this directory? (y/n) &#34;</span> response
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;</span>$response<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;y&#34;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
-</span></span><span style="display:flex;"><span>      echo <span style="color:#e6db74">&#34;Creating .venv directory @ </span>$PWD<span style="color:#e6db74">&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#191724;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#6e6a86">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#6e6a86"></span><span style="color:#6e6a86"># venv.sh</span>
+</span></span><span style="display:flex;"><span><span style="color:#6e6a86"># create venv if not exists</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#31748f">if</span> <span style="color:#908caa">[</span> -d <span style="color:#f6c177">&#34;.venv&#34;</span> <span style="color:#908caa">]</span><span style="color:#908caa">;</span> <span style="color:#31748f">then</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ebbcba">echo</span> <span style="color:#f6c177">&#34;Found .venv. Activating...&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#31748f">else</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ebbcba">read</span> -p <span style="color:#f6c177">&#34;.venv does not exist. Would you like to \
+</span></span></span><span style="display:flex;"><span><span style="color:#f6c177">         create a venv for this directory? (y/n) &#34;</span> response
+</span></span><span style="display:flex;"><span>    <span style="color:#31748f">if</span> <span style="color:#908caa">[</span> <span style="color:#f6c177">&#34;</span><span style="color:#ebbcba">$response</span><span style="color:#f6c177">&#34;</span> <span style="color:#908caa">==</span> <span style="color:#f6c177">&#34;y&#34;</span> <span style="color:#908caa">]</span><span style="color:#908caa">;</span> <span style="color:#31748f">then</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#ebbcba">echo</span> <span style="color:#f6c177">&#34;Creating .venv directory @ </span><span style="color:#ebbcba">$PWD</span><span style="color:#f6c177">&#34;</span>
 </span></span><span style="display:flex;"><span>      python3 -m venv .venv
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">fi</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#31748f">fi</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#31748f">fi</span>
 </span></span></code></pre></div><p>If <code>venv.sh</code> finds an existing <code>.venv</code> directory, it does nothing. If the script does not find the <code>.venv</code> directory it prompts the user asking if the script has permission to create it. I know I could probably do without the prompt and just have the script create it. I decided to leave it in for now.</p>
 <p>I guess my issue was with Bash and not venv. Anyway, I think I have to be careful. I&rsquo;ve been getting sidetracked and spending a lot of time configuring my environment. Off to building something!</p>
 <p>Be sure to follow me <a href="https://twitter.com/chrisparaiso">@chrisparaiso</a>.</p>
 
+      
+      <div class="post-date">
+        <span class="g time">August 23, 2023 </span> &#8729;
+         
+      </div>
+      
+    </section>
+    
+    
+<footer>
+<p>&copy; 2025 Chris Paraiso</p>
+</footer>
 
   </div>
-
-  <footer class="post-footer">
-    <ul class="post-tags">
-    </ul>
-  </footer>
-</article>
-    </main>
-    
-<footer class="footer">
-        <span>&copy; 2025 <a href="https://chrisparaiso.dev/">Chris Paraiso</a></span> · 
-
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
-</footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
-</a>
-
-<script>
-    let menu = document.getElementById('menu')
-    if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-
-</script>
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
-
-</script>
+</main>
 </body>
-
 </html>

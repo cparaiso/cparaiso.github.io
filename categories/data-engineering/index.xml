@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Data Engineering on Chris Paraiso</title>
-    <link>https://chrisparaiso.dev/categories/data-engineering/</link>
+    <link>http://localhost:1313/categories/data-engineering/</link>
     <description>Recent content in Data Engineering on Chris Paraiso</description>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 22 Dec 2022 02:31:50 -0700</lastBuildDate>
-    <atom:link href="https://chrisparaiso.dev/categories/data-engineering/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/data-engineering/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Unlocking the Data Universe: Embarking on a Data Engineer Journey</title>
-      <link>https://chrisparaiso.dev/articles/unlocking-the-data-universe-embarking-on-a-data-engineer-journey/</link>
+      <link>http://localhost:1313/articles/unlocking-the-data-universe-embarking-on-a-data-engineer-journey/</link>
       <pubDate>Thu, 22 Dec 2022 02:31:50 -0700</pubDate>
-      <guid>https://chrisparaiso.dev/articles/unlocking-the-data-universe-embarking-on-a-data-engineer-journey/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve been in the software engineering field since 2009 with a focus on front-end development and UI/UX. This is funny to me because when I first started learning web development back in the early 2000s, I avoided JavaScript like the plague. I would only touch the HTML and CSS of the website. The design was all I cared about. Now, JavaScript is all I do.&lt;/p&gt;
-&lt;h2 id=&#34;the-now&#34;&gt;The Now&lt;/h2&gt;
-&lt;p&gt;Currently, my team is contracted by &lt;a href=&#34;https://www.cisco.com/&#34;&gt;Cisco&lt;/a&gt; to convert and migrate their &lt;a href=&#34;https://www.netacad.com/&#34;&gt;Networking Academy&lt;/a&gt; application to replace all unsupported Flash assets into Canvas. Everything from localized SVG translations, animations, and simulations is being converted over.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/articles/unlocking-the-data-universe-embarking-on-a-data-engineer-journey/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been in the software engineering field since 2009 with a focus on front-end development and UI/UX. This is funny to me because when I first started learning web development back in the early 2000s, I avoided JavaScript like the plague. I would only touch the HTML and CSS of the website. The design was all I cared about. Now, JavaScript is all I do.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-now&#34;&gt;The Now&lt;/h2&gt;&#xA;&lt;p&gt;Currently, my team is contracted by &lt;a href=&#34;https://www.cisco.com/&#34;&gt;Cisco&lt;/a&gt; to convert and migrate their &lt;a href=&#34;https://www.netacad.com/&#34;&gt;Networking Academy&lt;/a&gt; application to replace all unsupported Flash assets into Canvas. Everything from localized SVG translations, animations, and simulations is being converted over.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

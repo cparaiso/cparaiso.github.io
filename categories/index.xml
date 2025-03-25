@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Chris Paraiso</title>
-    <link>https://chrisparaiso.dev/categories/</link>
+    <link>http://localhost:1313/categories/</link>
     <description>Recent content in Categories on Chris Paraiso</description>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 25 Aug 2023 02:37:52 -0700</lastBuildDate>
-    <atom:link href="https://chrisparaiso.dev/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Python</title>
-      <link>https://chrisparaiso.dev/categories/python/</link>
+      <link>http://localhost:1313/categories/python/</link>
       <pubDate>Fri, 25 Aug 2023 02:37:52 -0700</pubDate>
-      <guid>https://chrisparaiso.dev/categories/python/</guid>
+      <guid>http://localhost:1313/categories/python/</guid>
       <description></description>
     </item>
     <item>
       <title>Vim</title>
-      <link>https://chrisparaiso.dev/categories/vim/</link>
+      <link>http://localhost:1313/categories/vim/</link>
       <pubDate>Sun, 20 Aug 2023 02:33:46 -0700</pubDate>
-      <guid>https://chrisparaiso.dev/categories/vim/</guid>
+      <guid>http://localhost:1313/categories/vim/</guid>
       <description></description>
     </item>
     <item>
       <title>Data Engineering</title>
-      <link>https://chrisparaiso.dev/categories/data-engineering/</link>
+      <link>http://localhost:1313/categories/data-engineering/</link>
       <pubDate>Thu, 22 Dec 2022 02:31:50 -0700</pubDate>
-      <guid>https://chrisparaiso.dev/categories/data-engineering/</guid>
+      <guid>http://localhost:1313/categories/data-engineering/</guid>
       <description></description>
     </item>
   </channel>
