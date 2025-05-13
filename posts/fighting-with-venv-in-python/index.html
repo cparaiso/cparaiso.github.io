@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="en">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Liste - http://localhost:1313/">
+    <meta name="author" content="Liste - /">
     <title>Fighting with venv in Python | Chris Paraiso</title>
     <meta name="description" content="A minimal hugo theme focus on content">
-    <meta property="og:url" content="http://localhost:1313/posts/fighting-with-venv-in-python/">
+    <meta property="og:url" content="/posts/fighting-with-venv-in-python/">
   <meta property="og:site_name" content="Chris Paraiso">
   <meta property="og:title" content="Fighting with venv in Python">
   <meta property="og:description" content="I had a brain fart today. I was developing a personal project in Python and I had some library issues that I was trying to wrap my head around. It turns out, I didn’t even have my virtual environment running. I completely forgot.
@@ -32,16 +32,16 @@ I’m lazy. I don’t like to type unnecessary things. I switch projects mid-day
   <meta itemprop="dateModified" content="2023-08-23T02:36:29-07:00">
   <meta itemprop="wordCount" content="560">
     
-    <link rel="canonical" href="http://localhost:1313/posts/fighting-with-venv-in-python/">
-    <link rel="icon" href="http://localhost:1313//assets/favicon.ico">
+    <link rel="canonical" href="/posts/fighting-with-venv-in-python/">
+    <link rel="icon" href="//assets/favicon.ico">
     <link rel="dns-prefetch" href="https://www.google-analytics.com">
     <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
-    <link rel="alternate" type="application/atom+xml" title="Chris Paraiso" href="http://localhost:1313//atom.xml" />
-    <link rel="alternate" type="application/json" title="Chris Paraiso" href="http://localhost:1313//feed.json" />
+    <link rel="alternate" type="application/atom+xml" title="Chris Paraiso" href="//atom.xml" />
+    <link rel="alternate" type="application/json" title="Chris Paraiso" href="//feed.json" />
     <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bricolage+Grotesque">
     
-    <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 bricolage grotesque,-apple-system,BlinkMacSystemFont,segoe ui,Helvetica,Arial,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:2rem;background:#fffdfa;color:#000}.skip-link{position:absolute;top:-40px;left:0;background:#eee;z-index:100}.skip-link:focus{top:0}header{display:flex;justify-content:space-between;align-items:center;position:relative;padding-bottom:1rem}header .burger{display:none;background:0 0;border:none;padding:0;cursor:pointer}header .burger span{display:block;width:25px;height:3px;background:#000;margin:5px 0;transition:all .3s ease}@media(max-width:768px){header .burger{display:block;z-index:2}header .nav-menu{position:fixed;top:0;right:-100%;width:100%;height:100vh;background:#fffdfa;padding:2rem;transition:.3s ease;z-index:1}header .nav-menu.active{right:0}header .nav-menu ul{flex-direction:column;align-items:center;width:100%}header .nav-menu ul li{display:block;font-size:1.2rem;border-bottom:1px dotted #000;height:50px;display:flex;justify-content:center;align-items:center}header.menu-open .burger span:first-child{transform:rotate(45deg)translate(5px,6px)}header.menu-open .burger span:nth-child(2){opacity:0}header.menu-open .burger span:last-child{transform:rotate(-45deg)translate(5px,-6px)}}header a{text-decoration:none}header ul{list-style-type:none;padding:0}header li,header a{display:inline}.link{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.time{font-variant-numeric:tabular-nums;white-space:nowrap}blockquote{border-left:5px solid #eee;padding-left:1rem;margin:0}a,a:visited{color:inherit}a:hover,a.heading-link{text-decoration:none}pre{padding:.5rem;overflow:auto;overflow-x:scroll;overflow-wrap:normal}code,pre{font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;font-size:small;background:#eee}code{margin:.1rem;border:none;overflow:visible;overflow-wrap:anywhere}ul{list-style-type:square}ul,ol{padding-left:1.2rem}.list{line-height:2;list-style-type:none;padding-left:0}.list li{padding-bottom:.1rem}.meta{color:#777}.content{max-width:70ch;margin:0 auto}h2.post{padding-top:.5rem}header ul a:first-child{padding-left:1rem}.nav{height:1px;background:#000;content:'';max-width:10%}.list li{display:flex;align-items:baseline}.list li time{flex:initial}.hr-list{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:0;border-bottom:1px dotted #ccc;flex:1 0 1rem}.m,hr{border:0;margin:3rem 0}img{max-width:100%;height:auto}.post-date{margin:5% 0}.index-date{color:#9a9a9a}.animate-blink{animation:opacity 1s infinite;opacity:1}@keyframes opacity{0%{opacity:1}50%{opacity:.5}100%{opacity:0}}.tags{display:flex;justify-content:space-between}.tags ul{padding:0;margin:0}.tags li{display:inline}.avatar{height:120px;width:120px;position:relative;margin:-10px 0 0 15px;float:right;border-radius:50%}table{width:100%;border-collapse:collapse}th,td{border:1px solid #ddd;text-align:left;padding:8px}th{background-color:#f2f2f2}footer{margin-top:4rem}</style>
+    <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 bricolage grotesque,-apple-system,BlinkMacSystemFont,segoe ui,Helvetica,Arial,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:2rem;background:#0f1112;color:#f2f0ed;font-size:17px;letter-spacing:.25px;line-height:2rem}.skip-link{position:absolute;top:-40px;left:0;background:#eee;z-index:100}.skip-link:focus{top:0}header{display:flex;justify-content:space-between;align-items:center;position:relative;padding-bottom:1rem}header .burger{display:none;background:0 0;border:none;padding:0;cursor:pointer}header .burger span{display:block;width:25px;height:3px;background:#000;margin:5px 0;transition:all .3s ease}@media(max-width:768px){header .burger{display:block;z-index:2}header .nav-menu{position:fixed;top:0;right:-100%;width:100%;height:100vh;background:#fffdfa;padding:2rem;transition:.3s ease;z-index:1}header .nav-menu.active{right:0}header .nav-menu ul{flex-direction:column;align-items:center;width:100%}header .nav-menu ul li{display:block;font-size:1.2rem;border-bottom:1px dotted #000;height:50px;display:flex;justify-content:center;align-items:center}header.menu-open .burger span:first-child{transform:rotate(45deg)translate(5px,6px)}header.menu-open .burger span:nth-child(2){opacity:0}header.menu-open .burger span:last-child{transform:rotate(-45deg)translate(5px,-6px)}}header a{text-decoration:none}header ul{list-style-type:none;padding:0}header li,header a{display:inline}.link{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.time{font-variant-numeric:tabular-nums;white-space:nowrap}blockquote{border-left:5px solid #eee;padding-left:1rem;margin:0}a:link,a:visited{color:#ffa873}a:hover,a.heading-link{text-decoration:none}pre{padding:.5rem;overflow:auto;overflow-x:scroll;overflow-wrap:normal;border-radius:10px}code,pre{font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;font-size:small;background:0 0;line-height:1.5rem}code{margin:.1rem;border:none;overflow:visible;overflow-wrap:anywhere;font-size:16px;background:rgba(145,64,21,.1);color:#ffa873;padding:0 5px;border-radius:5px}ul{list-style-type:square}ul,ol{padding-left:1.2rem}.list{line-height:2;list-style-type:none;padding-left:0}.list li{padding-bottom:.1rem}.meta{color:#777}.content{max-width:768px;margin:0 auto}h2.post{padding-top:.5rem}header ul a:first-child{padding-left:1rem}.nav{height:1px;background:#000;content:'';max-width:10%}.list li{display:flex;align-items:baseline}.list li time{flex:initial}.hr-list{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:0;border-bottom:1px dotted #ccc;flex:1 0 1rem}.m,hr{border:0;margin:3rem 0}img{max-width:100%;height:auto}.post-date{margin:5% 0}.index-date{color:#9a9a9a}.animate-blink{animation:opacity 1s infinite;opacity:1}@keyframes opacity{0%{opacity:1}50%{opacity:.5}100%{opacity:0}}.tags{display:flex;justify-content:space-between}.tags ul{padding:0;margin:0}.tags li{display:inline}.avatar{height:120px;width:120px;position:relative;margin:-10px 0 0 15px;float:right;border-radius:50%}table{width:100%;border-collapse:collapse}th,td{border:1px solid #ddd;text-align:left;padding:8px}th{background-color:#f2f2f2}footer{overflow:hidden}footer p{float:left}footer .social-links{float:right}footer .social-links ul{list-style:none}footer .social-links ul li{display:inline-block;margin-left:1rem}</style>
   
     
     
@@ -59,7 +59,7 @@ I’m lazy. I don’t like to type unnecessary things. I switch projects mid-day
         "isFamilyFriendly": "true",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "http:\/\/localhost:1313\/posts\/fighting-with-venv-in-python\/"
+            "@id": "\/posts\/fighting-with-venv-in-python\/"
         },
         "author" : {
             "@type": "Person",
@@ -81,16 +81,16 @@ I’m lazy. I don’t like to type unnecessary things. I switch projects mid-day
         "publisher":{
             "@type":"Organization",
             "name": "Chris Paraiso",
-            "url": "http://localhost:1313/",
+            "url": "/",
             "logo": {
                 "@type": "ImageObject",
-                "url": "http:\/\/localhost:1313\/assets\/favicon.ico",
+                "url": "\/assets\/favicon.ico",
                 "width":"32",
                 "height":"32"
             }
         },
-        "image": "http://localhost:1313/assets/favicon.ico",
-        "url" : "http:\/\/localhost:1313\/posts\/fighting-with-venv-in-python\/",
+        "image": "/assets/favicon.ico",
+        "url" : "\/posts\/fighting-with-venv-in-python\/",
         "wordCount" : "560",
         "genre" : [ ],
         "keywords" : [ ]
@@ -129,32 +129,21 @@ I’m lazy. I don’t like to type unnecessary things. I switch projects mid-day
     
 <header>
   <p style="padding: 0;margin: 0;">
-    <a href="http://localhost:1313/">
+    <a href="/">
       <b>Chris Paraiso</b>
       <span class="text-stone-500 animate-blink">▮</span>
     </a>
   </p>
 
   
-  <button class="burger" aria-label="Toggle menu">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
-  <nav class="nav-menu">
-    <ul style="padding: 0;margin: 0;">
+  <ul style="padding: 0;margin: 0;">
+    
+    
+    <li class="">
+      <a href="/posts/"><span>Posts</span></a>
       
-      
-        <li class="">
-          <a href="/posts/"><span>Articles</span></a>
-        </li>
-      
-        <li class="">
-          <a href="/about/"><span>About</span></a>
-        </li>
-      
-    </ul>
-  </nav>
+    </li>
+  </ul>
   
 </header>
 <hr class="hr-list" style="padding: 0;margin: 0;">
@@ -176,36 +165,36 @@ I’m lazy. I don’t like to type unnecessary things. I switch projects mid-day
 <h2 id="solution">Solution</h2>
 <p>I removed the <code>source</code> line from my <code>venv.sh</code> script and just left the script to create the needed files and directories. I would then need to run that <code>source</code> command to enter the virtual environment.</p>
 <p>Then I thought: Why don&rsquo;t I just string the commands together into one alias on my shell? Perfect.</p>
-<div class="highlight"><div style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># aliases.sh</span>
-</span></span><span style="display:flex;"><span><span style="color:#111">alias</span> <span style="color:#111">venv</span><span style="color:#f92672">=</span><span style="color:#d88200">&#39;$HOME/src/dotfiles/bin/utils/venv.sh &amp;&amp; \
-</span></span></span><span style="display:flex;"><span><span style="color:#d88200">    source .venv/bin/activate&#39;</span>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#6272a4"># aliases.sh</span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">alias</span> <span style="color:#8be9fd;font-style:italic">venv</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;$HOME/src/dotfiles/bin/utils/venv.sh &amp;&amp; \
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    source .venv/bin/activate&#39;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># ... other aliases below here</span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># ... other aliases below here</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>Running the <code>venv</code> alias would execute the <code>venv.sh</code> <strong>then</strong> run the <code>source</code> command in the context of the shell I am currently in.</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#75715e"># venv.sh</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># create venv if not exists</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">if</span> <span style="color:#f92672">[</span> -d <span style="color:#d88200">&#34;.venv&#34;</span> <span style="color:#f92672">]</span><span style="color:#111">;</span> <span style="color:#00a8c8">then</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">echo</span> <span style="color:#d88200">&#34;Found .venv. Activating...&#34;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">else</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">read</span> -p <span style="color:#d88200">&#34;.venv does not exist. Would you like to \
-</span></span></span><span style="display:flex;"><span><span style="color:#d88200">         create a venv for this directory? (y/n) &#34;</span> response
-</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">if</span> <span style="color:#f92672">[</span> <span style="color:#d88200">&#34;</span><span style="color:#111">$response</span><span style="color:#d88200">&#34;</span> <span style="color:#f92672">==</span> <span style="color:#d88200">&#34;y&#34;</span> <span style="color:#f92672">]</span><span style="color:#111">;</span> <span style="color:#00a8c8">then</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#111">echo</span> <span style="color:#d88200">&#34;Creating .venv directory @ </span><span style="color:#111">$PWD</span><span style="color:#d88200">&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff79c6">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#ff79c6"></span><span style="color:#6272a4"># venv.sh</span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># create venv if not exists</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">if</span> <span style="color:#ff79c6">[</span> -d <span style="color:#f1fa8c">&#34;.venv&#34;</span> <span style="color:#ff79c6">]</span>; <span style="color:#ff79c6">then</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#f1fa8c">&#34;Found .venv. Activating...&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">else</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">read</span> -p <span style="color:#f1fa8c">&#34;.venv does not exist. Would you like to \
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">         create a venv for this directory? (y/n) &#34;</span> response
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">if</span> <span style="color:#ff79c6">[</span> <span style="color:#f1fa8c">&#34;</span><span style="color:#8be9fd;font-style:italic">$response</span><span style="color:#f1fa8c">&#34;</span> <span style="color:#ff79c6">==</span> <span style="color:#f1fa8c">&#34;y&#34;</span> <span style="color:#ff79c6">]</span>; <span style="color:#ff79c6">then</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#f1fa8c">&#34;Creating .venv directory @ </span><span style="color:#8be9fd;font-style:italic">$PWD</span><span style="color:#f1fa8c">&#34;</span>
 </span></span><span style="display:flex;"><span>      python3 -m venv .venv
-</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">fi</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">fi</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">fi</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">fi</span>
 </span></span></code></pre></div><p>If <code>venv.sh</code> finds an existing <code>.venv</code> directory, it does nothing. If the script does not find the <code>.venv</code> directory it prompts the user asking if the script has permission to create it. I know I could probably do without the prompt and just have the script create it. I decided to leave it in for now.</p>
 <p>I guess my issue was with Bash and not venv. Anyway, I think I have to be careful. I&rsquo;ve been getting sidetracked and spending a lot of time configuring my environment. Off to building something!</p>
 <p>Be sure to follow me <a href="https://twitter.com/chrisparaiso">@chrisparaiso</a>.</p>
@@ -224,7 +213,7 @@ I’m lazy. I don’t like to type unnecessary things. I switch projects mid-day
 <script src="https://utteranc.es/client.js"
     repo=cparaiso/cparaiso.github.io
     issue-term="pathname"
-    theme=github-light
+    theme=github-dark
     crossorigin="anonymous"
     async>
 </script>
@@ -233,6 +222,18 @@ I’m lazy. I don’t like to type unnecessary things. I switch projects mid-day
     </div>
     
     
+    
+<footer>
+<p>&copy; 2025 Chris Paraiso</p>
+<div class="social-links">
+  <ul>
+    <li><a href="https://x.com/chrisparaiso">x/twitter</a></li>
+    <li><a href="https://github.com/cparaiso">github</a></li>
+    <li><a href="https://www.linkedin.com/in/chrisparaiso/">linkedin</a></li>
+  </ul>
+</div>
+</footer>
+
   </div>
 </main>
 </body>
